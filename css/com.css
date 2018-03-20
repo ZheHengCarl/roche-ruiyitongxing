@@ -1,0 +1,19 @@
+﻿body { background-color: #f7fafc; font-family: Lantinghei;}
+.container { width: 1024px; height: 768px; margin: 0 auto; background-color:#f7fafc; font-family: Lantinghei;}
+/* public */
+.input1 { width: 286px; height: 20px; padding: 10px; background-color: #f9fcff; border-radius: 20px; border: solid 1px #ace3f5; font-size: 15px; font-family: Lantinghei;}
+.input1:focus { box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15); border: solid 1px #39c1ee; }
+/* login */
+.login img { display: block; width: 356.5px; height: 132.5px; margin: 90px auto 0;}
+.login .content { width: 345px; height: 188px; margin: 37px auto 0; padding: 50px 74px 58px 81px; background-color: #ffffff; box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15); border-radius: 10px; border: solid 1px #ffffff;}
+.login .content label { display: block; margin-bottom: 33px; }
+.login .content i { width: 25px; margin-right: 10px; color: #4bc2e3; font-size: 25px; vertical-align: middle; text-align: center;}
+.login .content .btn-cont {text-align: right;}
+.login .content .btn-cont input {  border-radius: 20px; height: 41px; color: #FFF;  font-size: 18px; line-height: 41px; cursor: pointer;}
+.login .content .login-btn {width: 194px;  background-color: rgba(18, 119, 190, 0.9);box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15); border: solid 0px rgba(11, 90); }
+.login .content .registr-btn { width: 93px; height: 41px; margin-left: 18px; background-color: rgba(170, 170, 170, 0.9); box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15); border: solid 0px rgba(160, 160, 160, 0.9); }
+/* index */
+.index { position: relative; background: url('../img/bg.png') no-repeat 0 0 / cover;}
+.index .nav>a { display: block; width: 270px; height: 82.5px; background: #d4edf8; font-weight: bold; border: 1px solid #c6e7f6; border-radius: 10px; text-align: center; line-height: 82.5px; font-size: 30px; color: #0073bb; cursor: pointer;}
+.index .nav a:nth-child(1) { position: absolute; top: 60px; right:60px;}
+.index .nav a:nth-child(2) { position: absolute; bottom: 60px; left:60px;}
