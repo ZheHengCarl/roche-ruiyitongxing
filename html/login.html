@@ -13,25 +13,36 @@
         <h3><img src="../img/login-title.png" alt=""></h3>
         <div class="content">
             <div class="login-content">
-                <div class="email"><i> <img src="../img/icon-email.png" alt=""/> </i><input type="text" class="input1" placeholder="员工邮箱"></div>
-                <div class="pwd"><i> <img src="../img/icon-pwd.png" alt=""> </i><input type="password" class="input1" placeholder="输入密码"></div>
+                <div class="email"><i> <img src="../img/icon/icon-email.png" alt=""/> </i><input type="text" class="input1 inputWidth266" placeholder="员工邮箱"></div>
+                <div class="pwd"><i> <img src="../img/icon/icon-pwd.png" alt=""> </i><input type="password" class="input1 inputWidth266" placeholder="输入密码"></div>
                 <div class="btn-cont"><input type="button" class="login-btn" value="登录"><input type="button" class="registr-btn" value="注册"></div>
                 <div class="function-cont">
-                    <div class="first-login"><i> <img src="../img/icon-first-login.png" alt=""> </i>首次登录</div>
-                    <div class="change-pwd"><i> <img src="../img/icon-change-pw.png" alt=""> </i>修改密码</div>
-                    <div class="forget-pwd"><i> <img src="../img/icon-forget-pwd.png" alt=""> </i>忘记密码</div>
+                    <div class="first-login"><i> <img src="../img/icon/icon-first-login.png" alt=""> </i>首次登录</div>
+                    <div class="change-pwd"><i> <img src="../img/icon/icon-change-pw.png" alt=""> </i>修改密码</div>
+                    <div class="forget-pwd"><i> <img src="../img/icon/icon-forget-pwd.png" alt=""> </i>忘记密码</div>
                 </div>
             </div>
             <div class="register-conent">
-                <div class="email"><i> <img src="../img/icon-email.png" alt=""/> </i><input type="text" class="input1" placeholder="员工邮箱"></div>
+                <div class="email"><i> <img src="../img/icon/icon-email.png" alt=""/> </i><input type="text" class="input1 inputWidth310" placeholder="员工邮箱"></div>
+                <div class="user-info">
+                    <label class="user-name"><i> <img src="../img/icon/icon-user.png" alt=""/> </i><input type="text" class="input1 inputWidth100" placeholder="姓名"></label>
+                    <label class="user-phone"><i> <img src="../img/icon/icon-iphone.png" alt=""/> </i><input type="text" class="input1 inputWidth150" placeholder="手机号"></label>
+                </div>
+                <div class="c-code"><i> <img src="../img/icon/icon-cCode.png" alt=""/> </i><input type="text" class="input1 inputWidth310" placeholder="校验码" maxlength="4"><label class="check-code"><img src="../img/temp-code.png" alt=""></label></div>
+                <div class="v-code"><i> <img src="../img/icon/icon-vCode.png" alt=""/> </i><input type="text" class="input1 inputWidth310" placeholder="验证码"><button class="get-code">获取验证码</button></div>
             </div>
         </div>
         <div class="footer">
             <ul>
-                <li><i> <img src="../img/icon-phone.png" alt="" width="14" height="14"> </i>客服热线:4000621818</li>
+                <li><i> <img src="../img/icon/icon-phone.png" alt="" width="14" height="14"> </i>客服热线:4000621818</li>
                 <li>上海会畅通讯股份有限公司 版权所有 沪ICP备11034277号-18</li>
             </ul>
         </div>
     </div>
+    <script>
+        $(".login .registr-btn, .login .first-login").click(function(){
+            $(".login .register-conent").show().siblings().hide();
+        })
+    </script>
 </body>
 </html>
