@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container conference">
+      <div class="side-bar">
+        <div class="logo"></div>
+        <div class="my-message"><i class="icon i-msg"></i><span class="item-name">我的消息</span><span class="item-value">2</span></div>
+        <ul class="side-menu">
+          <li><i class="icon i-cup"></i><div class="item"><h3 class="item-name">我的排名</h3><p class="item-value">8121</p></div></li>
+          <li><i class="icon i-star"></i><div class="item"><h3 class="item-name">区域之星</h3><p class="item-value">李莉莉</p></div></li>
+          <li><i class="icon i-badge"></i><div class="item"><h3 class="item-name">明日之星</h3><p class="item-value">赵倩荪</p></div></li>
+        </ul>
+        <div class="link-to-index">
+          <i class="icon i-return"></i>
+          <span class="item-name">返回首页</span>
+        </div>
+        <ul class="help">
+          <li><i class="icon i-phone"></i>客服热线:4000621818</li>
+          <li><i class="icon i-manual"></i>操作手册</li>
+          <li><i class="icon i-cloud"></i>下载客户端</li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="top-bar">
+          <ul id="top-menu" class="top-menu"></ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      var arrMainMenu = [{
+        icon: 'i-confirm',
+        text: '抢单会议',
+        href: '/html/login.html',
+      }, {
+        icon: 'i-mouse',
+        text: '一键入会',
+        href: '/html/login.html',
+      }, {
+        icon: 'i-cloud-up',
+        text: '会后上传',
+        href: '/html/login.html',
+      }, {
+        icon: 'i-notepad',
+        text: '查看报告',
+        href: '/html/login.html',
+      }, {
+        icon: 'i-leaf',
+        text: '活跃值',
+        href: '/html/login.html',
+      }, {
+        icon: 'i-note-board',
+        text: '创建会议',
+        href: '/html/login.html',
+      }]
+      var goPage = function (idx) {
+        document.location.pathname = arrMainMenu[idx].href
+      }
+
+      var initTopMenu = function () {
+        var oDomTopMenu = document.getElementById('top-menu'),
+        sTopMenuHtml = '';
+        for (var i = 0, len = arrMainMenu.length; i < len; i++) {
+           // onclick="goPage('+ i +')"
+          sTopMenuHtml += '<li><a href="'+ arrMainMenu[i].href +'" title=""><i class="'+ arrMainMenu[i].icon +'"></i>'+ arrMainMenu[i].text +'</a></li>'
+        }
+        oDomTopMenu.innerHTML = sTopMenuHtml
+      }
+      initTopMenu()
+    </script>
+</body>
+</html>
