@@ -1,1 +1,5 @@
-*.DS_Store
+.DS_Store
+css/.DS_Store
+html/.DS_Store
+img/.DS_Store
+js/.DS_Store

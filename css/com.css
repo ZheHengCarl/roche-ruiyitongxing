@@ -10,12 +10,19 @@
 .input1::placeholder { opacity: .5; }
 /* login */
 .login h3 img { display: block; width: 356.5px; height: 132.5px; margin: 90px auto 0;}
-.login .content { width: 500px; height: 300px; margin: 37px auto 0; padding-top: 50px; /* padding: 50px 74px 58px 81px; */ background-color: #ffffff; box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15); border-radius: 10px; border: solid 1px #ffffff;}
-.login .content div { display: block; margin-bottom: 33px; text-align: center; }
+.login .content { width: 500px; height: 350px; margin: 37px auto 0;  background-color: #ffffff; box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15); border-radius: 10px; border: solid 1px #ffffff;}
+.login .content div { position: relative; display: block; margin-bottom: 33px; text-align: center; }
+.login .content .login-content { padding-top: 50px;}
 .login .content>div:not(.login-content) { display: none;}
 .login .content i { display: inline-block; width: 30px; height: 30px; margin-right: 7px; text-align: center; }
 .login .footer { position: absolute; left: 0; bottom: 0; width: 100%; text-align: center; color: #4bc2e3; font-size: 16px;}
 .login .footer li { margin:15px 0;}
+/* register */
+.login .content .register-conent { padding-top: 30px}
+.login .content .register-conent>div { margin: 15px 0;}
+.login .c-code .check-code { position: absolute; top: 1px; right: 82px; width: 90px; height: 100%; border-top-right-radius: 18px; border-bottom-right-radius: 18px; }
+.login .c-code .check-code img { width: 100%; height: 96%; border-top-right-radius: 18px; border-bottom-right-radius: 18px; }
+.login .v-code .get-code { position: absolute; top: 0; right: 80px; width: 90px; height: 98%; background-color: #4cc2e3; color: #FFF; font-size: 15px; font-family: Lantinghei; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border:none; cursor: pointer; letter-spacing: 1px; }
 /* login icon */
 .login .content i img { width: 100%; vertical-align: top;}
 .login .content .email i img{ width: 28px; height: 24px;}
@@ -29,13 +36,14 @@
 .login .content .forget-pwd i img{ width: 25.5px; height: 25.5px; }
 /* login icon end */
 /* register icon */
-
-.login .content .user-info { display: block; padding: 0 15px;}
+.login .content .user-info { display: block;}
 .login .content .user-info label { display: inline-block;}
 .login .content .user-name i { vertical-align: 3px; }
 .login .content .user-name i img{ width: 24.5px; height: 26.5px; }
 .login .content .user-phone i { vertical-align: 3px; }
 .login .content .user-phone i img{ width: 20.5px; height: 29px; }
+.login .content .v-code i { vertical-align: 5px; }
+.login .content .v-code i img{ width: 26.5px; height: 31px; }
 /* register icon end */
 .login .content .function-cont { margin: 70px 0 0; padding: 0 36px 0 47px; text-align: right;}
 .login .content .function-cont div { display: inline-block; cursor: pointer; }
