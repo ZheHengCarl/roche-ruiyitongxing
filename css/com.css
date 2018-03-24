@@ -61,6 +61,13 @@
 .i-phone {  }
 .i-manual {  }
 .i-cloud {  }
+.i-confirm {  }
+.i-mouse {  }
+.i-cloud-up {  }
+.i-notepad {  }
+.i-leaf {  }
+.i-note-board {  }
+
 
 .side-bar { position: relative; float: left; width: 174px; height: 768px; padding-right: 14px; }
 .side-bar:after { content: ''; position: absolute; top: 0; right: 0; width: 14px; height: 100%; background-image: linear-gradient(-90deg, rgba(61, 143, 202, 0.1) 0%, #3d8fca 100%); opacity: 0.1; }
@@ -95,6 +102,11 @@
 .top-bar:after { display: block; content: ''; width: 850px; height: 7px; background-image: linear-gradient(180deg,  rgba(45, 142, 172, 0.1) 0%,  rgba(255, 255, 255, 0.1) 100%); }
 
 .top-menu { width: 100%; height: 73px; }
-.top-menu li { width: 130px; }
+.top-menu li { display: inline-block; width: 135px; padding: 25px 0 20px; text-align: center; font-size: 15px; }
+.top-menu li:after { content: ''; float: right; width: 2px; height: 8px; margin-top: 9px; background-color: #b8c1ce; }
+.top-menu li a { color: #b6bfce; }
+.top-menu li.active { border-bottom: 4px solid #ffc14a; }
+.top-menu li .icon { width: 26px; height: 26px; margin-right: 10px; vertical-align: middle; }
+.top-menu li .menu-text { display: inline-block; vertical-align: middle; }
 
 /* conference-list */

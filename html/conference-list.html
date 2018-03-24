@@ -18,8 +18,10 @@
           <li><i class="icon i-badge"></i><div class="item"><h3 class="item-name">明日之星</h3><p class="item-value">赵倩荪</p></div></li>
         </ul>
         <div class="link-to-index">
-          <i class="icon i-return"></i>
-          <span class="item-name">返回首页</span>
+          <a href="/home/index.html">
+            <i class="icon i-return"></i>
+            <span class="item-name">返回首页</span>
+          </a>
         </div>
         <ul class="help">
           <li><i class="icon i-phone"></i>客服热线:4000621818</li>
@@ -37,27 +39,27 @@
       var arrMainMenu = [{
         icon: 'i-confirm',
         text: '抢单会议',
-        href: '/html/login.html',
+        path: '/html/login.html',
       }, {
         icon: 'i-mouse',
         text: '一键入会',
-        href: '/html/login.html',
+        path: '/html/login.html',
       }, {
         icon: 'i-cloud-up',
         text: '会后上传',
-        href: '/html/login.html',
+        path: '/html/login.html',
       }, {
         icon: 'i-notepad',
         text: '查看报告',
-        href: '/html/login.html',
+        path: '/html/login.html',
       }, {
         icon: 'i-leaf',
         text: '活跃值',
-        href: '/html/login.html',
+        path: '/html/login.html',
       }, {
         icon: 'i-note-board',
         text: '创建会议',
-        href: '/html/login.html',
+        path: '/html/login.html',
       }]
       var goPage = function (idx) {
         document.location.pathname = arrMainMenu[idx].href
@@ -65,10 +67,11 @@
 
       var initTopMenu = function () {
         var oDomTopMenu = document.getElementById('top-menu'),
-        sTopMenuHtml = '';
+        sTopMenuHtml = '',
+        path = window.location.pathname;
         for (var i = 0, len = arrMainMenu.length; i < len; i++) {
            // onclick="goPage('+ i +')"
-          sTopMenuHtml += '<li><a href="'+ arrMainMenu[i].href +'" title=""><i class="'+ arrMainMenu[i].icon +'"></i>'+ arrMainMenu[i].text +'</a></li>'
+          sTopMenuHtml += '<li class="'+ (path == arrMainMenu[i].path ? 'active' : '') +'"><a href="'+ arrMainMenu[i].path +'" title=""><i class="icon '+ arrMainMenu[i].icon +'"></i><span class="menu-text">'+ arrMainMenu[i].text +'</span></a></li>'
         }
         oDomTopMenu.innerHTML = sTopMenuHtml
       }
