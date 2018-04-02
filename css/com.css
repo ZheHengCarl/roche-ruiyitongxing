@@ -1,5 +1,5 @@
-﻿body { background-color: #eee; font-family: Lantinghei;}
-.container { position: relative; width: 1024px; height: 768px; margin: 0 auto; background-color:#f7fafc; font-family: Lantinghei;}
+﻿body { background-color: #fff; font-family: Lantinghei;}
+.container { position: relative; width: 1024px; height: 768px; margin: 0 auto; background-color:#FFF; font-family: Lantinghei;}
 /* public */
 .input1 { height: 40px; padding:0 20px; background-color: #f9fcff; border-radius: 20px; border: solid 1px #ace3f5; font-size: 15px; line-height: 40px; font-family: Lantinghei;}
 .inputWidth310 { width: 260px;}

@@ -63,7 +63,7 @@
       }]
       var goPage = function (idx) {
         document.location.pathname = arrMainMenu[idx].href
-      }
+      };
 
       var initTopMenu = function () {
         var oDomTopMenu = document.getElementById('top-menu'),
@@ -71,11 +71,11 @@
         path = window.location.pathname;
         for (var i = 0, len = arrMainMenu.length; i < len; i++) {
            // onclick="goPage('+ i +')"
-          sTopMenuHtml += '<li class="'+ (path == arrMainMenu[i].path ? 'active' : '') +'"><a href="'+ arrMainMenu[i].path +'" title=""><i class="icon '+ arrMainMenu[i].icon +'"></i><span class="menu-text">'+ arrMainMenu[i].text +'</span></a></li>'
+          sTopMenuHtml += '<li class="'+ (path == arrMainMenu[i].path ? 'active' : '') +'"><a href="'+ arrMainMenu[i].path +'" title=""><i class="icon '+ arrMainMenu[i].icon +'"></i><span class="menu-text">'+ arrMainMenu[i].text +'</span></a></li>';
         }
-        oDomTopMenu.innerHTML = sTopMenuHtml
-      }
-      initTopMenu()
+        oDomTopMenu.innerHTML = sTopMenuHtml;
+      };
+      initTopMenu();
     </script>
 </body>
 </html>
