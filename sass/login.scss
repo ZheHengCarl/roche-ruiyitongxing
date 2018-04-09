@@ -1,0 +1,351 @@
+
+// 隐私条例pop
+.privacy-pop {
+    width: 450px;
+    height: 600px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
+    border-radius: 10px;
+    border: solid 1px #ffffff;
+    z-index: 999;
+    h6{
+        padding: 0 25px;
+        text-align: center;
+        line-height: 88.5px;
+        color: #0074b6;
+        font-size: 26px;
+        p{
+            font-weight: bold;
+            border-bottom: solid 1px #e0f0ff;
+        }
+    }
+    .pop-box{
+        position: relative;
+        height: 443px;
+        margin-top: 32px;
+        padding: 0 17.5px 0 25px;
+        overflow: auto;
+        .pop-content{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 370px;
+            font-size: 12px;
+            line-height: 24px;
+            color: #818181;
+            font-weight: 400;
+            text-align: justify;
+        }
+        .scroll{
+            position: absolute;
+            top: 0;
+            right: 17.5px;
+            width: 6px;
+            height: 100%;
+            background-color: #e4f6fb;
+            border-radius: 10px;
+            .active-scroll{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                border-radius: 10px;
+                background: #1277be;
+            }
+            .bar{
+                position: absolute;
+                top: 0;
+                left: -10px;
+                width: 20px;
+                height: 20px;
+                background-color: #ffffff;
+                border-radius: 20px;
+                border: solid 3px rgba(74, 206, 183, 0.15);
+                cursor: pointer;
+                z-index: 999;
+            }
+        }
+    }
+}
+.privacy-false {
+    width: 350px;
+    height: 200px;
+    background-color: #ffffff;
+	box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
+	border-radius: 10px;
+    border: solid 1px #ffffff;
+    text-align: center;
+    .pop-btn {
+        @include popButton(35px);
+        background-color: #b8c1ce;
+    }
+    p{
+        margin-top: 67px;
+        font-size: 24px;
+        color: #fd7423;
+    }
+}
+.sub-success {
+    .pop-btn{
+        @include popButton(10px);
+    }
+}
+.sub-error{
+    .pop-btn{
+        @include popButton(25px);
+    }
+}
+//login
+.login {
+    padding-top: (256px/2);
+    @media screen and (max-width: 1025px) {
+        height: 640px;
+    }
+    .login-title{
+        display: block;
+        width: (713px/2);
+        height: (265px/2);
+        margin: 0 auto;
+    }
+    .form-content{
+        display: none;
+        i { background:url('../img/icon/icon-login-list.png') no-repeat 0 0; background-size: cover;}
+        ul{
+            width: 395px;
+            margin: 0 auto;
+            padding-left: 15px;
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                i { 
+                    display: inline-block;
+                    width: (56px/2);
+                    height: (62px/2);
+                    margin-right: 10px;
+                    background-position-y: 4px;
+                }
+                label {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding-right: 10px;
+                    box-sizing: border-box;
+                    @include inputCont(350px);
+                    .temp-cCode{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 77px;
+                        height: 100%;
+                        border-radius: 0px 20px 20px 0px;
+                    }
+                    .send-vCode{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 90px;
+                        height: 38px;
+                        background-color: #1277be;
+                        border-radius: 0px 18px 18px 0px;
+                        color: #FFF;
+                        font-size: 15px;
+                    }
+                    input{
+                        @include inputStyle;
+                    }
+                    span{
+                        display: inline-block;
+                        width: 80px;
+                        margin-left: 25px;
+                        font-size: 15px;
+                        color: #1277be;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .email {
+                label{@include inputCont(350px);}
+            }
+            .pwd {
+                i{ background-position-y: -31px;}
+            }
+            .name{
+                i{ background-position-y: -130px;}
+            }
+            .phone{
+                i{ background-position-y: -165px;}
+            }
+            .c-code{
+                i{ background-position-y: -200px;}
+                input{width: 105px;}
+            }
+            .v-code{
+                i{ background-position-y: -236px;}
+                input{width: 105px;}
+            }
+            .set-pwd{
+                i{background-position-y: -31px;}
+            }
+            
+            .confirm-pwd{
+                i{background-position-y: -273px;}
+            }
+        }
+        .login-button-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{ 
+                border-radius: 20px;
+                color: #FFF;
+                font-size: 18px;
+                margin: 0 5px;
+            }
+            .login-btn {
+                width: 180px;
+                height: 40px;
+                background-image: linear-gradient(#1277be, #1277be), linear-gradient(#1277be, #1277be);
+                box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15);
+            }
+            .register-btn {
+                width: 115px;
+                height: 40px;
+                background-color: #b8c1ce;
+	            box-shadow: 0px 10px 20px 0px rgba(28, 174, 226, 0.15);
+            }
+        }
+        .login-bottom{
+            margin-top: 70px;
+            ul{
+                width: 230px;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                li{
+                    color: #4596d5;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+                .forgot-password{
+                    i{background-position-y: -64px;}
+                }
+                .change-password{
+                    i{background-position-y: -97px;}
+                }
+            }
+        }
+        .next-btn{
+            display: block;
+            width: 184px;
+            height: 40px;
+            margin: 22.5px auto 0;
+            background-image: linear-gradient(#1277be, #1277be),linear-gradient(#1277be, #1277be);
+            box-shadow: 0px 5px 10px 0p rgba(28, 174, 226, 0.15);
+            border-radius: 20px;
+            border: solid 1px #1277be;
+            color: #FFF;
+            font-size: 18px;
+        }
+        .privacy{
+            margin-top: 20px;
+            text-align: center;
+            div{
+                display: inline-block;
+            }
+        }
+    }
+    .login-content {
+        display: block;
+        margin-top: 55px;
+        ul{
+            li{
+                margin-bottom: 33px;
+            }
+        }
+    }
+    .register-content {
+        margin-top: 30px;
+        ul{
+            li{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .set-pwd-content{
+        margin-top: 55px;
+        ul{
+            li{
+                position: relative;
+                width: 420px;
+                display: inline-block;
+                margin-bottom: 0px;
+                &:nth-child(2){
+                    margin-top: -10px;
+                }
+                i{
+                    float: left;
+                    margin-top: 25px;
+                }
+                label{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    line-height: 38px;
+                    span{
+                        width: 120px;
+                    }
+                }
+                p{
+                    margin: 10px 0 0;
+                    text-align: center;
+                    color: #fd7423;
+                    font-size: 14px;
+                }
+                b{
+                    position: absolute;
+                    top: 28px;
+                    right: 0;
+                    width: 25px;
+                    height: 25px;
+                    background-color: #1277be;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 25px;
+                    i{
+                        float: none;
+                        margin: 0;
+                        width: 15px;
+                        height: 15px;
+                        background: none;
+                        color: #FFF;
+                    }
+                }
+            }
+            
+        }
+    }
+    .reset-pwd-content {
+        margin-top: 40px;
+        ul{
+            li{
+                margin-bottom:25px;
+                label{
+                    span{
+                        width:140px;
+                    }
+                }
+            }
+        }
+    }
+    .forgot-pwd-content{
+        margin-top: 30px;
+        ul{
+            li{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

@@ -2,47 +2,184 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>锐医同行|会揽全局</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/com.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/com.js"></script>
 </head>
 <body>
     <div class="container login">
-        <h3><img src="../img/login-title.png" alt=""></h3>
-        <div class="content">
-            <div class="login-content">
-                <div class="email"><i> <img src="../img/icon/icon-email.png" alt=""/> </i><input type="text" class="input1 inputWidth266" placeholder="员工邮箱"></div>
-                <div class="pwd"><i> <img src="../img/icon/icon-pwd.png" alt=""> </i><input type="password" class="input1 inputWidth266" placeholder="输入密码"></div>
-                <div class="btn-cont"><input type="button" class="login-btn" value="登录"><input type="button" class="registr-btn" value="注册"></div>
-                <div class="function-cont">
-                    <div class="first-login"><i> <img src="../img/icon/icon-first-login.png" alt=""> </i>首次登录</div>
-                    <div class="change-pwd"><i> <img src="../img/icon/icon-change-pw.png" alt=""> </i>修改密码</div>
-                    <div class="forget-pwd"><i> <img src="../img/icon/icon-forget-pwd.png" alt=""> </i>忘记密码</div>
-                </div>
+        <div class="back-index"><img src="../img/icon/icon-back-index.png" alt="">返回首页</div>
+        <img src="../img/login-title.png" alt="" class="login-title">
+        <!-- 登录 -->
+        <div class="login-content form-content">
+            <ul>
+                <li class="email"><i></i><label><span>员工邮箱:</span><input type="email" placeholder="请输入邮箱"></label></li>
+                <li class="pwd"><i></i><label><span>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:</span><input type="password" placeholder="请输入密码"></label></li>
+            </ul>
+            <div class="login-button-content">
+                <button class="login-btn">登录</button>
+                <button class="register-btn">注册</button>
             </div>
-            <div class="register-conent">
-                <div class="email"><i> <img src="../img/icon/icon-email.png" alt=""/> </i><input type="text" class="input1 inputWidth310" placeholder="员工邮箱"></div>
-                <div class="user-info">
-                    <label class="user-name"><i> <img src="../img/icon/icon-user.png" alt=""/> </i><input type="text" class="input1 inputWidth100" placeholder="姓名"></label>
-                    <label class="user-phone"><i> <img src="../img/icon/icon-iphone.png" alt=""/> </i><input type="text" class="input1 inputWidth150" placeholder="手机号"></label>
-                </div>
-                <div class="c-code"><i> <img src="../img/icon/icon-cCode.png" alt=""/> </i><input type="text" class="input1 inputWidth310" placeholder="校验码" maxlength="4"><label class="check-code"><img src="../img/temp-code.png" alt=""></label></div>
-                <div class="v-code"><i> <img src="../img/icon/icon-vCode.png" alt=""/> </i><input type="text" class="input1 inputWidth310" placeholder="验证码"><button class="get-code">获取验证码</button></div>
+            <div class="login-bottom">
+                <ul>
+                    <li class="forgot-password"><i></i>忘记密码</li>
+                    <li class="change-password"><i></i>修改密码</li>
+                </ul>
             </div>
         </div>
-        <div class="footer">
+        <!-- 注册 -->
+        <div class="register-content form-content">
             <ul>
-                <li><i> <img src="../img/icon/icon-phone.png" alt="" width="14" height="14"> </i>客服热线:4000621818</li>
+                <li class="email"><i></i><label><span>员工邮箱:</span><input type="email" placeholder="请输入邮箱"></label></li>
+                <li class="name"><i></i><label><span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</span><input type="text" placeholder="请输入姓名"></label></li>
+                <li class="phone"><i></i><label><span class="letter-spacing3">手&nbsp;机&nbsp;号:</span><input type="tel" placeholder="请输入手机号"></label></li>
+                <li class="c-code"><i></i><label><span class="letter-spacing3">校&nbsp;验&nbsp;码:</span><input type="text" placeholder="请输入校验码"><img src="../img/temp-cCode.jpg" alt="" class="temp-cCode"></label></li>
+                <li class="v-code"><i></i><label><span class="letter-spacing3">验&nbsp;证&nbsp;码:</span><input type="text" placeholder="请输入验证码"><button class="send-vCode">发送</button></label></li>
+            </ul>
+            <button class="next-btn">下一步</button>
+            <div class="privacy options">
+                <div><input type="checkbox"><i></i><span class="privacy-btn">隐私条例</span></div>
+            </div>
+        </div>
+        <!-- 设置密码 -->
+        <div class="set-pwd-content form-content">
+            <ul>
+                <li class="set-pwd"><i></i><label><span>设置密码:</span><input type="password"></label><b class="check-pwdYes"> <i class="fa fa-check-circle"></i> </b><p>6-18位字符，至少包含1个字母和1个数字</p></li>
+                <li class="confirm-pwd"><i></i><label><span>再次输入密码:</span><input type="password"></label><b class="check-pwdNo"> <i class="fa fa-close"></i> </b><p>6-18位字符，至少包含1个字母和1个数字</p></li>
+            </ul>
+            <button class="next-btn">确认</button>
+        </div>
+        <!-- 修改密码 -->
+        <div class="reset-pwd-content form-content">
+            <ul>
+                <li class="email"><i></i><label><span>员工邮箱:</span><input type="email"></label></li>
+                <li class="set-pwd"><i></i><label><span>设置密码:</span><input type="password"></label></li>
+                <li class="confirm-pwd"><i></i><label><span>再次输入密码:</span><input type="password"></label></li>
+            </ul>
+            <button class="next-btn">确认</button>
+        </div>
+        <!-- 忘记密码 -->
+        <div class="forgot-pwd-content form-content">
+            <ul>
+                <li class="email"><i></i><label><span>员工邮箱:</span><input type="email" placeholder="请输入邮箱"></label></li>
+                <li class="set-pwd"><i></i><label><span>设置密码:</span><input type="password" placeholder="设置密码"></label></li>
+                <li class="phone"><i></i><label><span class="letter-spacing3">手&nbsp;机&nbsp;号:</span><input type="tel" placeholder="请输入手机号"></label></li>
+                <li class="c-code"><i></i><label><span class="letter-spacing3">校&nbsp;验&nbsp;码:</span><input type="text" placeholder="请输入校验码"><img src="../img/temp-cCode.jpg" alt="" class="temp-cCode"></label></li>
+                <li class="v-code"><i></i><label><span class="letter-spacing3">验&nbsp;证&nbsp;码:</span><input type="text" placeholder="请输入验证码"><button class="send-vCode">发送</button></label></li>
+            </ul>
+            <button class="next-btn">确认</button>
+        </div>
+        <div class="copyright">
+            <ul>
+                <li> <img src="../img/icon/icon-hotline.png" alt="" class="icon-hotline"> 客服热线:4000621818</li>
                 <li>上海会畅通讯股份有限公司 版权所有 沪ICP备11034277号-18</li>
+                <li> <img src="../img/icon/icon-copyright.png" alt="" class="icon-copyright"> 沪公网安备31010602002539号</li>
             </ul>
         </div>
     </div>
+    <div class="cover"></div>
+    <!-- 隐私政策 -->
+    <div class="privacy-pop pop">
+        <span class="close">&Chi;</span>
+        <h6><p>隐私政策</p></h6>
+        <div class="pop-box">
+            <div class="pop-content">
+                    "其明重视用户的隐私，隐私权是您重要的权利。您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本《隐私政策》向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本《隐私政策》与您所使用的其明服务息息相关，希望您仔细阅读，在需要时，按照本《隐私政策》的指引，作出您认为适当的选择。本《隐私政策》中涉及的相关技术词汇，我们尽量以简明扼要的表述，并提供进一步说明的链接，以便您的理解。
+                    您使用或继续使用我们的服务，即意味着同意我们按照本《隐私政策》收集、使用、储存和分享您的相关信息。如对本《隐私政策》或相关事宜有任何问题，请通过与我们联系。
+                    我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果。其明重视用户的隐私，隐私权是您重要的权利。您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本《隐私政策》向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本《隐私政策》与您所使用的其明服务息息相关，希望您仔细阅读，在需要时，按照本《隐私政策》的指引，作出您认为适当的选择。本《隐私政策》中涉及的相关技术词汇，我们尽量以简明扼要的表述，并提供进一步说明的链接，以便您的理解。
+                    您使用或继续使用我们的服务，即意味着同意我们按照本《隐私政策》收集、使用、储存和分享您的相关信息。如对本《隐私政策》或相关事宜有任何问题，请通过与我们联系。
+                    我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果。""其明重视用户的隐私，隐私权是您重要的权利。您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本《隐私政策》向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本《隐私政策》与您所使用的其明服务息息相关，希望您仔细阅读，在需要时，按照本《隐私政策》的指引，作出您认为适当的选择。本《隐私政策》中涉及的相关技术词汇，我们尽量以简明扼要的表述，并提供进一步说明的链接，以便您的理解。
+                    您使用或继续使用我们的服务，即意味着同意我们按照本《隐私政策》收集、使用、储存和分享您的相关信息。如对本《隐私政策》或相关事宜有任何问题，请通过与我们联系。
+                    我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果。其明重视用户的隐私，隐私权是您重要的权利。您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本《隐私政策》向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本《隐私政策》与您所使用的其明服务息息相关，希望您仔细阅读，在需要时，按照本《隐私政策》的指引，作出您认为适当的选择。本《隐私政策》中涉及的相关技术词汇，我们尽量以简明扼要的表述，并提供进一步说明的链接，以便您的理解。
+                    您使用或继续使用我们的服务，即意味着同意我们按照本《隐私政策》收集、使用、储存和分享您的相关信息。如对本《隐私政策》或相关事宜有任何问题，请通过与我们联系。
+                    我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果。""其明重视用户的隐私，隐私权是您重要的权利。您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本《隐私政策》向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本《隐私政策》与您所使用的其明服务息息相关，希望您仔细阅读，在需要时，按照本《隐私政策》的指引，作出您认为适当的选择。本《隐私政策》中涉及的相关技术词汇，我们尽量以简明扼要的表述，并提供进一步说明的链接，以便您的理解。
+                    您使用或继续使用我们的服务，即意味着同意我们按照本《隐私政策》收集、使用、储存和分享您的相关信息。如对本《隐私政策》或相关事宜有任何问题，请通过与我们联系。
+                    我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果。其明重视用户的隐私，隐私权是您重要的权利。您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本《隐私政策》向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本《隐私政策》与您所使用的其明服务息息相关，希望您仔细阅读，在需要时，按照本《隐私政策》的指引，作出您认为适当的选择。本《隐私政策》中涉及的相关技术词汇，我们尽量以简明扼要的表述，并提供进一步说明的链接，以便您的理解。
+                    您使用或继续使用我们的服务，即意味着同意我们按照本《隐私政策》收集、使用、储存和分享您的相关信息。如对本《隐私政策》或相关事宜有任何问题，请通过与我们联系。
+                    我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果。""其明重视用户的隐私，隐私权是您重要的权利。您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本《隐私政策》向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本《隐私政策》与您所使用的其明服务息息相关，希望您仔细阅读，在需要时，按照本《隐私政策》的指引，作出您认为适当的选择。本《隐私政策》中涉及的相关技术词汇，我们尽量以简明扼要的表述，并提供进一步说明的链接，以便您的理解。
+                    您使用或继续使用我们的服务，即意味着同意我们按照本《隐私政策》收集、使用、储存和分享您的相关信息。如对本《隐私政策》或相关事宜有任何问题，请通过与我们联系。
+                    我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果。其明重视用户的隐私，隐私权是您重要的权利。您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本《隐私政策》向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本《隐私政策》与您所使用的其明服务息息相关，希望您仔细阅读，在需要时，按照本《隐私政策》的指引，作出您认为适当的选择。本《隐私政策》中涉及的相关技术词汇，我们尽量以简明扼要的表述，并提供进一步说明的链接，以便您的理解。
+                    您使用或继续使用我们的服务，即意味着同意我们按照本《隐私政策》收集、使用、储存和分享您的相关信息。如对本《隐私政策》或相关事宜有任何问题，请通过与我们联系。
+                    我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果。"
+            </div>
+            <div class="scroll">
+                <div class="bar"></div>
+                <div class="active-scroll"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 隐私政策未勾选 -->
+    <div class="privacy-false pop">
+        <p>请勾选并阅读隐私条款！</p>
+        <div class="pop-btn">关闭</div>
+    </div>
+    <!-- 提交成功 -->
+    <div class="sub-success pop">
+        <img src="../img//sub-success.png" alt="" class="pop-img">
+        <div class="pop-btn">确认</div>
+    </div>
+    <!-- 修改信息有误 -->
+    <div class="sub-error pop">
+        <img src="../img//sub-error.png" alt="" class="pop-img">
+        <div class="pop-btn">确认</div>
+    </div>
     <script>
-        $(".login .registr-btn, .login .first-login").click(function(){
-            $(".login .register-conent").show().siblings().hide();
-        })
+        // 注册
+        $(".register-btn").click(function () {
+            $(".login-content").hide();
+            $(".register-content, .back-index").show();
+        });
+        //返回首页
+        $(".back-index").click(function(){
+            $(".form-content").hide();
+            $(".login-content").show();
+        });
+        //关闭弹出层
+        $(".close, .pop-btn").click(function(){
+            $(this).parent().hide();
+            $(".cover").hide();
+        });
+        //注册下一步
+        $(".register-content .next-btn").click(function(){
+            var _registerContent = $(".register-content");
+            var _email = _registerContent.find(".email input").val();
+            if ($(".privacy input:checkbox").prop("checked")) {
+                if (_email) {
+                    $(".register-content").hide();
+                    $(".set-pwd-content").show();
+                }
+                else
+                {
+                    $(".cover, .sub-error").show();
+                }
+            }
+            else
+            {
+                $(".cover, .privacy-false").show();
+            }
+        });
+        //设置密码
+        $(".set-pwd-content .next-btn").click(function(){
+            $(".cover, .sub-success").show();
+        });
+        //修改密码
+        $(".login .change-password").click(function(){
+            $(".login-content").hide();
+            $(".reset-pwd-content").show();
+        });
+        //忘记密码
+        $(".login .forgot-password").click(function(){
+            $(".login-content").hide();
+            $(".forgot-pwd-content").show()
+        });
+        //登录
+        $(".login-content .login-btn").click(function(){
+            window.location.href = './index.html';
+        });
     </script>
+<script src="../js/scroll.js"></script>
 </body>
 </html>
