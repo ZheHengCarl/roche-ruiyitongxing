@@ -4,6 +4,9 @@
  */
     $(".privacy-btn").click(function () {
         $(".cover, .privacy-pop").show();
+        Scrollbar();
+    });
+    function Scrollbar (){
         var oBox = document.querySelector(".pop-box");
         var oContent = document.querySelector(".pop-content");
         var oScroll = document.querySelector(".scroll");
@@ -73,5 +76,4 @@
                 }
             }
         }
-    });
-    
+    }

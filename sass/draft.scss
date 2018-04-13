@@ -1,0 +1,84 @@
+.draft{
+    .btn-content{
+        float: right;
+        cursor: pointer;
+        div{
+            display: inline-block;
+            width: 65px;
+            height: 25px;
+            color: #FFF;
+            font-size: 12px;
+            border-radius: 17px;
+            text-align: center;
+            line-height: 25px;
+            i{ margin-right: 5px;}
+            cursor: pointer;
+        }
+        .alter{
+            background-color: #1277be;
+            box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+        }
+        .del{
+            margin-left: 15px;
+            background-color: #b8c1ce;
+            box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+        }
+    }
+    .message-list{
+        padding: 0 30px;
+        li{
+            min-height: 20px;
+            padding:15px 10px;
+            border-bottom: 1px solid #e0f0ff;
+            font-size: 15px;
+            label{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                input{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 18px;
+                    height: 18px;
+                    opacity: 0;
+                    &:checked+i{
+                        background: url('../img/icon/icon-check2.png') no-repeat center center;
+                        background-size: cover;
+                    }
+                }
+                i{
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    margin-right: 15px;
+                    border: 1px solid #b6bfce;
+                }
+                em{
+                    display: inline-block;
+                    width: 23px;
+                    height: 18px;
+                    margin-right: 10px;
+                    background: url('../img/icon/icon-draft.png') no-repeat 0 0;
+                    background-size: cover;
+                    &.active{
+                        height: 22px;
+                        background-position-y: -22px;
+                    }
+                }
+                span{
+                    width: 75%;
+                    display: inline-block;
+                    color: #1277be;
+                }
+                b{
+                    display: inline-block;
+                    // float: right;
+                    color: #b8c1ce;
+                }
+
+            }
+        }
+    }
+}

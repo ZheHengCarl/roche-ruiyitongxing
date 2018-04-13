@@ -1,0 +1,92 @@
+.create-conference{
+    .behalf-info{
+        li{
+            div{
+                i{
+                    width: 30px;
+                    height: 26px;
+                    background: url('../img/icon/icon-brand-left2.png') no-repeat 0 0 ;
+                    background-size: cover;
+                }
+            }
+            &:nth-child(1){
+                i{
+                    background-position-y: 0;
+                }
+            }
+            &:nth-child(2){
+                i{
+                    background-position-y: -24px;
+                }
+            }
+            &:nth-child(3){
+                i{
+                    background-position-y: -48px;
+                }
+            }
+            &:nth-child(4){
+                i{
+                    background-position-y: -77px;
+                }
+            }
+        }
+    }
+    .conference-content{
+        .bread-crumb-nav{
+            li{
+                a{
+                    i{
+                        background: url('../img/icon/icon-bar2.png') no-repeat 0 0;
+                        background-size: cover;
+                    }
+                }
+                .active{
+                    i{
+                        background: url('../img/icon/icon-bar-active2.png') no-repeat 0 0;
+                        background-size: cover;
+                    }
+                }
+                &:nth-child(1){
+                    i{
+                        background-position-y:2px;
+                    }
+                }
+                &:nth-child(2){
+                    i{
+                        background-position-y:-26px; 
+                    }
+                }
+                &:nth-child(3){
+                    i{
+                        background-position-y: -56px;
+                    }
+                }
+                &:nth-child(4){
+                    i{
+                        background-position-y: -83px;
+                    }
+                }
+            }
+        }
+        .list-content{
+            .meeting-content{
+                li{
+                    height: 230px;
+                    .create-btn{
+                        width: 100px;
+                        height: 25px;
+                        margin:15px auto;
+                        background-color: #1277be;
+                        box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+                        border-radius: 25px;
+                        text-align: center;
+                        color: #FFF;
+                        line-height: 25px;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -97,6 +97,21 @@
 }
 //login
 .login {
+    .back-index {
+        display: none;
+        position: absolute;
+        top: 31px;
+        left: 38px;
+        font-size: 15px;
+        color: #78859a;
+        cursor: pointer;
+        img{
+            width: 24.5px;
+            height: 16.5px;
+            margin-right: 8px;
+            vertical-align: top;
+        }
+    }
     padding-top: (256px/2);
     @media screen and (max-width: 1025px) {
         height: 640px;
@@ -132,6 +147,7 @@
                     justify-content: flex-start;
                     padding-right: 10px;
                     box-sizing: border-box;
+                    color: #1277be;
                     @include inputCont(350px);
                     .temp-cCode{
                         position: absolute;
@@ -156,12 +172,18 @@
                         @include inputStyle;
                     }
                     span{
-                        display: inline-block;
-                        width: 80px;
+                        width: 65px;
                         margin-left: 25px;
+                        padding-top: 20px;
                         font-size: 15px;
                         color: #1277be;
                         font-size: 15px;
+                        text-align: justify;
+                        &::after{
+                            content: "";
+                            display: inline-block;
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -334,7 +356,7 @@
                 margin-bottom:25px;
                 label{
                     span{
-                        width:140px;
+                        width:95px;
                     }
                 }
             }

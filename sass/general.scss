@@ -34,23 +34,6 @@ button { font-family: Lantinghei; cursor: pointer;}
 }
 .container {
     position: relative;
-    overflow: hidden;
-    .back-index {
-        display: none;
-        position: absolute;
-        top: 31px;
-        left: 38px;
-        font-size: 15px;
-        color: #78859a;
-        cursor: pointer;
-        img{
-            width: 24.5px;
-            height: 16.5px;
-            margin-right: 8px;
-            vertical-align: top;
-        }
-    }
-    position: relative;
     width: 1024px;
     height:768px;
     margin: 0 auto;
