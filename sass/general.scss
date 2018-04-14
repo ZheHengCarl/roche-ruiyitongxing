@@ -2,6 +2,17 @@ body { background-color: #FFF; font-family: Lantinghei; }
 input:focus::placeholder { transition: all .4s ease; transform: translateX(80%); opacity: 0;}
 input::placeholder { color: rgba(40, 40, 40, 0.5); font-size: 15px; font-family: Lantinghei; }
 button { font-family: Lantinghei; cursor: pointer;}
+select::-ms-expand { display: none; }
+select{
+    width: 139px;
+    height: 30px;
+    border: solid 1px #45cbe4;
+    border-radius: 15px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    padding:0 10px;
+}
 //General
 @mixin popButton ($marginTop){
     display: inline-block;
@@ -26,17 +37,51 @@ button { font-family: Lantinghei; cursor: pointer;}
     box-sizing: border-box;
     background-color: rgba(243, 249, 255, 0.9);
 }
+@mixin inputCont2 (){
+    height: 30px;
+    border: solid 1px #45cbe4;
+    border-radius: 15px;
+}
 @mixin inputStyle {
     width: 65%;
     height: 100%;
     font-size: 15px;
     color: #282828;
 }
+.my-message{
+    .title{
+        color: #1277be;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+.icon-arrow{
+    background: url('../img/icon/icon-arrow.png') no-repeat;
+    background-position: 95% 50%;
+    background-size: 17px 13.5px;
+}
 .container {
     position: relative;
     width: 1024px;
     height:768px;
     margin: 0 auto;
+    .shut-down{
+        float: right;
+        width: 65px;
+        height: 25px;
+        margin-bottom: 15px;
+        background-color: #b8c1ce;
+        box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+        border-radius: 15px;
+        text-align: center;
+        line-height: 25px;
+        color: #FFF;
+        font-size: 12px;
+        cursor: pointer;
+        i{
+            margin-right: 5px;
+        }
+    }
     .options{
         color: #9fa0a0;
         font-size: 14px;
@@ -114,7 +159,7 @@ button { font-family: Lantinghei; cursor: pointer;}
 }
 .pop{
     display: none;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -150,4 +195,122 @@ button { font-family: Lantinghei; cursor: pointer;}
     line-height: 25px;
     cursor: pointer;
 }
-
+.report-pop{
+    display: none;
+    width: 620px;
+    height: 450px;
+    border:none;
+	background-color: #ffffff;
+	box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+    border-radius: 10px;
+    .shut-down{
+        margin: 10px 10px 0 0; 
+    }
+    ul{
+        margin-top: 45px;
+        li{
+            padding-left: 75px;
+            text-align:left;
+            color: #1277be;
+            font-weight: 500;
+            margin-bottom: 19px;
+            &:nth-child(1) input{
+                width: 180px;
+                @include inputCont2;
+            }
+            &:nth-child(2) select{
+                width: 390px;
+            }
+        }
+    }
+    .download-upload{
+        margin-top: -10px;
+        padding-right: 30px;
+        a{
+            display: inline-block;
+        }
+        div{
+            position: relative;
+            display: inline-block;
+            input{
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        img{ width: 275px; height: 290px; vertical-align: top;}
+    }
+}
+.brand-icon1{
+    li{
+        div{
+            i{
+                width: 30px;
+                height: 26px;
+                background: url('../img/icon/icon-brand-left2.png') no-repeat 0 0 ;
+                background-size: cover;
+            }
+        }
+        &:nth-child(1){
+            i{
+                background-position-y: 0;
+            }
+        }
+        &:nth-child(2){
+            i{
+                background-position-y: -24px;
+            }
+        }
+        &:nth-child(3){
+            i{
+                background-position-y: -48px;
+            }
+        }
+        &:nth-child(4){
+            i{
+                background-position-y: -77px;
+            }
+        }
+    }
+}
+.conference-content{
+    .brand-icon2{
+        li{
+            a{
+                i{
+                    background: url('../img/icon/icon-bar2.png') no-repeat 0 0;
+                    background-size: cover;
+                }
+            }
+            .active{
+                i{
+                    background: url('../img/icon/icon-bar-active2.png') no-repeat 0 0;
+                    background-size: cover;
+                }
+            }
+            &:nth-child(1){
+                i{
+                    background-position-y:2px;
+                }
+            }
+            &:nth-child(2){
+                i{
+                    background-position-y:-26px; 
+                }
+            }
+            &:nth-child(3){
+                i{
+                    background-position-y: -56px;
+                }
+            }
+            &:nth-child(4){
+                i{
+                    background-position-y: -83px;
+                }
+            }
+        }
+    }
+}

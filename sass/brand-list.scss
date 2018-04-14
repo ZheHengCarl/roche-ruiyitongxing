@@ -1,0 +1,112 @@
+.brand-list{
+    .conference-content .list-content .meeting-content li{
+        .state{
+            i{
+                width: 16px;
+                height: 19px;
+                background: url('../img/icon/icon-brand-list.png') no-repeat 0 0;
+                background-size: cover;
+            }
+        }
+        .btn-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            div,.del,.alter{ background-color: #b8c1ce; margin: 0; }
+        }
+    }
+    .conference-content .list-content .meeting-content li.active{
+        .btn-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .oneKey{
+                background-color: #1277be;
+            }
+            .alter{
+                background-color: #4597d5;
+            }
+            .del{
+                margin: 0;
+                background-color: #45cbe4;
+            }
+            .report{
+                background-color: #fd7423;
+            }
+        }
+    }
+    .search-content{
+        display: inline-block;
+        width: 345px;
+        height: 30px;
+        margin: 0 30px 0;
+        background-color: #ffffff;
+        border-radius: 15px;
+        border: solid 1px #b6bfce;
+        vertical-align: middle;
+        input{
+            float: left;
+            width:320px;
+            height: 100%;
+            padding: 0 20px;
+            font-size: 12px;
+        }
+        i{
+            float: left;
+            margin: 5px 1px 0 0;
+            color: #1277be;
+            font-size: 18px;
+        }
+    }
+    .title-menu{
+        display: inline-flex;
+        width: 160px;
+        height: 30px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        border: solid 1px #006ab4;
+        vertical-align: middle;
+        overflow: hidden;
+        box-sizing: border-box;
+        a{
+            flex: 1;
+            height: 100%;
+            color: #78859a;
+            font-size: 12px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .active{
+            background-color: #006ab4;
+            color: #FFF;
+        }
+    }
+    .report-pop{
+        width: 620px;
+        height: 375px;
+        .download-upload{
+            padding: 50px 0 0 30px;
+            .download{float: left;}
+            .upload { float: left;}
+        }
+    }
+}
+.circusee{
+    .conference-content .list-content .meeting-content li{
+        height: 300px;
+        .info{
+            margin-top: 15px;
+        }
+        .btn-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .oneKey{
+                background-color: #1277be;
+                a{
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}

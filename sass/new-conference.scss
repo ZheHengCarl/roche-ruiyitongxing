@@ -1,4 +1,4 @@
-.new-conference1{
+.new-conference{
     .btn-content{
         float: right;
         padding-right: 15px;
@@ -38,6 +38,19 @@
             box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
             border-radius: 10px;
         }
+        .add-atThe-venue{
+            width: 140px;
+            height: 25px;
+            margin: 20px auto;
+            background-color: #fd7423;
+            box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+            border-radius: 24px;
+            color: #ffffff;
+            font-size: 12px;
+            text-align: center;
+            line-height: 25px;
+            cursor: pointer;
+        }
         ul{
             padding: 0 20px;
             li{
@@ -48,11 +61,6 @@
                     background: url('../img/icon/icon-add.png') no-repeat;
                     background-position: 95% 45%;
                     background-size: 17px;
-                }
-                .icon-arrow{
-                    background: url('../img/icon/icon-arrow.png') no-repeat;
-                    background-position: 90% 50%;
-                    background-size: 17px 13.5px;
                 }
                 >i{ 
                     display: inline-block;
@@ -102,6 +110,33 @@
                         vertical-align: -3px;
                     }
                 }
+                .introduction{
+                    display: none;
+                    // display: inline-block;
+                    width: 148px;
+                    height: 30px;
+                    border-radius: 15px;
+                    background-color: #f0f2f5;
+                    text-align: center;
+                    line-height: 30px;
+                    vertical-align: middle;
+                    span{
+                        display: inline-block;
+                        width: 80px;
+                        margin: 0;
+                        font-size: 15px;
+                        color: #78859a;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    i{
+                        float: right;
+                        margin:6px 15px 0 0;
+                        color: #ffc14a;
+                        cursor: pointer;
+                    }
+                }
                 sub{
                     display: inline-block;
                     margin-left: 10px;
@@ -119,18 +154,38 @@
             input[type='file']{
                 opacity: 0;
             }
+            select{
+
+            }
         }
         .main-info{
             li{
                 &:nth-child(1)>input { width: 320px;}
             }
         }
-        .main-venue{
+        .venue{
             h3{
                 padding-left: 20px;
                 color: #fd7423;
                 font-size: 15px;
                 font-weight: bold;
+                .del{
+                    float: right;
+                    width: 65px;
+                    height: 25px;
+                    margin-bottom: 15px;
+                    background-color: #b8c1ce;
+                    box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+                    border-radius: 15px;
+                    text-align: center;
+                    line-height: 25px;
+                    color: #FFF;
+                    font-size: 12px;
+                    cursor: pointer;
+                    i{
+                        margin-right: 5px;
+                    }
+                }
             }
             li{
                 &:nth-child(1),
@@ -162,6 +217,11 @@
                     border: solid 1px #45cbe4;
                     vertical-align: middle;
                 }
+                &:last-child{
+                    select{
+                        width: 193px;
+                    }
+                }
             }
         }
         .notice{
@@ -179,6 +239,99 @@
                 cursor: pointer;
                 i{
                     margin-right: 5px;
+                }
+            }
+        }
+        .grab-single-cont{
+            li{
+                input{width: 387px;}
+                select{width: 400px;}
+                &:last-child>input{ width: 180px; }
+            }
+        }
+        .onlookers-content{
+            li{
+                select{width: 400px;}
+            }
+        }
+    }
+    .preview-content{
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 600px;
+        height: 600px;
+        padding: 20px;
+        overflow: auto;
+        background-color: #ffffff;
+        box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+        border-radius: 10px;
+        z-index: 999;
+        .preview-top{
+            dt{
+                float: left;
+                width: 239px;
+                height: 176px;
+                img{
+                    width: 100%;
+                    vertical-align: top;
+                }
+            }
+            dd{
+                display: block;
+                margin-left: 255px;
+                h3{
+                    color: #006ab4;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-indent: 10px;
+                }
+                li{
+                    padding-left: 10px;
+                    margin-bottom: 5px;
+                    border-left: 1px solid #919191;
+                    span{
+                        color: #394e5f;
+                        font-size: 12px;
+                    }
+                    p{
+                        font-size: 14px;
+                        color: #1893e7;
+                    }
+                }
+            }
+        }
+        .venue{
+            h3{
+                padding: 7px 0;
+                border-bottom: 1px solid #c8c8c8;
+                text-indent: 10px;
+                font-size: 15px;
+                color: #006ab4;
+                font-weight: bold;
+            }
+            ul{
+                padding: 0 5px;
+                li{
+                    padding: 10px 5px;
+                    border-bottom: 1px dashed #e6ebee;
+                    font-size: 15px;
+                    font-weight: 500;
+                    span{
+                        color: #1893e7;
+                        b{
+                            display: inline-block;
+                            width: 30px;
+                        }
+                    }
+                    label,a{
+                        color: #808080;
+                    }
+                    a{
+                        text-decoration: underline;
+                    }
                 }
             }
         }

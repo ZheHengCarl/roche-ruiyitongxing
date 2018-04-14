@@ -173,17 +173,15 @@
                     }
                     span{
                         width: 65px;
-                        height: 50%;
                         margin-left: 25px;
                         font-size: 15px;
                         color: #1277be;
                         font-size: 15px;
                         text-align: justify;
-                        &::after{
-                            content: "";
-                            display: inline-block;
-                            width: 100%;
-                        }
+                        text-justify: distribute-all-lines;
+                        text-align-last: justify;
+                        -moz-text-align-last: justify;
+                        -webkit-text-align-last: justify;
                     }
                 }
             }

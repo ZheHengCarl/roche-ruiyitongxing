@@ -152,6 +152,7 @@
         }
     }
     .conference-content{
+        position: relative;
         float: left;
         .bread-crumb-nav{
             height:73px;
@@ -198,6 +199,7 @@
             }
         }
         .list-content{
+            position: relative;
             width: 810px;
             height: 650px;
             margin: 20px 0 0 15px;
@@ -209,7 +211,7 @@
                 height: 51.5px;
                 line-height: 51.5px;
                 border-bottom: 1px solid #e0f0ff;
-                a{
+                >a{
                     display: inline-block;
                     min-width: 90px;
                     margin: 0 10px;
@@ -219,7 +221,7 @@
                     border-bottom: 1px solid transparent;
                     i{ margin-right: 5px; }
                 }
-                .active{
+                >.active{
                     color: #1277be;
                     border-bottom: 1px solid #1277be;
                 }
