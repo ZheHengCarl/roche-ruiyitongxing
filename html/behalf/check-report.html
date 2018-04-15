@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>锐医同行|会揽全局</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/com.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <script src="../../js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+    <div class="container conference conference-list check-report behalf-check-report">
+      <div class="nav">
+        <div class="logo"></div>
+        <a class="message" href="#"><i></i>我的消息<b>2</b></a>
+        <div class="nav-middle">
+            <ul class="info behalf-info">
+                <li><div><i></i>我的排名</div><p>8121</p></li>
+                <li><div><i></i>区域之星</div><p>李莉莉</p></li>
+                <li><div><i></i>明日之星</div><p>赵倩荪</p></li>
+            </ul>
+            <a class="back-index" href="../../login.html"><img src="../../img/icon/icon-back-index-blue.png" alt="">返回首页</a>
+        </div>
+        <div class="nav-bottom">
+          <ul>
+            <li><a href=""><i></i>技术支持文件<span>4000621818</span></a></li>
+            <li><a href=""><i></i>隐私条款</a></li>
+            <li><a href=""><i></i>操作手册</a></li>
+            <li><a href=""><i></i>下载客户端</a></li>
+          </ul>
+        </div>
+        <div class="copyright2">
+          <img src="../../img/temp-copyright.png" alt="">
+        </div>
+      </div>
+      <div class="conference-content">
+            <ul class="bread-crumb-nav">
+                <li><a href="#"><i></i>抢单会议</a></li>
+                <li><a href="#"><i></i>一键入会</a></li>
+                <li><a href="#"><i></i>会后上传</a></li>
+                <li><a class="active" href="#"><i></i>查看报告</a></li>
+                <li><a href="#"><i></i>活跃值</a></li>
+                <li><a href="#"><i></i>创建会议</a></li>
+            </ul>
+        <div class="list-content">
+            <div class="title"><i></i><span>报告总览</span></div>
+            <ul>
+                <li>
+                    <i class="fa fa-star-o"></i>品牌：
+                    <div class="drop icon-arrow">
+                        <div class="drop-content">
+                            <ul>
+                                <li><label><input type="checkbox" name="all"><i></i>全选</label></li>
+                                <li><label><input type="checkbox" name="q1"><i></i>代表1</label></li>
+                                <li><label><input type="checkbox" name="q1"><i></i>代表2</label></li>
+                                <li><label><input type="checkbox" name="q1"><i></i>代表3</label></li>
+                                <li><label><input type="checkbox" name="q1"><i></i>代表3</label></li>
+                                <li><label><input type="checkbox" name="q1"><i></i>代表3</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><label><i class="fa fa-calendar"></i>时间：<select class="icon-arrow"></select> - <select class="icon-arrow"></select></label></li>
+            </ul>
+            <ul class="info type1">
+                <li>
+                    <div><i class="fa fa-crosshairs"></i><span>大区：</span><b>东区</b></div>
+                    <div><i class="fa fa-map-marker"></i><span>地区：</span><b>李丽丽</b></div>
+                    <div><i class="fa fa-user-o"></i><span>代表：</span><b>李丽丽</b></div>
+                </li>
+            </ul>
+            <ul class="info type2">
+                <li>
+                    <div><i class="fa fa-crosshairs"></i><span>大区：</span><select class="icon-arrow"></select></div>
+                    <div><i class="fa fa-map-marker"></i><span>地区：</span><select class="icon-arrow"></select></div>
+                    <div><i class="fa fa-user-o"></i><span>代表：</span><select class="icon-arrow"></select></div>
+                </li>
+            </ul>
+            <div id="main"></div>
+        </div>
+      </div>
+    </div>
+
+</body>
+<script src="../../js/echarts.simple.min.js"></script>
+<script>
+    $(document).click(function(e){
+        var _con = $(".drop, .icon-arrow");
+        if(!_con.is(e.target) && _con.has(e.target).length === 0){
+            $(".drop-content").hide();
+        }
+    });
+    var _index=1;
+    $(".drop").click(function(){
+        $(this).find(".drop-content").show().css("z-index",_index++);
+    });
+    $(".drop-content input[name='all']").click(function(){
+        console.log($(this).parent().nextAll().find('input'));
+        
+        if ($(this).prop("checked")) {
+            $(this).parent().parent().nextAll('li').find("input").attr("checked",true);
+        }
+        else
+        {
+            $(this).parent().parent().nextAll('li').find("input").attr("checked",false);
+        }
+    });
+</script>
+<script>
+    var _type = ['人数', '时长', '场次'];
+    var _value = [50, 100, 44];
+    var myChart = echarts.init(document.getElementById('main'));
+    option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        yAxis: [
+            {
+                type: 'category',
+                data: _type,
+                axisTick: {
+                    alignWithLabel: true
+                }
+            }
+        ],
+        xAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                type: 'bar',
+                barWidth: '60px',
+                data: _value,
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'right',
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        color: function (params){
+                            var colorList = ['#1378bf','#00acff','#fd7525'];
+                            return colorList[params.dataIndex];
+                        },
+                    },
+                }
+            }
+        ]
+    };
+    myChart.setOption(option);
+</script>
+</html>

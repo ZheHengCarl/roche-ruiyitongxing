@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="../../css/com.css">
     <link rel="stylesheet" href="../../css/font-awesome.min.css">
     <script src="../../js/jquery-1.7.2.min.js"></script>
+    <script src="../../js/com.js"></script>
 </head>
 <body>
-    <div class="container conference brand-list">
+    <div class="container conference brand-list affirm-meeting">
       <div class="nav">
         <div class="logo"></div>
         <a class="message" href="#"><i></i>我的消息<b>2</b></a>
@@ -38,55 +39,34 @@
         <ul class="bread-crumb-nav brand-icon2">
           <li><a href="#"><i></i>创建会议</a></li>
           <li><a href="#"><i></i>查看报告</a></li>
-          <li><a class="active" href="#"><i></i>我的会议</a></li>
-          <li><a href="#"><i></i>确认会议</a></li>
+          <li><a href="#"><i></i>我的会议</a></li>
+          <li><a class="active" href="#"><i></i>确认会议</a></li>
         </ul>
         <div class="list-content">
-          <div class="title">
-            <a class="active" href="./conference-list.html"><i class="fa fa-th-large"></i>列表排列</a>
-            <a href="#"><i class="fa fa-calendar"></i>日历排列</a>
-            <label class="search-content">
-              <input type="search" placeholder="会议查找"><i class="fa fa-search"></i>
-            </label>
-            <div class="title-menu">
-              <a class="active" href="./conference-list1.html">已创建会议</a>
-              <a href="./conference-list2.html">可围观会议</a>
-            </div>
-          </div>
           <ul class="meeting-content ClearFix">
-            <li class="active">
+            <li>
               <img src="../../img/temp-meeting.jpg" alt="">
-              <div class="state"><i></i>已通过确认</div>
               <div class="info">
                 <p><span>主<b></b>题</span>:<label>罗氏肿瘤名医公开课</label></p>
                 <p><span>时<b></b>间</span>:<label>2017.7.26 16:00-17:30</label></p>
                 <p><span>主会场讲者</span>:<label>邱    健 陕西省人民医院</label></p>
-                <p><span>分会场讲者</span>:<label>李南林 第四军医大学附属西京医院</label></p>
               </div>
-              <div class="btn-content">
-                <div class="oneKey">一键入会</div>
-                <div class="alter"><i class="fa fa-pencil"></i>修改</div>
-                <div class="del"><i class="fa fa-close"></i>删除</div>
-                <div class="report">会后报告</div>
+              <div class="btn-content2">
+                <div class="consent"><i class="fa fa-check"></i>同意</div>
+                <div class="reject"><i class="fa fa-close"></i>驳回</div>
               </div>
-              <a href="#" class="list-bottom">点击下载</a>
             </li>
             <li>
               <img src="../../img/temp-meeting.jpg" alt="">
-              <div class="state"><i></i>待确认</div>
               <div class="info">
                 <p><span>主<b></b>题</span>:<label>罗氏肿瘤名医公开课</label></p>
                 <p><span>时<b></b>间</span>:<label>2017.7.26 16:00-17:30</label></p>
                 <p><span>主会场讲者</span>:<label>邱    健 陕西省人民医院</label></p>
-                <p><span>分会场讲者</span>:<label>李南林 第四军医大学附属西京医院</label></p>
               </div>
-              <div class="btn-content">
-                <div class="oneKey">一键入会</div>
-                <div class="alter"><i class="fa fa-pencil"></i>修改</div>
-                <div class="del"><i class="fa fa-close"></i>删除</div>
-                <div class="report">会后报告</div>
+              <div class="btn-content2">
+                <div class="consent"><i class="fa fa-check"></i>同意</div>
+                <div class="reject"><i class="fa fa-close"></i>驳回</div>
               </div>
-              <div class="list-bottom">资料等待上传</div>
             </li>
           </ul>
         </div>
@@ -105,6 +85,16 @@
       </div>
     </div>
     <div class="cover"></div>
+    <!-- 提交成功 -->
+    <div class="sub-success pop">
+      <img src="../../img/sub-success.png" alt="" class="pop-img">
+      <div class="pop-btn">确认</div>
+    </div>
+    <!-- 修改信息有误 -->
+    <div class="sub-error pop">
+      <img src="../../img/affirm-reject.png" alt="" class="pop-img">
+      <div class="pop-btn">确认</div>
+    </div>    
     <script>
       $(".active .btn-content .report").click(function(){
         $(".cover, .report-pop").show();
@@ -112,6 +102,12 @@
       $(".report-pop .shut-down").click(function(){
         $(".cover").hide();
         $(this).parent().hide();
+      });
+      $(".consent").click(function(){
+        $(".sub-success, .cover").show();
+      });
+      $(".reject").click(function(){
+        $(".sub-error, .cover").show();
       });
     </script>
 </body>

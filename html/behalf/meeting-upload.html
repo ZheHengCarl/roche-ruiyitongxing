@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>锐医同行|会揽全局</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/com.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <script src="../../js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+    <div class="container conference conference-list meeting-upload">
+      <div class="nav">
+        <div class="logo"></div>
+        <a class="message" href="#"><i></i>我的消息<b>2</b></a>
+        <div class="nav-middle">
+            <ul class="info behalf-info">
+              <li><div><i></i>我的排名</div><p>8121</p></li>
+              <li><div><i></i>区域之星</div><p>李莉莉</p></li>
+              <li><div><i></i>明日之星</div><p>赵倩荪</p></li>
+            </ul>
+            <a class="back-index" href="../../login.html"><img src="../../img/icon/icon-back-index-blue.png" alt="">返回首页</a>
+        </div>
+        <div class="nav-bottom">
+          <ul>
+            <li><a href=""><i></i>技术支持文件<span>4000621818</span></a></li>
+            <li><a href=""><i></i>隐私条款</a></li>
+            <li><a href=""><i></i>操作手册</a></li>
+            <li><a href=""><i></i>下载客户端</a></li>
+          </ul>
+        </div>
+        <div class="copyright2">
+          <img src="../../img/temp-copyright.png" alt="">
+        </div>
+      </div>
+      <div class="conference-content">
+        <ul class="bread-crumb-nav">
+          <li><a href="#"><i></i>抢单会议</a></li>
+          <li><a href="#"><i></i>一键入会</a></li>
+          <li><a class="active" href="#"><i></i>会后上传</a></li>
+          <li><a href="#"><i></i>查看报告</a></li>
+          <li><a href="#"><i></i>活跃值</a></li>
+          <li><a href="#"><i></i>创建会议</a></li>
+        </ul>
+        <div class="list-content">
+          <div class="title">
+              <i></i>会议结束后，请及时上传签到表及照片
+          </div>
+          <div class="accomplish"><i></i><span>已完成会议:</span><select class="icon-arrow"></select></div>
+          <div class="form-upload upload-general">
+                <div><i></i><span>签到表上传:</span></div>
+                <div class="form-content ">
+                    <div class="upload">
+                        <input type="file">
+                        <b class="fa fa-plus-circle"></b>
+                        <p>点击上传签到表</p>
+                    </div>
+                    <div class="folder">
+                        <div class="del"><b class="fa fa-close"></b></div>
+                    </div>
+                    <div class="folder">
+                        <div class="del"><b class="fa fa-close"></b></div>
+                    </div>
+                </div>
+          </div>
+          <div class="pic-upload upload-general">
+                <div><i></i><span>会议照片上传:</span></div>
+                <div class="form-content">
+                    <div class="upload">
+                        <input type="file">
+                        <b class="fa fa-plus-circle"></b>
+                        <p>点击上传签到表</p>
+                    </div>
+                    <div class="pic">
+                        <img src="../../img/temp-pic.jpg" alt="">
+                        <div class="del"><b class="fa fa-close"></b></div>
+                    </div>
+                </div>
+          </div>
+          <div class="upload-btn">
+              <label class="confirm"><b class="fa fa-check"></b>确认</label>
+              <label class="cancel"><b class="fa fa-close"></b>取消</label>
+          </div>
+        </div>
+        <!-- 签到弹出 -->
+        <div class="sign-in pop pop-type2">
+            <p>签到表最多上传2个！</p>
+            <div class="pop-btn">关闭</div>
+        </div>
+        <!-- 会议照片弹出 -->
+        <div class="pic-pop pop pop-type2">
+            <p>会议照片最多上传6张！</p>
+            <div class="pop-btn">关闭</div>
+        </div>
+        <div class="del-pop pop pop-type2">
+            <p>确认删除附件？</p>
+            <div class="del-btn">
+                <label class="confirm">确认</label>
+                <label class="pop-btn">关闭</label>
+            </div>
+        </div>
+    </div>
+    <div class="cover"></div>
+    <script>
+        $(".del-pop .pop-btn").click(function(){
+            $(".cover").hide();
+            $(this).parent().parent().hide();
+        });
+        $(".upload-general .del").click(function(){
+            $(".cover,.del-pop").show();
+        });
+    </script>
+</body>
+</html>

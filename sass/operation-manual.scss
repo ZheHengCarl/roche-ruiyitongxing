@@ -1,0 +1,57 @@
+.operation-manual{
+    .list-content{
+        overflow: auto;
+        .title{
+            padding-left: 40px;
+            color: #1277be;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+    .pdf-cont{
+        >img{ width: 100%; margin: 20px 0;  vertical-align: top; }
+        ul{
+            li{
+
+                padding: 15px;
+                border-bottom: 1px solid #e0f0ff;
+                .icon-pdf{ 
+                    width: 26.5px;
+                    height: 30px;
+                    vertical-align: -8px;
+                }
+                span{
+                    margin: 0 8px 0 10px;
+                    color: #78859a;
+                    font-size: 15px;
+                    display: inline-block;
+                    width: 580px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    vertical-align: middle;
+                }
+                a{
+                    color: #fd7423;
+                    text-decoration: underline;
+                    font-size: 15px;
+                }
+                .icon-download{
+                    width: 14px;
+                    height: 16px;
+                    vertical-align: middle;
+                    margin-right: 6px;
+                    vertical-align: -4px;
+                }
+                .time{
+                    float: right;
+                    margin-top: 6px;
+                    font-size: 15px;
+                    color: #b8c1ce;
+                }
+            }
+            
+        }
+
+    }
+}

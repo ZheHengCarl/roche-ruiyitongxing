@@ -1,0 +1,155 @@
+.meeting-upload{
+    .list-content{
+        overflow: auto;
+        >div{
+            color: #1277be;
+            font-size: 15px;
+            margin-bottom: 25px;
+            i{
+                display: inline-block;
+                width: 19px;
+                height: 21px;
+                margin-left: 25px;
+                margin-right: 15px;
+                background: url('../img/icon/icon-upload.png') no-repeat 0 0;
+                background-size: cover;
+                vertical-align: -5px;
+            }
+        }
+        >div:not(.title):not(.upload-btn){
+            padding: 13px 0;
+            background-color: #ffffff;
+            box-shadow: 0px 3px 15px 0px rgba(0, 173, 228, 0.33);
+            border-radius: 10px;
+            span{
+                margin-right: 9px;
+            }
+        }
+        .accomplish{
+            i{
+                background-position-y: -28px;
+            }
+            select{
+                width: 390px;
+            }
+        }
+        
+        .upload-general{
+            .form-content{
+                margin-top: 30px;
+                padding-left: 45px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                >div{
+                    position: relative;
+                    margin-right: 40px; 
+                    margin-bottom: 20px;
+                }
+                .upload{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 200px;
+                    height: 140px;
+                    background-color: #edeff3;
+                    text-align: center;
+                    b{
+                        color: #fd7423;
+                        font-size: 25px;
+                        margin-bottom: 5px;
+                    }
+                    input{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                    }
+                }
+                .del{
+                    position: absolute;
+                    top: 10px;
+                    right: 15px;
+                    width: 24px;
+                    height: 23px;
+                    background-color: #fd7423;
+                    text-align: center;
+                    color: #FFF;
+                    cursor: pointer;
+                }
+            }
+        }
+        .form-upload{
+            i{
+                background-position-y: -56px;
+            }
+            .folder{
+                width: 200px;
+                height: 140px;
+                background: url('../img/folder.png') no-repeat 0 0;
+                background-size: cover;
+                
+            }
+        }
+        .pic-upload{
+            i{
+                background-position-y: -82px;
+            }
+            .pic{
+                width: 200px;
+                height: 140px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    vertical-align: top;
+                }
+            }
+        }
+        .upload-btn{
+            text-align: center;
+            label{
+                display: inline-block;
+                 width: 90px;
+                 height: 30px;
+                 border-radius: 15px;
+                 font-size: 15px;
+                 color: #ffffff;
+                 line-height: 30px;
+                 cursor: pointer;
+                 b{
+                     margin-right: 5px;
+                 }
+            }
+            .confirm{
+                margin-right: 30px;
+                background-color: #1277be;
+                box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+            }
+            .cancel{
+                background-color: #b8c1ce;
+                box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+            }
+        }
+    }
+    .del-pop{
+        .confirm{
+            display: inline-block;
+            width: 65px;
+            height: 25px;
+            margin-right: 15px;
+            background-color: #1277be;
+            box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+            border-radius: 17px;
+            text-align: center;
+            line-height: 25px;
+            font-size: 14px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}

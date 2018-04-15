@@ -1,5 +1,7 @@
 .brand-list{
     .conference-content .list-content .meeting-content li{
+        min-height: 320px;
+        height: auto;
         .state{
             i{
                 width: 16px;
@@ -13,6 +15,14 @@
             align-items: center;
             justify-content: space-between;
             div,.del,.alter{ background-color: #b8c1ce; margin: 0; }
+        }
+        .list-bottom {
+            display: block;
+            margin-top: 10px;
+            text-align: right;
+            font-size: 12px;
+            color: #1277be;
+            font-weight: 500;
         }
     }
     .conference-content .list-content .meeting-content li.active{
@@ -109,4 +119,64 @@
             }
         }
     }
+}
+.affirm-meeting{
+    .conference-content .list-content .meeting-content li{
+        width: 345px;
+        min-height: 250px;
+        img{
+            margin-bottom: 10px;
+        }
+    }
+    .list-content{
+        .info {
+            float: left;
+        }
+        .btn-content2{
+            float: right;
+            >div{
+                width: 65px;
+                height: 25px;
+                margin: 0px 5px 5px 0;
+                color: #FFF;
+                border-radius: 15px;
+                text-align: center;
+                line-height: 25px;
+                font-size: 12px;
+                i{
+                    margin-right: 5px;
+                }
+            }
+            .consent{
+                background-color: #1277be;
+                box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.33);
+            }
+            .reject{
+                background-color: #fd7423;
+                box-shadow: 0px 3px 10px 0pxrgba(0, 173, 228, 0.15);
+            }
+        }
+    }
+    
+    
+}
+.sub-error{
+    .pop-btn{
+        margin-top: 10px;
+    }
+}
+.behalf-list{
+    .conference-content .list-content .meeting-content li{
+        width: 345px;
+        min-height: 250px;
+        img{
+            margin-bottom: 10px;
+        }
+        .btn-content{
+            width: 70%;
+            margin: 10px auto 5px;
+            
+        }
+    }
+    
 }
