@@ -8,6 +8,19 @@
     border-radius: 10px;
     border: solid 1px #ffffff;
     z-index: 999;
+    .scroll-box{
+        width: 400px ;
+        height: auto;
+        background-color: transparent;
+        box-shadow: none;
+        .scroll-content{
+            width: 450px ;
+            height: 443px;
+            .content{
+                padding: 5px 80px 5px 5px ;
+            }
+        }
+    }
     h6{
         padding: 0 25px;
         text-align: center;
@@ -24,7 +37,8 @@
         height: 443px;
         margin-top: 32px;
         padding: 0 17.5px 0 25px;
-        overflow: auto;
+        overflow: hidden;
+
         .pop-content{
             position: relative;
             top: 0;
@@ -36,35 +50,35 @@
             font-weight: 400;
             text-align: justify;
         }
-        .scroll{
-            position: absolute;
-            top: 0;
-            right: 17.5px;
-            width: 6px;
-            height: 100%;
-            background-color: #e4f6fb;
-            border-radius: 10px;
-            .active-scroll{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                border-radius: 10px;
-                background: #1277be;
-            }
-            .bar{
-                position: absolute;
-                top: 0;
-                left: -10px;
-                width: 20px;
-                height: 20px;
-                background-color: #ffffff;
-                border-radius: 20px;
-                border: solid 3px rgba(74, 206, 183, 0.15);
-                cursor: pointer;
-                z-index: 999;
-            }
-        }
+        // .scroll{
+        //     position: absolute;
+        //     top: 0;
+        //     right: 17.5px;
+        //     width: 6px;
+        //     height: 100%;
+        //     background-color: #e4f6fb;
+        //     border-radius: 10px;
+        //     .active-scroll{
+        //         position: absolute;
+        //         top: 0;
+        //         left: 0;
+        //         width: 100%;
+        //         border-radius: 10px;
+        //         background: #1277be;
+        //     }
+        //     .bar{
+        //         position: absolute;
+        //         top: 0;
+        //         left: -10px;
+        //         width: 20px;
+        //         height: 20px;
+        //         background-color: #ffffff;
+        //         border-radius: 20px;
+        //         border: solid 3px rgba(74, 206, 183, 0.15);
+        //         cursor: pointer;
+        //         z-index: 999;
+        //     }
+        // }
     }
 }
 .privacy-false,.pop-type2{

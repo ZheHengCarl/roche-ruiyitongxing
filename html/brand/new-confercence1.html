@@ -3,10 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>锐医同行|会揽全局</title>
+    <link rel="stylesheet" href="../../css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/reset.css">
-    <link rel="stylesheet" href="../../css/com.css">
     <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/com.css">
     <script src="../../js/jquery-1.7.2.min.js"></script>
+    <script src="../../js/scroll.js"></script>
 </head>
 <body>
     <div class="container conference create-conference new-conference new-conference1">
@@ -54,17 +57,94 @@
                     <ul>
                         <li><i></i><span>会议主题：</span><input type="text"></li>
                         <li><i></i><span>覆盖品牌：<label><input type="checkbox"><i></i>品牌甲乙丙</label><label><input type="checkbox"><i></i>品牌甲乙丙</label><label><input type="checkbox"><i></i>品牌甲乙丙</label></li>
-                        <li><i></i><span>会议日期：</span><input class="icon-arrow" type="date"><sub>请选择七天后的会议日期</sub></li>
-                        <li><i></i><span>会议时间：</span><input class="icon-arrow" type="time"> - <input class="icon-arrow" type="time"><sub>一经发布无法修改</sub></li>
+                        <li><i></i><span>会议日期：</span><input class="icon-arrow" type="text" value="" id="datetimepicker"><sub>请选择七天后的会议日期</sub></li>
+                        <li>
+                            <i></i>
+                            <span>会议时间：</span>
+                            <span class="select-content">
+                                <input class="icon-arrow" type="text">
+                                <div class="scroll-box">
+                                    <div class="scroll-content">
+                                        <div class="content">
+                                            <p>1</p>
+                                            <p>2</p>
+                                            <p>3</p>
+                                            <p>4</p>
+                                            <p>5</p>
+                                            <p>6</p>
+                                            <p>7</p>
+                                            <p>8</p>
+                                            <p>9</p>
+                                            <p>10</p>
+                                            <p>11</p>
+                                            <p>12</p>
+                                            <p>13</p>
+                                            <p>14</p>
+                                            <p>15</p>
+                                            <p>16</p>
+                                            <p>17</p>
+                                            <p>18</p>
+                                            <p>19</p>
+                                            <p>20</p>
+                                            <p>21</p>
+                                            <p>22</p>
+                                            <p>23</p>
+                                            <p>24</p>
+                                        </div>
+                                    </div>
+                                    <div class="scroll-bar">
+                                        <div class="active-bar"><div class="bar"></div></div>
+                                    </div>
+                                </div>
+                            </span>
+                             - 
+                            <span class="select-content">
+                                <input class="icon-arrow" type="text">
+                                <div class="scroll-box">
+                                    <div class="scroll-content">
+                                        <div class="content">
+                                            <p>1</p>
+                                            <p>2</p>
+                                            <p>3</p>
+                                            <p>4</p>
+                                            <p>5</p>
+                                            <p>6</p>
+                                            <p>7</p>
+                                            <p>8</p>
+                                            <p>9</p>
+                                            <p>10</p>
+                                            <p>11</p>
+                                            <p>12</p>
+                                            <p>13</p>
+                                            <p>14</p>
+                                            <p>15</p>
+                                            <p>16</p>
+                                            <p>17</p>
+                                            <p>18</p>
+                                            <p>19</p>
+                                            <p>20</p>
+                                            <p>21</p>
+                                            <p>22</p>
+                                            <p>23</p>
+                                            <p>24</p>
+                                        </div>
+                                    </div>
+                                    <div class="scroll-bar">
+                                        <div class="active-bar"><div class="bar"></div></div>
+                                    </div>
+                                </div>
+                            </span>
+                            <sub>一经发布无法修改</sub>
+                        </li>
                     </ul>
                 </div>
-                <div class="main-venue">
+                <div class="main-venue venue">
                     <h3>主会场</h3>
                     <ul>
                         <li><i></i><span>会议地点（医院/酒店）：</span><input type="text"></li>
                         <li><i></i><span>讲<b></b>者：</span><input type="text"></li>
-                        <li><sup></sup><span>讲者简历：</span><label class="icon-add" ><input type="file"></label></li>
-                        <li><sup></sup><span>讲者幻灯：</span><label class="icon-add" ><input type="file"></label><div class="introduction"><span>幻灯片1212幻灯片1212</span><i class="fa fa-close"></i></div><sub>会议前一天必须提交讲者PPT否则不能入会</sub></li>
+                        <li><sup></sup><span>讲者简历：</span><label class="icon-add"><input type="file"></label></li>
+                        <li><sup></sup><span>讲者幻灯：</span><label class="icon-add"><input type="file"></label><div class="introduction"><span>幻灯片1212幻灯片1212</span><i class="fa fa-close"></i></div><sub>会议前一天必须提交讲者PPT否则不能入会</sub></li>
                         <li><sup></sup><span>审&ensp;批&ensp;号：</span><input type="text"></li>
                         <li><sup></sup><span>审批号有效期：</span><input class="icon-arrow" type="text"><sub>审批号有效期不得早于会议时间</sub></li>
                         <li><sup></sup><span>主会场负责人：</span><input class="icon-arrow" type="text"></li>
@@ -148,15 +228,30 @@
         <p>请选择会议通知类型</p>
         <div class="pop-btn">关闭</div>
     </div>
-    <script>
-        $(".preview-btn").click(function(){
-            $(".cover").show();
-            $(".preview-content").show();
-        });
-        $(".shut-down").click(function(){
-            $(".cover").hide();
-            $(this).parent().parent().hide();
-        })
-    </script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/bootstrap-datetimepicker.min.js"></script>
+<script src="../../js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script>
+    $('#datetimepicker').datetimepicker({
+        format: 'yyyy-mm-dd',
+        language:  'zh-CN',
+        weekStart: 0,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+</script>
+<script>
+    $(".preview-btn").click(function(){
+        $(".cover").show();
+        $(".preview-content").show();
+    });
+    $(".shut-down").click(function(){
+        $(".cover").hide();
+        $(this).parent().parent().hide();
+    })
+</script>
 </body>
 </html>
