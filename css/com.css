@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body { background-color: #FFF; font-family: Lantinghei; }
+body { background-color: #FFF; font-family: Lantinghei; overflow: hidden; }
 
 input:focus::placeholder { transition: all .4s ease; transform: translateX(80%); opacity: 0; }
 
@@ -74,7 +74,7 @@ select { width: 139px; height: 30px; border: solid 1px #45cbe4; border-radius: 1
 .preview-content .preview-top dt { float: left; width: 239px; height: 176px; }
 .preview-content .preview-top dt img { width: 100%; vertical-align: top; }
 .preview-content .preview-top dd { display: block; margin-left: 255px; }
-.preview-content .preview-top dd h3 { color: #006ab4; font-size: 18px; font-weight: bold; text-indent: 10px; }
+.preview-content .preview-top dd h3 { color: #006ab4; font-size: 18px; text-indent: 10px; }
 .preview-content .preview-top dd li { padding-left: 10px; margin-bottom: 5px; border-left: 1px solid #919191; }
 .preview-content .preview-top dd li span { color: #394e5f; font-size: 12px; }
 .preview-content .preview-top dd li p { font-size: 14px; color: #1893e7; }
