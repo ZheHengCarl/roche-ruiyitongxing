@@ -12,7 +12,8 @@ li { -webkit-tap-highlight-color:transparent;}
 /* 特殊作用 */
 .ClearFix:after{ display:block; content:""; clear:both;}
 dl:after { display:block; content:""; clear:both;}
-@font-face { 
-    src:url('../fonts/Lantinghei_s.ttf');
-    font-family: Lantinghei;
+@font-face {
+    font-family: 'Lantinghei';
+    src: url('../fonts/Lantinghei_s.eot');
+    src: url('../fonts/Lantinghei_s.eot?#iefix') format('embedded-opentype'), url('../fonts/Lantinghei_s.otf') format('opentype'), url('../fonts/Lantinghei_s.woff') format('woff'), url('../fonts/Lantinghei_s.ttf') format('truetype');
 }
