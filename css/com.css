@@ -449,19 +449,20 @@ html::-webkit-scrollbar { width: 0; display: none; }
 .calendar-list .calendar-week-content .weeks { width: 720px; margin: 5px 0; padding-left: 65px; }
 .calendar-list .calendar-week-content .weeks span { display: block; }
 .calendar-list .calendar-week-content .weeks label { color: #53c6ea; font-size: 12px; }
-.calendar-list .calendar-week-content .week-content { width: 760px; height: 440px; margin: 0 auto; overflow: auto; border-top: 1px solid #b6bfce; }
-.calendar-list .calendar-week-content .week-content > div { height: 49px; border-bottom: 1px solid #e0f0ff; box-sizing: border-box; }
-.calendar-list .calendar-week-content .week-content > div .time { float: left; width: 40px; height: 100%; color: #78859a; font-size: 12px; border-right: 1px solid #53c6ea; text-align: center; }
-.calendar-list .calendar-week-content .week-content > div > ul { height: 49px; }
-.calendar-list .calendar-week-content .week-content > div > ul li { float: left; width: 101.5px; height: 100%; background: url("../img/bg-line.jpg") repeat-x center center; border-right: 1px solid #e0f0ff; }
-.calendar-list .calendar-week-content .week-content > div > ul li:nth-child(7n) { border-right: none; }
-.calendar-list .calendar-week-content .week-content > div > ul li p { float: left; width: 50%; height: 100%; color: #FFF; font-size: 10px; }
-.calendar-list .calendar-week-content .week-content > div > ul li p .num { display: block; text-align: center; }
-.calendar-list .calendar-week-content .week-content > div > ul li p span { display: block; text-align: center; cursor: pointer; }
-.calendar-list .calendar-week-content .week-content > div > ul li .yqd-top { background: #4192cb url("../img/icon/icon-week-yqd.jpg") no-repeat top left; background-size: 100% 20px; }
-.calendar-list .calendar-week-content .week-content > div > ul li .wqd-top { background: #fd904f url("../img/icon/icon-week-wqd.jpg") no-repeat top left; background-size: 100% 20px; }
-.calendar-list .calendar-week-content .week-content > div > ul li .yqd-cont { background-color: #4192cb; }
-.calendar-list .calendar-week-content .week-content > div > ul li .wqd-cont { background-color: #fd904f; }
+.calendar-list .calendar-week-content .week-content { width: 760px; height: 440px; margin: 0 auto; overflow: hidden; border-top: 1px solid #b6bfce; }
+.calendar-list .calendar-week-content .week-content .week-scroll-content { width: 780px; height: 440px; overflow: auto; }
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div { height: 49px; border-bottom: 1px solid #e0f0ff; box-sizing: border-box; }
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div .time { float: left; width: 40px; height: 100%; color: #78859a; font-size: 12px; border-right: 1px solid #53c6ea; text-align: center; }
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul { height: 49px; }
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul li { float: left; width: 101.5px; height: 100%; background: url("../img/bg-line.jpg") repeat-x center center; border-right: 1px solid #e0f0ff; }
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul li:nth-child(7n) { border-right: none; }
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul li p { float: left; width: 50%; height: 100%; color: #FFF; font-size: 10px; }
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul li p .num { display: block; text-align: center; }
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul li p span { display: block; text-align: center; cursor: pointer; }
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul li .yqd-top { background: #4192cb url("../img/icon/icon-week-yqd.jpg") no-repeat top left; background-size: 100% 20px; }
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul li .wqd-top { background: #fd904f url("../img/icon/icon-week-wqd.jpg") no-repeat top left; background-size: 100% 20px; }
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul li .yqd-cont { background-color: #4192cb; }
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul li .wqd-cont { background-color: #fd904f; }
 
 .meeting-upload .list-content { overflow: auto; }
 .meeting-upload .list-content > div { color: #1277be; font-size: 15px; margin-bottom: 25px; }

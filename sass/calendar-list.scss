@@ -184,59 +184,65 @@
             width: 760px;
             height: 440px;
             margin: 0 auto;
-            overflow: auto;
+            overflow: hidden;
             border-top: 1px solid #b6bfce;
-            >div{
-                height: 49px;
-                border-bottom: 1px solid #e0f0ff;
-                box-sizing: border-box;
-                .time{
-                    float: left;
-                    width: 40px;
-                    height: 100%;
-                    color: #78859a;
-                    font-size: 12px;
-                    border-right: 1px solid #53c6ea;
-                    text-align: center;
-                }
-                >ul{
+            .week-scroll-content{
+                width: 780px;
+                height: 440px;
+                overflow: auto;
+                >div{
                     height: 49px;
-                    li{
+                    border-bottom: 1px solid #e0f0ff;
+                    box-sizing: border-box;
+                    .time{
                         float: left;
-                        width: 101.5px;
+                        width: 40px;
                         height: 100%;
-                        background: url('../img/bg-line.jpg') repeat-x center center;
-                        border-right: 1px solid #e0f0ff;
-                        &:nth-child(7n){ border-right: none;}
-                        p{
+                        color: #78859a;
+                        font-size: 12px;
+                        border-right: 1px solid #53c6ea;
+                        text-align: center;
+                    }
+                    >ul{
+                        height: 49px;
+                        li{
                             float: left;
-                            width: 50%;
+                            width: 101.5px;
                             height: 100%;
-                            color: #FFF;
-                            font-size: 10px;
-                            .num {
-                                display: block;
-                                text-align: center;
+                            background: url('../img/bg-line.jpg') repeat-x center center;
+                            border-right: 1px solid #e0f0ff;
+                            &:nth-child(7n){ border-right: none;}
+                            p{
+                                float: left;
+                                width: 50%;
+                                height: 100%;
+                                color: #FFF;
+                                font-size: 10px;
+                                .num {
+                                    display: block;
+                                    text-align: center;
+                                }
+                                span{
+                                    display: block;
+                                    text-align: center;
+                                    cursor: pointer;
+                                }
                             }
-                            span{
-                                display: block;
-                                text-align: center;
-                                cursor: pointer;
+                            .yqd-top{
+                                background:#4192cb url('../img/icon/icon-week-yqd.jpg') no-repeat top left;
+                                background-size: 100% 20px;
                             }
+                            .wqd-top{
+                                background:#fd904f url('../img/icon/icon-week-wqd.jpg') no-repeat top left;
+                                background-size: 100% 20px;
+                            }
+                            .yqd-cont{ background-color: #4192cb;}
+                            .wqd-cont{ background-color: #fd904f;}
                         }
-                        .yqd-top{
-                            background:#4192cb url('../img/icon/icon-week-yqd.jpg') no-repeat top left;
-                            background-size: 100% 20px;
-                        }
-                        .wqd-top{
-                            background:#fd904f url('../img/icon/icon-week-wqd.jpg') no-repeat top left;
-                            background-size: 100% 20px;
-                        }
-                        .yqd-cont{ background-color: #4192cb;}
-                        .wqd-cont{ background-color: #fd904f;}
                     }
                 }
             }
+            
         }
     }
 }
