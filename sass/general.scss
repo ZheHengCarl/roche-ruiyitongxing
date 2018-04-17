@@ -1,7 +1,7 @@
-body { background-color: #FFF; font-family: Lantinghei; overflow: hidden; }
+body { background-color: #FFF; font-family: 'Lantinghei',serif,sans-serif; overflow: hidden; }
 input:focus::placeholder { transition: all .4s ease; transform: translateX(80%); opacity: 0;}
-input::placeholder { color: rgba(40, 40, 40, 0.5); font-size: 15px; font-family: Lantinghei; }
-button { font-family: Lantinghei; cursor: pointer;}
+input::placeholder { color: rgba(40, 40, 40, 0.5); font-size: 15px; font-family: 'Lantinghei',serif,sans-serif; }
+button { ffont-family: 'Lantinghei',serif,sans-serif; cursor: pointer;}
 select::-ms-expand { display: none; }
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 /* only needed once */
