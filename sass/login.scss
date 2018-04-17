@@ -188,15 +188,15 @@
                     span{
                         width: 65px;
                         margin-left: 25px;
-                        padding-top: 20px;
+                        padding-top: 7%;
                         font-size: 15px;
                         color: #1277be;
                         font-size: 15px;
                         text-align: justify;
-                        // text-justify: distribute-all-lines;
-                        // text-align-last: justify;
-                        // -moz-text-align-last: justify;
-                        // -webkit-text-align-last: justify;
+                        text-justify: distribute-all-lines;
+                        text-align-last: justify;
+                        -moz-text-align-last: justify;
+                        -webkit-text-align-last: justify;
                         &::after{
                             content: '';
                             width: 100%;
