@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body { background-color: #FFF; font-family: serif,sans-serif; overflow: hidden; }
+body { background-color: #FFF; font-family: sans-serif; overflow: hidden; }
 
 input:focus::placeholder { transition: all .4s ease; transform: translateX(80%); opacity: 0; }
 
