@@ -50,35 +50,6 @@
             font-weight: 400;
             text-align: justify;
         }
-        // .scroll{
-        //     position: absolute;
-        //     top: 0;
-        //     right: 17.5px;
-        //     width: 6px;
-        //     height: 100%;
-        //     background-color: #e4f6fb;
-        //     border-radius: 10px;
-        //     .active-scroll{
-        //         position: absolute;
-        //         top: 0;
-        //         left: 0;
-        //         width: 100%;
-        //         border-radius: 10px;
-        //         background: #1277be;
-        //     }
-        //     .bar{
-        //         position: absolute;
-        //         top: 0;
-        //         left: -10px;
-        //         width: 20px;
-        //         height: 20px;
-        //         background-color: #ffffff;
-        //         border-radius: 20px;
-        //         border: solid 3px rgba(74, 206, 183, 0.15);
-        //         cursor: pointer;
-        //         z-index: 999;
-        //     }
-        // }
     }
 }
 .privacy-false,.pop-type2{
@@ -333,7 +304,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;
-                    line-height: 38px;
+                    // line-height: 38px;
                     span{
                         width: 120px;
                     }

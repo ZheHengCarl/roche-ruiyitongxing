@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body { background-color: #FFF; font-family: 'Lantinghei',serif,sans-serif; overflow: hidden; }
+body { background-color: #FFF; font-family: serif,sans-serif; overflow: hidden; }
 
 input:focus::placeholder { transition: all .4s ease; transform: translateX(80%); opacity: 0; }
 
@@ -138,7 +138,7 @@ html::-webkit-scrollbar { width: 0; display: none; }
 .login .form-content ul li label { position: relative; display: flex; align-items: center; justify-content: flex-start; padding-right: 10px; box-sizing: border-box; color: #1277be; width: 350px; height: 40px; box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15); border-radius: 20px; border: solid 1px #1277be; box-sizing: border-box; background-color: rgba(243, 249, 255, 0.9); }
 .login .form-content ul li label .temp-cCode { position: absolute; top: 0; right: 0; width: 77px; height: 100%; border-radius: 0px 20px 20px 0px; }
 .login .form-content ul li label .send-vCode { position: absolute; top: 0; right: 0; width: 90px; height: 38px; background-color: #1277be; border-radius: 0px 18px 18px 0px; color: #FFF; font-size: 15px; }
-.login .form-content ul li label input { width: 65%; height: 100%; font-size: 15px; color: #282828; }
+.login .form-content ul li label input { width: 65%; height: 100%; padding-left: 3%; font-size: 15px; color: #282828; }
 .login .form-content ul li label span { width: 65px; margin-left: 25px; padding-top: 7%; font-size: 15px; color: #1277be; font-size: 15px; text-align: justify; text-justify: distribute-all-lines; text-align-last: justify; -moz-text-align-last: justify; -webkit-text-align-last: justify; }
 .login .form-content ul li label span::after { content: ''; width: 100%; display: inline-block; }
 .login .form-content ul .email label { width: 350px; height: 40px; box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15); border-radius: 20px; border: solid 1px #1277be; box-sizing: border-box; background-color: rgba(243, 249, 255, 0.9); }
@@ -171,7 +171,7 @@ html::-webkit-scrollbar { width: 0; display: none; }
 .login .set-pwd-content ul li { position: relative; width: 420px; display: inline-block; margin-bottom: 0px; }
 .login .set-pwd-content ul li:nth-child(2) { margin-top: -10px; }
 .login .set-pwd-content ul li i { float: left; margin-top: 25px; }
-.login .set-pwd-content ul li label { display: flex; align-items: center; justify-content: flex-start; line-height: 38px; }
+.login .set-pwd-content ul li label { display: flex; align-items: center; justify-content: flex-start; }
 .login .set-pwd-content ul li label span { width: 120px; }
 .login .set-pwd-content ul li p { margin: 10px 0 0; text-align: center; color: #fd7423; font-size: 14px; }
 .login .set-pwd-content ul li b { position: absolute; top: 28px; right: 0; width: 25px; height: 25px; background-color: #1277be; border-radius: 50%; text-align: center; line-height: 25px; }
@@ -218,7 +218,7 @@ html::-webkit-scrollbar { width: 0; display: none; }
 .conference .nav .nav-middle ul li { text-align: center; font-weight: 500; margin-bottom: 10px; }
 .conference .nav .nav-middle ul li div { color: #1277be; }
 .conference .nav .nav-middle ul li div i { display: inline-block; width: 25.5px; height: 26.5px; margin-right: 10px; }
-.conference .nav .nav-middle ul li p { padding-left: 15px; color: #fd7423; font-size: 36px; font-weight: bold; }
+.conference .nav .nav-middle ul li p { padding-left: 15px; color: #fd7423; font-size: 36px; }
 .conference .nav .nav-middle .behalf-info li div i { vertical-align: -7px; }
 .conference .nav .nav-middle .back-index { position: absolute; bottom: 14px; display: block; width: 100%; text-align: center; color: #1277be; font-size: 15px; }
 .conference .nav .nav-middle .back-index img { width: 34px; height: 21px; margin-right: 12px; vertical-align: top; }
