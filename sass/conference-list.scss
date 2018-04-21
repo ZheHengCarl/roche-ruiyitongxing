@@ -2,26 +2,26 @@
     .behalf-info{
         li{
             div{
-                i{
-                    background: url('../img/icon/icon-brand-left.png') no-repeat 0 0 ;
-                    background-size: cover;
-                }
+                // i{
+                //     background: url('../img/icon/icon-brand-left.png') no-repeat 0 0 ;
+                //     background-size: cover;
+                // }
             }
-            &:nth-child(1){
-                i{
-                    background-position-y: -25px;
-                }
-            }
-            &:nth-child(2){
-                i{
-                    background-position-y: -58px;
-                }
-            }
-            &:nth-child(3){
-                i{
-                    background-position-y: -87px;
-                }
-            }
+            // &:nth-child(1){
+            //     i{
+            //         background-position-y: -25px;
+            //     }
+            // }
+            // &:nth-child(2){
+            //     i{
+            //         background-position-y: -58px;
+            //     }
+            // }
+            // &:nth-child(3){
+            //     i{
+            //         background-position-y: -87px;
+            //     }
+            // }
         }
     }
     .conference-content{

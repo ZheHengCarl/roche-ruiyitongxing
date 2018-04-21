@@ -122,7 +122,7 @@
                 left: 1px solid #e0f0ff;
                 right: 1px solid #e0f0ff;
             }
-            li{
+            >ul>li{
                 float: left;
                 width: 107px;
                 height: 89px;
@@ -143,7 +143,8 @@
                 }
             }
             .hasmeeting{
-                p{ 
+                >section{
+                    position: relative;
                     height: 21.5px;
                     margin: 10px 0;
                     padding-left: 30px;
@@ -151,6 +152,92 @@
                     font-size: 12px;
                     line-height: 21.5px;
                     cursor: pointer;
+                    span{
+                        color: #FFF;
+                        margin: 0;
+                    }
+                    .detail{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 300px;
+                        height: 375px;
+                        background-color: #ffffff;
+                        box-shadow: 0px 5px 29px 0px rgba(0, 173, 228, 0.33);
+                        z-index: 999;
+                        h3{
+                            border-left: 2px solid #4192cb;
+                            height: 22px;
+                            background-color: #fff;
+                            img{
+                                width: 14px;
+                                height: 14px;
+                                margin: 0 4px;
+                                vertical-align: middle;
+                            }
+                            span{
+                                color: #1277be;
+                            }
+                        }
+                        ol{
+                            height: 353px;
+                            padding: 0 22px;
+                            background-color: #f8f8f8;
+                            padding-bottom: 10px;
+                            overflow: auto;
+                            li{
+                                padding: 15px 0;
+                                >div{
+                                    margin-bottom: 5px;
+                                    span{
+                                        float: left;
+                                        width: 60px;
+                                        text-align: justify;
+                                        text-justify: distribute-all-lines;
+                                        text-align-last: justify;
+                                        -moz-text-align-last: justify;
+                                        -webkit-text-align-last: justify;
+                                        line-height: inherit;
+                                    }
+                                    label{
+                                        padding-left: 75px;
+                                        display: block;
+                                    }
+                                }
+                                span{
+                                    color: #1277be;
+                                }
+                                border-bottom:1px dashed #b6bfce;
+                                color: #78859a;
+                                .btn-content{
+                                    width: 60%;
+                                    display:flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    margin: 0 auto;
+                                    div{
+                                        width: 65px;
+                                        height: 25px;
+                                        box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+                                        border-radius: 17px;
+                                        text-align: center;
+                                        font-size: 12px;
+                                        line-height: 25px;
+                                        color: #FFF;
+                                        i{
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                    .close-btn{
+                                        background-color: #b8c1ce;
+                                    }
+                                    .change-btn{
+                                        background-color: #4596d5;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
                 .yqd{
                     background: url('../img/icon/icon-yqd.png') no-repeat 0 0;

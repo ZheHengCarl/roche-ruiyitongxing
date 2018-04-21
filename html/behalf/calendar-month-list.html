@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../css/swiper.min.css">
     <link rel="stylesheet" href="../../css/com.css">
     <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
     <script src="../../js/jquery-1.7.2.min.js"></script>
     <script src="../../js/swiper.min.js"></script>
 </head>
@@ -15,12 +16,12 @@
     <div class="container conference conference-list brand-list calendar-list">
         <div class="nav">
             <div class="logo"></div>
-            <a class="message" href="#"><i></i>我的消息<b>2</b></a>
+            <a class="message" href="#"><i class="iconfont icon-xiaoxi"></i>我的消息<b>2</b></a>
             <div class="nav-middle">
                 <ul class="info behalf-info">
-                    <li><div><i></i>我的排名</div><p>8121</p></li>
-                    <li><div><i></i>区域之星</div><p>李莉莉</p></li>
-                    <li><div><i></i>明日之星</div><p>赵倩荪</p></li>
+                    <li><div><i class="iconfont icon-trophy_icon"></i>我的排名</div><p>8121</p></li>
+                    <li><div><i class="iconfont icon-dituleiditu"></i>区域之星</div><p>李莉莉</p></li>
+                    <li><div><i class="iconfont icon-shixunchengji"></i>明日之星</div><p>赵倩荪</p></li>
                 </ul>
                 <a class="back-index" href="../../login.html"><img src="../../img/icon/icon-back-index-blue.png" alt="">返回首页</a>
             </div>
@@ -81,10 +82,46 @@
                             <li><span>6</span></li>
                             <li class="hasmeeting">
                                 <span>7</span>
-                                <p class="yqd">1</p>
-                                <p class="wqd">2</p>
-                                </li>
-                            <li class="hasmeeting"><span>8</span><p class="yqd">1</p></li>
+                                <section class="yqd">
+                                    <span>11</span>
+                                    <div class="detail">
+                                        <h3><img src="../../img/icon/icon-yqd-detail.png" alt=""><span>1</span></h3>
+                                        <ol>
+                                            <li>
+                                                <div><span>主题</span><label>罗氏肿瘤名医公开课</label></div>
+                                                <div><span>时间</span><label>2017.7.26  16:00-17:30</label></div>
+                                                <div><span>主会场讲者</span><label>王颖硕   浙江大学医学院附属儿童医院</label></div>
+                                                <div class="btn-content">
+                                                    <div class="close-btn"><i class="fa fa-close"></i>取消</div>
+                                                    <div class="change-btn"><i class="fa fa-pencil"></i>修改</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><span>主题</span><label>罗氏肿瘤名医公开课</label></div>
+                                                <div><span>时间</span><label>2017.7.26  16:00-17:30</label></div>
+                                                <div><span>主会场讲者</span><label>王颖硕   浙江大学医学院附属儿童医院</label></div>
+                                                <div class="btn-content">
+                                                    <div class="close-btn"><i class="fa fa-close"></i>取消</div>
+                                                    <div class="change-btn"><i class="fa fa-pencil"></i>修改</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><span>主题</span><label>罗氏肿瘤名医公开课</label></div>
+                                                <div><span>时间</span><label>2017.7.26  16:00-17:30</label></div>
+                                                <div><span>主会场讲者</span><label>王颖硕   浙江大学医学院附属儿童医院</label></div>
+                                                <div class="btn-content">
+                                                    <div class="close-btn"><i class="fa fa-close"></i>取消</div>
+                                                    <div class="change-btn"><i class="fa fa-pencil"></i>修改</div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </section>
+                                <section class="wqd">
+                                    <span>22</span>
+                                </section>
+                            </li>
+                            <li class="hasmeeting"><span>8</span><section class="yqd"><span>12</span></section></li>
                             <li><span>9</span></li>
                             <li><span>10</span></li>
                             <li><span>11</span></li>
@@ -102,7 +139,7 @@
                             <li><span>23</span></li>
                             <li><span>24</span></li>
                             <li><span>25</span></li>
-                            <li class="hasmeeting"><span>26</span><p class="wqd">2</p></li>
+                            <li class="hasmeeting"><span>26</span><section class="wqd"><span>2</span></section></li>
                             <li><span>27</span></li>
                             <li><span>28</span></li>
                             <li><span>29</span></li>
@@ -117,7 +154,7 @@
                 </div>
             </div>
             <!-- 预览 -->
-            <div class="swiper-container">
+            <!-- <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="preview-content">
@@ -226,29 +263,26 @@
                         </div>
                     </div>
                 </div>
-                <!-- Add Pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
-                <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-            </div>
-            
+            </div> -->
         </div>
     </div>
     <div class="cover"></div>
     <script>
         $(".yqd").click(function(){
-            $(".swiper-container, .cover").show();
-                var swiper = new Swiper('.swiper-container', {
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'fraction',
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
+            console.log(1);
+            // $(".swiper-container, .cover").show();
+            //     var swiper = new Swiper('.swiper-container', {
+            //     pagination: {
+            //         el: '.swiper-pagination',
+            //         type: 'fraction',
+            //     },
+            //     navigation: {
+            //         nextEl: '.swiper-button-next',
+            //         prevEl: '.swiper-button-prev',
+            //     },
+            // });
         });
         $(".preview-content .shut-down").click(function(){
             $(".cover").hide();

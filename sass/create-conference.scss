@@ -3,15 +3,17 @@
         li{
             div{
                 i{
+                    font-size: 25px;
                     width: 30px;
                     height: 26px;
-                    background: url('../img/icon/icon-brand-left2.png') no-repeat 0 0 ;
-                    background-size: cover;
+                    // background: url('../img/icon/icon-brand-left2.png') no-repeat 0 0 ;
+                    // background-size: cover;
                 }
             }
             &:nth-child(1){
                 i{
-                    background-position-y: 0;
+                    // background-position-y: 0;
+                    // vertical-align: -7px;
                 }
             }
             &:nth-child(2){
