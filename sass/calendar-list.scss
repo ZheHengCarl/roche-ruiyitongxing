@@ -157,6 +157,7 @@
                         margin: 0;
                     }
                     .detail{
+                        display: none;
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -174,9 +175,6 @@
                                 height: 14px;
                                 margin: 0 4px;
                                 vertical-align: middle;
-                            }
-                            span{
-                                color: #1277be;
                             }
                         }
                         ol{
@@ -234,6 +232,11 @@
                                     .change-btn{
                                         background-color: #4596d5;
                                     }
+                                    .rob-btn{
+                                        display: block;
+                                        margin: 0 auto;
+                                        background-color: #fd7423;
+                                    }
                                 }
                             }
                         }
@@ -242,10 +245,20 @@
                 .yqd{
                     background: url('../img/icon/icon-yqd.png') no-repeat 0 0;
                     background-size: cover;
+                    .detail{
+                        h3>span{
+                            color: #1277be;
+                        }
+                    }
                 }
                 .wqd{
                     background: url('../img/icon/icon-wqd.png') no-repeat 0 0;
                     background-size: cover;
+                    .detail{
+                        h3>span{
+                            color: #fd7423;
+                        }
+                    }
                 }
             }
             .disabled{

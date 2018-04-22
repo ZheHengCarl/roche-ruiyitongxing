@@ -112,6 +112,24 @@ html::-webkit-scrollbar { width: 0; display: none; }
 
 .active-bar { position: absolute; top: 0; right: 0; width: 5px; height: 0; background: #1277be; }
 
+.pop-change { display: none; width: 400px; height: 370px; padding: 0 15px 15px; background-color: #ffffff; box-shadow: 0px 2px 60px 0px rgba(29, 29, 29, 0.25), 0px 2px 12px 0px rgba(0, 173, 228, 0.7); border-radius: 10px; border: none; }
+.pop-change h2 { position: relative; height: 40px; text-align: center; color: #1277be; font-size: 18px; line-height: 40px; border-bottom: 1px solid #e0f0ff; }
+.pop-change h2 .cancel { position: absolute; top: 8px; right: 0; width: 65px; height: 25px; background-color: #b8c1ce; box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15); border-radius: 12px; color: #FFF; font-size: 12px; line-height: 25px; cursor: pointer; }
+.pop-change h2 .cancel i { margin-right: 5px; }
+.pop-change li { position: relative; text-align: left; margin: 15px 0; }
+.pop-change li:nth-child(1) label { width: 216px; }
+.pop-change li:nth-child(2) label, .pop-change li:nth-child(3) label, .pop-change li:nth-child(4) label, .pop-change li:nth-child(5) label { width: 314px; }
+.pop-change li:nth-child(6) label { width: 284px; }
+.pop-change li i { display: inline-block; width: 8px; height: 8px; background-color: #fd7423; border-radius: 4px; vertical-align: middle; margin-right: 5px; }
+.pop-change li b { display: inline-block; width: 8px; height: 8px; background-color: transparent; border-radius: 4px; vertical-align: middle; margin-right: 5px; }
+.pop-change li span { font-size: 15px; color: #78859a; margin-right: 5px; }
+.pop-change li span sub { display: inline-block; width: 30px; }
+.pop-change li label { display: inline-block; height: 30px; background-color: #FFF; border-radius: 15px; border: solid 1px #53c6ea; }
+.pop-change li label input { width: 90%; height: 20px; padding: 5px; }
+.pop-change li label input[type='file'] { opacity: 0; }
+.pop-change li p { position: absolute; right: -5px; bottom: -15px; color: #fd7423; font-size: 12px; transform: scale(0.8); }
+.pop-change .sub-btn { width: 65px; height: 25px; background-color: #1277be; box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15); border-radius: 15px; color: #FFF; }
+
 .dropup, .dropdown { position: relative; }
 
 .dropdown-toggle { *margin-bottom: -3px; }
@@ -470,10 +488,9 @@ html::-webkit-scrollbar { width: 0; display: none; }
 .calendar-list .calendar-month-content .days > ul > li span { margin-top: 5px; margin-left: 8px; color: #78859a; font-size: 12px; }
 .calendar-list .calendar-month-content .days .hasmeeting > section { position: relative; height: 21.5px; margin: 10px 0; padding-left: 30px; color: #FFF; font-size: 12px; line-height: 21.5px; cursor: pointer; }
 .calendar-list .calendar-month-content .days .hasmeeting > section span { color: #FFF; margin: 0; }
-.calendar-list .calendar-month-content .days .hasmeeting > section .detail { position: absolute; top: 0; left: 0; width: 300px; height: 375px; background-color: #ffffff; box-shadow: 0px 5px 29px 0px rgba(0, 173, 228, 0.33); z-index: 999; }
+.calendar-list .calendar-month-content .days .hasmeeting > section .detail { display: none; position: absolute; top: 0; left: 0; width: 300px; height: 375px; background-color: #ffffff; box-shadow: 0px 5px 29px 0px rgba(0, 173, 228, 0.33); z-index: 999; }
 .calendar-list .calendar-month-content .days .hasmeeting > section .detail h3 { border-left: 2px solid #4192cb; height: 22px; background-color: #fff; }
 .calendar-list .calendar-month-content .days .hasmeeting > section .detail h3 img { width: 14px; height: 14px; margin: 0 4px; vertical-align: middle; }
-.calendar-list .calendar-month-content .days .hasmeeting > section .detail h3 span { color: #1277be; }
 .calendar-list .calendar-month-content .days .hasmeeting > section .detail ol { height: 353px; padding: 0 22px; background-color: #f8f8f8; padding-bottom: 10px; overflow: auto; }
 .calendar-list .calendar-month-content .days .hasmeeting > section .detail ol li { padding: 15px 0; border-bottom: 1px dashed #b6bfce; color: #78859a; }
 .calendar-list .calendar-month-content .days .hasmeeting > section .detail ol li > div { margin-bottom: 5px; }
@@ -485,8 +502,11 @@ html::-webkit-scrollbar { width: 0; display: none; }
 .calendar-list .calendar-month-content .days .hasmeeting > section .detail ol li .btn-content div i { margin-right: 5px; }
 .calendar-list .calendar-month-content .days .hasmeeting > section .detail ol li .btn-content .close-btn { background-color: #b8c1ce; }
 .calendar-list .calendar-month-content .days .hasmeeting > section .detail ol li .btn-content .change-btn { background-color: #4596d5; }
+.calendar-list .calendar-month-content .days .hasmeeting > section .detail ol li .btn-content .rob-btn { display: block; margin: 0 auto; background-color: #fd7423; }
 .calendar-list .calendar-month-content .days .hasmeeting .yqd { background: url("../img/icon/icon-yqd.png") no-repeat 0 0; background-size: cover; }
+.calendar-list .calendar-month-content .days .hasmeeting .yqd .detail h3 > span { color: #1277be; }
 .calendar-list .calendar-month-content .days .hasmeeting .wqd { background: url("../img/icon/icon-wqd.png") no-repeat 0 0; background-size: cover; }
+.calendar-list .calendar-month-content .days .hasmeeting .wqd .detail h3 > span { color: #fd7423; }
 .calendar-list .calendar-month-content .days .disabled { background-color: #eff7ff; }
 .calendar-list .calendar-week-content { margin-top: 12px; }
 .calendar-list .calendar-week-content .weeks { width: 720px; margin: 5px 0; padding-left: 65px; }

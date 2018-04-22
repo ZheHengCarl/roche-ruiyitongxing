@@ -97,6 +97,18 @@
                 </div>
             </div>
         </div>
+        <div class="pop pop-change">
+            <h2><span>分会场</span><div class="cancel"><i class="fa fa-close"></i>取消</div></h2>
+            <ul>
+                <li><i></i><span>会议地点（医院/酒店）</span><label><input type="text"></label></li>
+                <li><i></i><span>讲<sub></sub>者</span><label><input type="text"></label></li>
+                <li><b></b><span>讲者幻灯</span><label class='icon-arrow'><input type="file"></label><p>会议前一天必须提交讲者 PPT，否则无法入会</p></li>
+                <li><b></b><span>讲者简历</span><label class='icon-arrow'><input type="file"></label></li>
+                <li><b></b><span>审&ensp;批&ensp;号</span><label><input type="text"></label></li>
+                <li><b></b><span>审批号有效期</span><label><input type="text"></label><p>审批号有效期不得早于会议日期</p></li>
+            </ul>
+            <button class="sub-btn">提交</button>
+        </div>
       </div>
     </div>
     <div class="cover"></div>
@@ -107,6 +119,14 @@
       $(".report-pop .shut-down").click(function(){
         $(".cover").hide();
         $(this).parent().hide();
+      });
+      $(".active .alter").click(function(){
+        $('.cover').show();
+        $('.pop-change').show();
+      });
+      $('.pop-change .cancel').click(function(){
+        $('.cover').hide();
+        $(this).parent().parent().hide();
       });
     </script>
 </body>
