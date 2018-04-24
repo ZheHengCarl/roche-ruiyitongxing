@@ -29,7 +29,7 @@
           <ul>
             <li><a href=""><i></i>技术支持文件<span>4000621818</span></a></li>
             <li><a href=""><i></i>隐私条款</a></li>
-            <li><a href=""><i></i>操作手册</a></li>
+            <li><a href="./operation-manual.html"><i></i>操作手册</a></li>
             <li><a href=""><i></i>下载客户端</a></li>
           </ul>
         </div>
@@ -39,10 +39,10 @@
       </div>
       <div class="conference-content">
         <ul class="bread-crumb-nav">
-          <li><a class="active" href="#"><i></i>创建会议</a></li>
-          <li><a href="#"><i></i>查看报告</a></li>
-          <li><a href="#"><i></i>我的会议</a></li>
-          <li><a href="#"><i></i>确认会议</a></li>
+            <li><a class="active" href="./create-conference.html"><i></i>创建会议</a></li>
+            <li><a href="./check-report.html"><i></i>查看报告</a></li>
+            <li><a href="./conference-list1.html"><i></i>我的会议</a></li>
+            <li><a href="./affirm-meeting.html"><i></i>确认会议</a></li>
         </ul>
         <div class="list-content">
             <div class="title">
@@ -59,8 +59,8 @@
                         <li><i></i><span>覆盖品牌：<label><input type="checkbox"><i></i>品牌甲乙丙</label><label><input type="checkbox"><i></i>品牌甲乙丙</label><label><input type="checkbox"><i></i>品牌甲乙丙</label></li>
                         <li ><i></i><span>会议日期：</span><input class="icon-arrow" type="text" value="" id="datetimepicker"><sub>请选择七天后的会议日期</sub></li>
                         <li class="font-size0"><i></i><span>会议时间：</span>
-                                <span class="select-content">
-                                    <input class="icon-arrow" type="text">
+                                <span class="select-content start-time">
+                                    <input class="icon-arrow" type="text" readonly="readonly">
                                     <div class="scroll-box">
                                         <div class="scroll-content">
                                             <div class="content">
@@ -95,9 +95,9 @@
                                         </div>
                                     </div>
                                 </span>
-                                 - 
-                                <span class="select-content">
-                                    <input class="icon-arrow" type="text">
+                                <b>-</b>
+                                <span class="select-content end-time">
+                                    <input class="icon-arrow" type="text" readonly="readonly">
                                     <div class="scroll-box">
                                         <div class="scroll-content">
                                             <div class="content">
@@ -283,6 +283,19 @@
         else
         {
             $(".grab-single-cont").show();
+        }
+    });
+    $('.start-time input, .end-time input').click(function(){
+        $(this).next().show();
+    });
+    $('.scroll-box p').click(function(){
+        var _value = $(this).text();
+        $(this).parent().parent().parent().prev().val(_value);
+        $(this).parent().parent().parent().hide();
+    });
+    $(document).click(function(e){
+        if (e.target.tagName != 'P' && e.target.tagName !='INPUT') {
+            $('.scroll-box').hide();
         }
     });
 </script>

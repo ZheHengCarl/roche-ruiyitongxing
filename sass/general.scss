@@ -2,7 +2,7 @@ body { background-color: #FFF; font-family: sans-serif; overflow: hidden; }
 input:focus::placeholder { transition: all .4s ease; transform: translateX(80%); opacity: 0;}
 // 'Lantinghei',serif,sans-serif;
 input::placeholder { color: rgba(40, 40, 40, 0.5); font-size: 15px; font-family: sans-serif; }
-button { ffont-family: 'Lantinghei',serif,sans-serif; cursor: pointer;}
+button { font-family: sans-serif;  cursor: pointer;}
 .font-size0 { font-size: 0; b{ display: inline-block; width: 20px; margin-right: 8px; text-align: center; font-size: 12px;} sub{ vertical-align: 0 !important;}}
 select::-ms-expand { display: none; }
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
