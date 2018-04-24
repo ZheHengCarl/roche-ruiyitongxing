@@ -168,11 +168,6 @@
                         text-align-last: justify;
                         -moz-text-align-last: justify;
                         -webkit-text-align-last: justify;
-                        &::after{
-                            content: '';
-                            width: 100%;
-                            display: inline-block;
-                        }
                     }
                 }
             }

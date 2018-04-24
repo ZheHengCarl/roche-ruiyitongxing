@@ -992,11 +992,6 @@ html::-webkit-scrollbar {
   -moz-text-align-last: justify;
   -webkit-text-align-last: justify;
 }
-.login .form-content ul li label span::after {
-  content: '';
-  width: 100%;
-  display: inline-block;
-}
 .login .form-content ul .email label {
   width: 350px;
   height: 40px;
