@@ -982,7 +982,6 @@ html::-webkit-scrollbar {
 .login .form-content ul li label span {
   width: 65px;
   margin-left: 25px;
-  font-size: 15px;
   color: #1277be;
   font-size: 15px;
   text-align: justify;
@@ -1184,7 +1183,7 @@ html::-webkit-scrollbar {
   margin-bottom: 25px;
 }
 .login .reset-pwd-content ul li label span {
-  width: 95px;
+  width: 105px;
 }
 .login .forgot-pwd-content {
   margin-top: 30px;
