@@ -118,6 +118,41 @@
                                         </ol>
                                     </div>
                                 </section>
+                                <section class="ycj">
+                                    <span>11</span>
+                                    <div class="detail">
+                                        <h3><img src="../../img/icon/icon-ycj-detail.png" alt=""><span>1</span></h3>
+                                        <ol>
+                                            <li>
+                                                <div><span>主题</span><label>罗氏肿瘤名医公开课</label></div>
+                                                <div><span>时间</span><label>2017.7.26  16:00-17:30</label></div>
+                                                <div><span>主会场讲者</span><label>王颖硕   浙江大学医学院附属儿童医院</label></div>
+                                                <div class="btn-content">
+                                                    <div class="close-btn"><i class="fa fa-close"></i>取消</div>
+                                                    <div class="change-btn"><i class="fa fa-pencil"></i>修改</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><span>主题</span><label>罗氏肿瘤名医公开课</label></div>
+                                                <div><span>时间</span><label>2017.7.26  16:00-17:30</label></div>
+                                                <div><span>主会场讲者</span><label>王颖硕   浙江大学医学院附属儿童医院</label></div>
+                                                <div class="btn-content">
+                                                    <div class="close-btn"><i class="fa fa-close"></i>取消</div>
+                                                    <div class="change-btn"><i class="fa fa-pencil"></i>修改</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><span>主题</span><label>罗氏肿瘤名医公开课</label></div>
+                                                <div><span>时间</span><label>2017.7.26  16:00-17:30</label></div>
+                                                <div><span>主会场讲者</span><label>王颖硕   浙江大学医学院附属儿童医院</label></div>
+                                                <div class="btn-content">
+                                                    <div class="close-btn"><i class="fa fa-close"></i>取消</div>
+                                                    <div class="change-btn"><i class="fa fa-pencil"></i>修改</div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </section>
                                 <section class="wqd">
                                     <span>22</span>
                                     <div class="detail">
@@ -179,6 +214,7 @@
                     </div>
                     <div class="hint">
                         <label><i></i>已创建会议</label>
+                        <label><i></i>已抢单会议</label>
                         <label><i></i>可围观会议</label>
                     </div>
                 </div>
@@ -201,6 +237,9 @@
     <div class="cover"></div>
     <script>
         $(".days ul li").on("click",'.yqd',function(){
+            $(this).find(".detail").show();
+        });
+        $(".days ul li").on("click",'.ycj',function(){
             $(this).find(".detail").show();
         });
         $(".days ul li").on("click",'.wqd',function(){

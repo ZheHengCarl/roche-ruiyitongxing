@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../css/font-awesome.min.css">
     <link rel="stylesheet" href="../../css/iconfont.css">
     <script src="../../js/jquery-1.7.2.min.js"></script>
+    <script src="../../js/scroll.js"></script>
 </head>
 <body>
     <div class="container conference conference-list">
@@ -49,48 +50,83 @@
             <a class="active" href="./conference-list.html"><i class="fa fa-th-large"></i>列表排列</a>
             <a href="./calendar-month-list.html"><i class="fa fa-calendar"></i>日历排列</a>
           </div>
-          <ul class="meeting-content ClearFix">
-            <li class="active">
-              <img src="../../img/temp-meeting.jpg" alt="">
-              <div class="state"><i></i>已抢单</div>
-              <div class="info">
-                <p><span>主<b></b>题</span>:<label>罗氏肿瘤名医公开课</label></p>
-                <p><span>时<b></b>间</span>:<label>2017.7.26 16:00-17:30</label></p>
-                <p><span>主会场讲者</span>:<label>邱    健 陕西省人民医院</label></p>
-                <p><span>分会场讲者</span>:<label>李南林 第四军医大学附属西京医院</label></p>
+          <div class="scroll-box">
+              <div class="scroll-content">
+                  <div class="content">
+                      <ul class="meeting-content ClearFix">
+                          <li class="active">
+                            <img src="../../img/temp-meeting.jpg" alt="">
+                            <div class="state"><i></i>已抢单</div>
+                            <div class="info">
+                              <p><span>主<b></b>题</span>:<label>罗氏肿瘤名医公开课</label></p>
+                              <p><span>时<b></b>间</span>:<label>2017.7.26 16:00-17:30</label></p>
+                              <p><span>主会场讲者</span>:<label>邱    健 陕西省人民医院</label></p>
+                              <p><span>分会场讲者</span>:<label>李南林 第四军医大学附属西京医院</label></p>
+                            </div>
+                            <div class="btn-content">
+                              <div class="alter"><i class="fa fa-pencil"></i>修改</div>
+                              <div class="del"><i class="fa fa-close"></i>删除</div>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="../../img/temp-meeting.jpg" alt="">
+                            <div class="state"><i></i>未抢单</div>
+                            <div class="info">
+                              <p><span>主<b></b>题</span>:<label>罗氏肿瘤名医公开课123</label></p>
+                              <p><span>时<b></b>间</span>:<label>2017.7.26 16:00-17:30</label></p>
+                              <p><span>主会场讲者</span>:<label>邱    健 陕西省人民医院</label></p>
+                              <p><span>分会场讲者</span>:<label>李南林 第四军医大学附属西京医院</label></p>
+                            </div>
+                            <div class="btn-content">
+                              <div class="grab"><i class="fa fa-check"></i>抢单</div>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="../../img/temp-meeting.jpg" alt="">
+                            <div class="state"><i></i>未抢单</div>
+                            <div class="info">
+                              <p><span>主<b></b>题</span>:<label>罗氏肿瘤名医公开课</label></p>
+                              <p><span>时<b></b>间</span>:<label>2017.7.26 16:00-17:30</label></p>
+                              <p><span>主会场讲者</span>:<label>邱    健 陕西省人民医院</label></p>
+                              <p><span>分会场讲者</span>:<label>李南林 第四军医大学附属西京医院</label></p>
+                            </div>
+                            <div class="btn-content">
+                              <div class="grab"><i class="fa fa-check"></i>抢单</div>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="../../img/temp-meeting.jpg" alt="">
+                            <div class="state"><i></i>未抢单</div>
+                            <div class="info">
+                              <p><span>主<b></b>题</span>:<label>罗氏肿瘤名医公开课</label></p>
+                              <p><span>时<b></b>间</span>:<label>2017.7.26 16:00-17:30</label></p>
+                              <p><span>主会场讲者</span>:<label>邱    健 陕西省人民医院</label></p>
+                              <p><span>分会场讲者</span>:<label>李南林 第四军医大学附属西京医院</label></p>
+                            </div>
+                            <div class="btn-content">
+                              <div class="grab"><i class="fa fa-check"></i>抢单</div>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="../../img/temp-meeting.jpg" alt="">
+                            <div class="state"><i></i>未抢单</div>
+                            <div class="info">
+                              <p><span>主<b></b>题</span>:<label>罗氏肿瘤名医公开课</label></p>
+                              <p><span>时<b></b>间</span>:<label>2017.7.26 16:00-17:30</label></p>
+                              <p><span>主会场讲者</span>:<label>邱    健 陕西省人民医院</label></p>
+                              <p><span>分会场讲者</span>:<label>李南林 第四军医大学附属西京医院</label></p>
+                            </div>
+                            <div class="btn-content">
+                              <div class="grab"><i class="fa fa-check"></i>抢单</div>
+                            </div>
+                          </li>
+                        </ul>
+                  </div>
               </div>
-              <div class="btn-content">
-                <div class="alter"><i class="fa fa-pencil"></i>修改</div>
-                <div class="del"><i class="fa fa-close"></i>删除</div>
+              <div class="scroll-bar">
+                  <div class="active-bar"><div class="bar"></div></div>
               </div>
-            </li>
-            <li>
-              <img src="../../img/temp-meeting.jpg" alt="">
-              <div class="state"><i></i>未抢单</div>
-              <div class="info">
-                <p><span>主<b></b>题</span>:<label>罗氏肿瘤名医公开课</label></p>
-                <p><span>时<b></b>间</span>:<label>2017.7.26 16:00-17:30</label></p>
-                <p><span>主会场讲者</span>:<label>邱    健 陕西省人民医院</label></p>
-                <p><span>分会场讲者</span>:<label>李南林 第四军医大学附属西京医院</label></p>
-              </div>
-              <div class="btn-content">
-                <div class="grab"><i class="fa fa-check"></i>抢单</div>
-              </div>
-            </li>
-            <li>
-              <img src="../../img/temp-meeting.jpg" alt="">
-              <div class="state"><i></i>未抢单</div>
-              <div class="info">
-                <p><span>主&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;题</span>:<label>罗氏肿瘤名医公开课</label></p>
-                <p><span>时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间</span>:<label>2017.7.26 16:00-17:30</label></p>
-                <p><span>主会场讲者</span>:<label>邱    健 陕西省人民医院</label></p>
-                <p><span>分会场讲者</span>:<label>李南林 第四军医大学附属西京医院</label></p>
-              </div>
-              <div class="btn-content">
-                <div class="grab"><i class="fa fa-check"></i>抢单</div>
-              </div>
-            </li>
-          </ul>
+          </div>
         </div>
         <!-- 修改 -->
         <div class="pop pop-change">

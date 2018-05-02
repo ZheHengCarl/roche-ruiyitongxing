@@ -26,6 +26,12 @@
             }
             &:nth-child(2){
                 i{
+                    background-color: #45cbe4;
+                    border: 4px solid #e3f7fb;
+                }
+            }
+            &:nth-child(3){
+                i{
                     background-color: #fd7423;
                     border: 4px solid #ffe3d3;
                 }
@@ -146,7 +152,7 @@
                 >section{
                     position: relative;
                     height: 21.5px;
-                    margin: 10px 0;
+                    // margin: 10px 0;
                     padding-left: 30px;
                     color: #FFF;
                     font-size: 12px;
@@ -242,8 +248,8 @@
                         }
                     }
                 }
-                .yqd{
-                    background: url('../img/icon/icon-yqd.png') no-repeat 0 0;
+                .ycj{
+                    background: url('../img/icon/icon-ycj.png') no-repeat 0 0;
                     background-size: cover;
                     .detail{
                         h3>span{
@@ -257,6 +263,15 @@
                     .detail{
                         h3>span{
                             color: #fd7423;
+                        }
+                    }
+                }
+                .yqd{
+                    background: url('../img/icon/icon-yqd.png') no-repeat 0 0;
+                    background-size: cover;
+                    .detail{
+                        h3>span{
+                            color: #6ed2e5;
                         }
                     }
                 }
@@ -328,16 +343,21 @@
                                     cursor: pointer;
                                 }
                             }
-                            .yqd-top{
-                                background:#4192cb url('../img/icon/icon-week-yqd.jpg') no-repeat top left;
+                            .ycj-top{
+                                background:#4192cb url('../img/icon/icon-week-ycj.jpg') no-repeat top left;
                                 background-size: 100% 20px;
                             }
                             .wqd-top{
                                 background:#fd904f url('../img/icon/icon-week-wqd.jpg') no-repeat top left;
                                 background-size: 100% 20px;
                             }
-                            .yqd-cont{ background-color: #4192cb;}
+                            .yqd-top{
+                                background:#6ed2e5 url('../img/icon/icon-week-yqd.jpg') no-repeat top left;
+                                background-size: 100% 20px;
+                            }
+                            .ycj-cont{ background-color: #4192cb;}
                             .wqd-cont{ background-color: #fd904f;}
+                            .yqd-cont{ background-color: #6ed2e5;}
                         }
                     }
                 }

@@ -176,21 +176,21 @@
                 i{ background-position-y: -31px;}
             }
             .name{
-                i{ background-position-y: -130px;}
+                i{ background-position-y: -120px;}
             }
             .phone{
-                i{ background-position-y: -165px;}
+                i{ background-position-y: -154px;}
             }
             .c-code{
-                i{ background-position-y: -200px;}
+                i{ background-position-y: -185px;}
                 input{width: 105px;}
             }
             .v-code{
-                i{ background-position-y: -236px;}
+                i{ background-position-y: -235px;}
                 input{width: 105px;}
             }
             .set-pwd{
-                i{background-position-y: -31px;}
+                i{background-position-y: -29px;}
             }
             
             .confirm-pwd{
@@ -277,6 +277,11 @@
                 margin-bottom: 15px;
             }
         }
+        b{
+            margin-left: 5px;
+            font-size: 25px;
+            color: #1277be;
+        }
     }
     .set-pwd-content{
         margin-top: 55px;
@@ -341,7 +346,17 @@
                         width:105px;
                     }
                 }
+                &:nth-child(3){
+                    >i{
+                        background-position-y: -253px;
+                    }
+                }
             }
+        }
+        b{
+            margin-left: 5px;
+            font-size: 25px;
+            color: #1277be;
         }
     }
     .forgot-pwd-content{
@@ -350,6 +365,11 @@
             li{
                 margin-bottom: 15px;
             }
+        }
+        b{
+            margin-left: 5px;
+            font-size: 25px;
+            color: #1277be;
         }
     }
 }

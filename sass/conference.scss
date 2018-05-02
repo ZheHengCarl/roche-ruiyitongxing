@@ -236,11 +236,11 @@
             .meeting-content{
                 margin-top: 25px;
                 height: 565px;
-                overflow: auto;
+                // overflow: auto;
                 li{
                     float: left;
                     width: 325px;
-                    height: 321px;
+                    min-height: 321px;
                     margin: 0 10px 25px;
                     padding: 10px;
                     background-color: #ffffff;
@@ -328,6 +328,17 @@
                     }
                 }
             }
+            .scroll-box{
+                width: 100%;
+                height: 590px;
+                box-shadow: initial;
+                background-color: transparent;
+                .scroll-content{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
     }
+
 }

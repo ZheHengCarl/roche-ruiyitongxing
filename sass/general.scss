@@ -425,6 +425,7 @@ select{
         left: 0;
         top: 20px;
         width: 170px;
+        background-color: #fff !important;
     }
 }
 html::-webkit-scrollbar { width: 0; display: none;}
@@ -462,7 +463,7 @@ html::-webkit-scrollbar { width: 0; display: none;}
     width: 5px;
     height: 95%;
     background: #e4f6fb;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 .bar {
     position: absolute;
@@ -481,6 +482,7 @@ html::-webkit-scrollbar { width: 0; display: none;}
     width: 5px;
     height: 0;
     background: #1277be;
+    border-radius: 10px;
 }
 .pop-change{
     display: none;

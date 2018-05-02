@@ -2,13 +2,13 @@ $(function () {
     $(".select-content input").focus(function () { 
         oScroll();
      });
-    // window.onload = function () { 
-    //     oScroll();
-    // }
     $(".login .privacy-btn").click(function(){
         $(".privacy-pop").show();
         oScroll();
-    })
+    });
+    window.onload = function (){
+        oScroll();
+    }
     function oScroll (){
         var oDevice = 'ontouchstart' in window,
             startEvent = oDevice ? 'touchstart' : 'mousedown',
@@ -59,5 +59,5 @@ $(function () {
             $(document).unbind(endEvent, fnTouchend)
         }
         $(".bar").bind(startEvent, fnTouchstart);
-    }
+    };
 })
