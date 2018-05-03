@@ -1827,6 +1827,7 @@ html::-webkit-scrollbar {
 .new-conference .form-content ul li {
   padding: 10px 2px;
   border-bottom: 1px solid #e0f0ff;
+  font-size: 0;
 }
 .new-conference .form-content ul li .drop {
   position: relative;

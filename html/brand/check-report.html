@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../css/font-awesome.min.css">
     <link rel="stylesheet" href="../../css/iconfont.css">
     <script src="../../js/jquery-1.7.2.min.js"></script>
+    <script src="../../js/com.js"></script>
 </head>
 <body>
     <div class="container conference create-conference check-report">
@@ -165,33 +166,12 @@
 </body>
 <script src="../../js/echarts.simple.min.js"></script>
 <script>
-    $(document).click(function(e){
-        var _con = $(".drop, .icon-arrow");
-        if(!_con.is(e.target) && _con.has(e.target).length === 0){
-            $(".drop-content").hide();
-        }
-    });
-    var _index=1;
-    $(".drop").click(function(){
-        $(this).find(".drop-content").show().css("z-index",_index++);
-    });
     $(".report-pop .shut-down").click(function(){
         $(".cover").hide();
         $(this).parent().hide();
     });
     $(".detail-btn").click(function(){
         $(".report-pop,.cover").show();
-    });
-    $(".drop-content input[name='all']").click(function(){
-        console.log($(this).parent().nextAll().find('input'));
-        
-        if ($(this).prop("checked")) {
-            $(this).parent().parent().nextAll('li').find("input").attr("checked",true);
-        }
-        else
-        {
-            $(this).parent().parent().nextAll('li').find("input").attr("checked",false);
-        }
     });
 </script>
 <script>

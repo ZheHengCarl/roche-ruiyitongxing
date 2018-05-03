@@ -9,9 +9,9 @@ $(function () {
             $(".drop-content").hide();
         }
     });
-    var _index=1;
+    var dropIndex=1;
     $(".drop").click(function(){
-        $(this).find(".drop-content").show().css("z-index",_index++);
+        $(this).find(".drop-content").show().css("z-index",dropIndex++);
     });
     $(".drop-content input[name='all']").click(function(){
         console.log($(this).parent().nextAll().find('input'));
@@ -22,5 +22,9 @@ $(function () {
         {
             $(this).parent().parent().nextAll('li').find("input").attr("checked",false);
         }
+    });
+    $(".drop-content input").click(function () {
+        var _thisName = $(this);
+        console.log(_thisName);
     });
 })
