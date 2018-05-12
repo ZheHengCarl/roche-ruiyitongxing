@@ -10,7 +10,7 @@ select::-ms-expand { display: none; }
 // body { margin-right:-14px!important; overflow-y:scroll; overflow-x:hidden;}
 /*Chrome下隐藏滚动条，溢出可以透明滚动*/
 ::-webkit-scrollbar{width:0px; display: none;}
-select{
+select,#date1,#date2,#date3,#date4{
     width: 139px;
     height: 30px;
     border: solid 1px #45cbe4;
@@ -584,6 +584,11 @@ html::-webkit-scrollbar { width: 0; display: none;}
         border-radius: 15px;
         color: #FFF;
     }
+}
+.table-condensed{
+    .prev, .next{ display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale; color: #1277be;}
+    .prev:before{content:"\f053"}
+    .next:before{content:"\f054"}
 }
 .dropup,.dropdown{position:relative;}
 .dropdown-toggle{*margin-bottom:-3px;}

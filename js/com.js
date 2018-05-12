@@ -10,11 +10,15 @@ $(function () {
         }
     });
     var dropIndex=1;
-    $(".drop").click(function(){
-        $(this).find(".drop-content").show().css("z-index",dropIndex++);
+    $(".drop").click(function(e){
+        if (e.target.className == "sub-btn") {
+            $(this).find(".drop-content").hide()
+        }
+        else{
+            $(this).find(".drop-content").show().css("z-index",dropIndex++);
+        }
     });
     $(".drop-content input[name='all']").click(function(){
-        console.log($(this).parent().nextAll().find('input'));
         if ($(this).prop("checked")) {
             $(this).parent().parent().nextAll('li').find("input").attr("checked",true);
         }
@@ -23,8 +27,19 @@ $(function () {
             $(this).parent().parent().nextAll('li').find("input").attr("checked",false);
         }
     });
-    $(".drop-content input").click(function () {
-        var _thisName = $(this);
-        console.log(_thisName);
-    });
+    $(".drop-content .sub-btn").click(function (e) {
+        console.log(e.target.className);
+        
+        var sText = '';
+        var _this = $(this);
+        _this.prev().find("input").each(function(){
+            if($(this).attr("name")!="all"){
+                if ($(this).prop("checked")) {
+                    sText += $(this).val()+',';
+                }
+            }
+        })
+        sText = sText.substring(0,sText.length-1);
+        _this.parent().parent().find(".show").text(sText);
+    })
 })

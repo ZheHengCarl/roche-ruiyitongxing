@@ -66,6 +66,9 @@
                     border: solid 1px #45cbe4;
                     border-radius: 15px;
                     vertical-align: middle;
+                    .show{
+                        line-height: 30px;
+                    }
                     .drop-content{
                         display: none;
                         position: absolute;
@@ -194,7 +197,11 @@
                     margin-left: 10px;
                     color: #fd7423;
                     font-size: 12px;
-                    vertical-align: middle;
+                    // vertical-align: middle;
+                }
+                b{
+                    font-size: 16px;
+                    margin: 0 5px;
                 }
             }
             input[type='text'],input[type='date'],input[type='time']{
@@ -209,6 +216,19 @@
             select{
 
             }
+        }
+        .sub-btn{
+            width: 65px;
+            height: 25px;
+            margin: 5px auto;
+            color: #FFF;
+            border-radius: 15px;
+            text-align: center;
+            line-height: 25px;
+            font-size: 12px;
+            background-color: #1277be;
+            box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.33);
+            cursor: pointer;
         }
         .main-info{
             li{
@@ -259,7 +279,7 @@
                 span{
                     b{
                         display: inline-block;
-                        width: 31px;
+                        width: 21px;
                     }
                 }
                 label{

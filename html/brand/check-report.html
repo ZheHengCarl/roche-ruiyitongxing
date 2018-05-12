@@ -49,6 +49,7 @@
                 <ul>
                     <li><i class="fa fa-star-o"></i>品牌：
                         <div class="drop icon-arrow">
+                            <span class="show"></span>
                             <div class="drop-content">
                                 <ul>
                                     <li><label><input type="checkbox" name="all"><i></i>全选</label></li>
@@ -58,12 +59,14 @@
                                     <li><label><input type="checkbox" name="q1"><i></i>代表3</label></li>
                                     <li><label><input type="checkbox" name="q1"><i></i>代表3</label></li>
                                 </ul>
+                                <div class="sub-btn">确定</div>
                             </div>
                         </div>
                     </li>
                     <li>
                         <i class="fa fa-crosshairs"></i>大区：
                         <div class="drop icon-arrow">
+                            <span class="show"></span>
                             <div class="drop-content">
                                 <ul>
                                     <li><label><input type="checkbox" name="all"><i></i>全选</label></li>
@@ -73,10 +76,12 @@
                                     <li><label><input type="checkbox" name="q2"><i></i>代表3</label></li>
                                     <li><label><input type="checkbox" name="q2"><i></i>代表3</label></li>
                                 </ul>
+                                <div class="sub-btn">确定</div>
                             </div>
                         </div>
                         <i class="fa fa-map-marker"></i>地区：
                         <div class="drop icon-arrow">
+                            <span class="show">`</span>
                             <div class="drop-content">
                                 <ul>
                                     <li><label><input type="checkbox" name="all"><i></i>全选</label></li>
@@ -86,6 +91,7 @@
                                     <li><label><input type="checkbox" name="q3"><i></i>代表3</label></li>
                                     <li><label><input type="checkbox" name="q3"><i></i>代表3</label></li>
                                 </ul>
+                                <div class="sub-btn">确定</div>
                             </div>
                         </div>
                     </li>
@@ -93,22 +99,26 @@
                 <ul>
                     <li><i class="fa fa-star-o"></i>代表：
                         <div class="drop icon-arrow">
+                            <span class="show"></span>
                             <div class="drop-content">
                                 <ul>
                                     <li><label><input type="checkbox" name="all"><i></i>全选</label></li>
-                                    <li><label><input type="checkbox" name="q4"><i></i>代表1</label></li>
-                                    <li><label><input type="checkbox" name="q4"><i></i>代表2</label></li>
-                                    <li><label><input type="checkbox" name="q4"><i></i>代表3</label></li>
-                                    <li><label><input type="checkbox" name="q4"><i></i>代表3</label></li>
-                                    <li><label><input type="checkbox" name="q4"><i></i>代表3</label></li>
+                                    <li><label><input type="checkbox" name="q4" value="代表1"><i></i>代表1</label></li>
+                                    <li><label><input type="checkbox" name="q4" value="代表2"><i></i>代表2</label></li>
+                                    <li><label><input type="checkbox" name="q4" value="代表3"><i></i>代表3</label></li>
+                                    <li><label><input type="checkbox" name="q4" value="代表4"><i></i>代表3</label></li>
+                                    <li><label><input type="checkbox" name="q4" value="代表5"><i></i>代表3</label></li>
                                 </ul>
+                                <div class="sub-btn">确定</div>
                             </div>
                         </div>
                     </li>
                     <li><label><i class="fa fa-calendar"></i>时间：
-                        <select class="icon-arrow"></select> - <select class="icon-arrow"></select></label></li>
+                        <input class="icon-arrow" type="text" id="date1"> - <input class="icon-arrow" type="text" id="date2"></label>
+                    </li>
                     <li>
                         <i class="fa fa-crosshairs"></i>会议类型：<div class="drop icon-arrow">
+                            <span class="show"></span>
                             <div class="drop-content">
                                 <ul>
                                     <li><label><input type="checkbox" name="all"><i></i>全选</label></li>
@@ -118,6 +128,7 @@
                                     <li><label><input type="checkbox" name="q5"><i></i>代表3</label></li>
                                     <li><label><input type="checkbox" name="q5"><i></i>代表3</label></li>
                                 </ul>
+                                <div class="sub-btn">确定</div>
                             </div>
                         </div>
                     </li>
@@ -125,9 +136,9 @@
             <div id="main"></div>
         </div>
         <div class="report-pop pop">
-            <div class="shut-down"><i class='fa fa-close'></i>关闭</div>
+            <div class="shut-down"><i class="fa fa-close"></i>关闭</div>
             <ul>
-                <li><label><span>会议时间：</span><input class="icon-arrow" type="date"></label></li>
+                <li><label><span>会议时间：</span><input class="icon-arrow" type="text" id="date3"></label></li>
                 <li><label><span>会议主题：</span><select class="icon-arrow"></select></label></li>
             </ul>
             <div class="download-upload">
@@ -165,6 +176,21 @@
     </div>
 </body>
 <script src="../../js/echarts.simple.min.js"></script>
+<script src="../../src/laydate.js"></script>
+<script>
+    laydate.render({
+        elem: '#date1',
+        showBottom: false,
+    });
+    laydate.render({
+        elem: '#date2',
+        showBottom: false,
+    });
+    laydate.render({
+        elem: '#date3',
+        showBottom: false,
+    });
+</script>
 <script>
     $(".report-pop .shut-down").click(function(){
         $(".cover").hide();

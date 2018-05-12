@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../css/font-awesome.min.css">
     <link rel="stylesheet" href="../../css/iconfont.css">
     <script src="../../js/jquery-1.7.2.min.js"></script>
+    <script src="../../js/com.js"></script>
 </head>
 <body>
     <div class="container conference conference-list check-report behalf-check-report">
@@ -48,6 +49,7 @@
             <div class="title"><i></i><span>报告总览</span></div>
             <ul>
                 <li><i class="fa fa-star-o"></i>品牌：<div class="drop icon-arrow">
+                    <span class="show"></span>
                         <div class="drop-content">
                             <ul>
                                 <li><label><input type="checkbox" name="all"><i></i>全选</label></li>
@@ -57,10 +59,11 @@
                                 <li><label><input type="checkbox" name="q1"><i></i>代表3</label></li>
                                 <li><label><input type="checkbox" name="q1"><i></i>代表3</label></li>
                             </ul>
+                            <div class="sub-btn">确定</div>
                         </div>
                     </div>
                 </li>
-                <li><label><i class="fa fa-calendar"></i>时间：<select class="icon-arrow"></select> - <select class="icon-arrow"></select></label></li>
+                <li><label><i class="fa fa-calendar"></i>时间：<input class="icon-arrow" type="text" id="date1"> - <input class="icon-arrow" type="text" id="date2"></label></li>
             </ul>
             <ul class="info type1">
                 <li>
@@ -83,6 +86,17 @@
 
 </body>
 <script src="../../js/echarts.simple.min.js"></script>
+<script src="../../src/laydate.js"></script>
+<script>
+    laydate.render({
+        elem: '#date1',
+        showBottom: false,
+    });
+    laydate.render({
+        elem: '#date2',
+        showBottom: false,
+    });
+</script>
 <script>
     $(document).click(function(e){
         var _con = $(".drop, .icon-arrow");
