@@ -1,7 +1,7 @@
+
 .brand-list{
     .conference-content .list-content .meeting-content li{
-        min-height: 320px;
-        height: auto;
+        height: 400px;
         .state{
             i{
                 width: 16px;
@@ -119,7 +119,6 @@
 }
 .circusee{
     .conference-content .list-content .meeting-content li{
-        min-height: 300px;
         .info{
             margin-top: 15px;
         }
@@ -195,4 +194,9 @@
         }
     }
     
+}
+.circusee {
+    .conference-content .list-content .meeting-content li{
+        height: 350px;
+    }
 }

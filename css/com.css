@@ -870,11 +870,12 @@ html::-webkit-scrollbar {
   background-size: cover;
 }
 .login .form-content ul {
-  width: 395px;
+  width: 415px;
   margin: 0 auto;
   padding-left: 15px;
 }
 .login .form-content ul li {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -952,13 +953,13 @@ html::-webkit-scrollbar {
   background-position-y: -31px;
 }
 .login .form-content ul .name i {
-  background-position-y: -126px;
+  background-position-y: -131px;
 }
 .login .form-content ul .phone i {
-  background-position-y: -160px;
+  background-position-y: -166px;
 }
 .login .form-content ul .c-code i {
-  background-position-y: -190px;
+  background-position-y: -199px;
 }
 .login .form-content ul .c-code input {
   width: 105px;
@@ -1043,7 +1044,16 @@ html::-webkit-scrollbar {
   margin-top: 55px;
 }
 .login .login-content ul li {
+  position: relative;
   margin-bottom: 33px;
+}
+.login .login-content ul li b {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 25px;
+  color: #1277be;
 }
 .login .register-content {
   margin-top: 30px;
@@ -1052,7 +1062,10 @@ html::-webkit-scrollbar {
   margin-bottom: 15px;
 }
 .login .register-content b {
-  margin-left: 5px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
   font-size: 25px;
   color: #1277be;
 }
@@ -1070,7 +1083,7 @@ html::-webkit-scrollbar {
 }
 .login .set-pwd-content ul li i {
   float: left;
-  margin-top: 25px;
+  margin-top: 22px;
 }
 .login .set-pwd-content ul li label {
   display: flex;
@@ -1115,7 +1128,7 @@ html::-webkit-scrollbar {
   width: 105px;
 }
 .login .reset-pwd-content ul li:nth-child(3) > i {
-  background-position-y: -263px;
+  background-position-y: -273px;
 }
 .login .reset-pwd-content b {
   margin-left: 5px;
@@ -1520,7 +1533,6 @@ html::-webkit-scrollbar {
 .conference .conference-content .list-content .meeting-content li {
   float: left;
   width: 325px;
-  min-height: 321px;
   margin: 0 10px 25px;
   padding: 10px;
   background-color: #ffffff;
@@ -2267,8 +2279,7 @@ html::-webkit-scrollbar {
 }
 
 .brand-list .conference-content .list-content .meeting-content li {
-  min-height: 320px;
-  height: auto;
+  height: 400px;
 }
 .brand-list .conference-content .list-content .meeting-content li .state i {
   width: 16px;
@@ -2384,9 +2395,6 @@ html::-webkit-scrollbar {
   float: left;
 }
 
-.circusee .conference-content .list-content .meeting-content li {
-  min-height: 300px;
-}
 .circusee .conference-content .list-content .meeting-content li .info {
   margin-top: 15px;
 }
@@ -2450,6 +2458,10 @@ html::-webkit-scrollbar {
 .behalf-list .conference-content .list-content .meeting-content li .btn-content {
   width: 70%;
   margin: 10px auto 5px;
+}
+
+.circusee .conference-content .list-content .meeting-content li {
+  height: 350px;
 }
 
 .calendar-list .title-menu {
@@ -3096,7 +3108,7 @@ html::-webkit-scrollbar {
   color: #78859a;
   font-size: 15px;
   display: inline-block;
-  width: 580px;
+  max-width: 580px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

@@ -111,10 +111,11 @@
         display: none;
         i { background:url('../img/icon/icon-login-list.png') no-repeat 0 0; background-size: cover;}
         ul{
-            width: 395px;
+            width: 415px;
             margin: 0 auto;
             padding-left: 15px;
             li{
+                position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
@@ -176,13 +177,13 @@
                 i{ background-position-y: -31px;}
             }
             .name{
-                i{ background-position-y: -126px;}
+                i{ background-position-y: -131px;}
             }
             .phone{
-                i{ background-position-y: -160px;}
+                i{ background-position-y: -166px;}
             }
             .c-code{
-                i{ background-position-y: -190px;}
+                i{ background-position-y: -199px;}
                 input{width: 105px;}
             }
             .v-code{
@@ -266,7 +267,16 @@
         margin-top: 55px;
         ul{
             li{
+                position: relative;
                 margin-bottom: 33px;
+                b{
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    font-size: 25px;
+                    color: #1277be;
+                }
             }
         }
     }
@@ -278,7 +288,10 @@
             }
         }
         b{
-            margin-left: 5px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
             font-size: 25px;
             color: #1277be;
         }
@@ -296,7 +309,7 @@
                 }
                 i{
                     float: left;
-                    margin-top: 25px;
+                    margin-top: 22px;
                 }
                 label{
                     display: flex;
@@ -348,7 +361,7 @@
                 }
                 &:nth-child(3){
                     >i{
-                        background-position-y: -263px;
+                        background-position-y: -273px;
                     }
                 }
             }
