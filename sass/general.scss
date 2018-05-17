@@ -552,6 +552,7 @@ html::-webkit-scrollbar { width: 0; display: none;}
             }
         }
         label{
+            position: relative;
             display: inline-block;
             height: 30px;
             background-color: #FFF;
@@ -564,6 +565,13 @@ html::-webkit-scrollbar { width: 0; display: none;}
             }
             input[type='file']{
                 opacity: 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            span{
+                display: block;
+                line-height: 30px;
             }
         }
         p{
@@ -590,7 +598,7 @@ html::-webkit-scrollbar { width: 0; display: none;}
     .prev:before{content:"\f053"}
     .next:before{content:"\f054"}
 }
-.dropup,.dropdown{position:relative;}
+// .dropup,.dropdown{position:relative;}
 .dropdown-toggle{*margin-bottom:-3px;}
 .dropdown-toggle:active,.open .dropdown-toggle{outline:0;}
 .dropdown .caret{margin-top:8px;margin-left:2px;}

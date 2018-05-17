@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="../../css/com.css">
     <link rel="stylesheet" href="../../css/iconfont.css">
     <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/jquery.searchableSelect.css">
     <script src="../../js/jquery-1.7.2.min.js"></script>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js//jquery.searchableSelect.js"></script>
     <script src="../../js/com.js"></script>
 </head>
 <body>
@@ -70,7 +73,36 @@
                         <li><sup></sup><span>讲者幻灯：</span><label class="icon-add" ><input type="file"></label><div class="introduction"><span>幻灯片1212幻灯片1212</span><i class="fa fa-close"></i></div><sub style="vertical-align: -13px;">会议前一天必须提交讲者PPT<br>否则不能入会</sub></li>
                         <li><sup></sup><span>审&ensp;批&ensp;号：</span><input type="text"></li>
                         <li><sup></sup><span>审批号有效期：</span><input class="icon-arrow" type="text"><sub>审批号有效期不得早于会议时间</sub></li>
-                        <li><sup></sup><span>主会场负责人：</span><select class="icon-arrow"><option value="">1</option><option value="">2</option></select></li>
+                        <li><sup></sup><span>主会场负责人：</span><input class="icon-arrow" type="hidden">
+                            <select class="icon-arrow">
+                                <option value="BlackBerry">BlackBerry</option>
+                                <option value="device">device</option>
+                                <option value="with">with</option>
+                                <option value="entertainment">entertainment</option>
+                                <option value="and">and</option>
+                                <option value="social">social</option>
+                                <option value="networking">networking</option>
+                                <option value="apps">apps</option>
+                                <option value="or">or</option>
+                                <option value="apps">apps</option>
+                                <option value="that">that</option>
+                                <option value="will">will</option>
+                                <option value="boost">boost</option>
+                                <option value="your">your</option>
+                                <option value="productivity">productivity</option>
+                                <option value="Download">Download</option>
+                                <option value="or">or</option>
+                                <option value="buy">buy</option>
+                                <option value="apps">apps</option>
+                                <option value="from">from</option>
+                                <option value="Afbb">Afbb</option>
+                                <option value="Akademie">Akademie</option>
+                                <option value="Berlin">Berlin</option>
+                                <option value="reviews">reviews</option>
+                                <option value="by">by</option>
+                                <option value="real">real</option>
+                            </select>
+                        </li>
                     </ul>
                 </div>
                 <div class="grab-single">
@@ -123,7 +155,36 @@
                         <li><sup></sup><span>讲者幻灯：</span><label class="icon-add" ><input type="file"></label><div class="introduction"><span>幻灯片1212幻灯片1212</span><i class="fa fa-close"></i></div><sub>会议前一天必须提交讲者PPT否则不能入会</sub></li>
                         <li><sup></sup><span>审&ensp;批&ensp;号：</span><input type="text"></li>
                         <li><sup></sup><span>审批号有效期：</span><input class="icon-arrow" type="text"><sub>审批号有效期不得早于会议时间</sub></li>
-                        <li><sup></sup><span>主会场负责人：</span><select class="icon-arrow"><option value="">1</option><option value="">2</option></select></li>
+                        <li><sup></sup><span>主会场负责人：</span><input class="icon-arrow" type="hidden">
+                            <select class="icon-arrow">
+                                <option value="BlackBerry">BlackBerry</option>
+                                <option value="device">device</option>
+                                <option value="with">with</option>
+                                <option value="entertainment">entertainment</option>
+                                <option value="and">and</option>
+                                <option value="social">social</option>
+                                <option value="networking">networking</option>
+                                <option value="apps">apps</option>
+                                <option value="or">or</option>
+                                <option value="apps">apps</option>
+                                <option value="that">that</option>
+                                <option value="will">will</option>
+                                <option value="boost">boost</option>
+                                <option value="your">your</option>
+                                <option value="productivity">productivity</option>
+                                <option value="Download">Download</option>
+                                <option value="or">or</option>
+                                <option value="buy">buy</option>
+                                <option value="apps">apps</option>
+                                <option value="from">from</option>
+                                <option value="Afbb">Afbb</option>
+                                <option value="Akademie">Akademie</option>
+                                <option value="Berlin">Berlin</option>
+                                <option value="reviews">reviews</option>
+                                <option value="by">by</option>
+                                <option value="real">real</option>
+                            </select>
+                        </li>
                     </ul>
                 </div>
                 <div class="add-atThe-venue">添加更多分会场信息</div>
@@ -218,6 +279,9 @@
     laydate.render({
         elem: '#date3',
         showBottom: false,
+    });
+    $(function(){
+        $('select').searchableSelect();
     });
 </script>
 <script>
