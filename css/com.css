@@ -882,6 +882,7 @@ html::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  font-size: 0;
 }
 .login .form-content ul li i {
   display: inline-block;
@@ -951,6 +952,7 @@ html::-webkit-scrollbar {
   border: solid 1px #1277be;
   box-sizing: border-box;
   background-color: rgba(243, 249, 255, 0.9);
+  font-size: 15px;
 }
 .login .form-content ul .pwd i {
   background-position-y: -31px;

@@ -119,6 +119,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
+                font-size: 0;
                 i { 
                     display: inline-block;
                     width: (56px/2);
@@ -171,7 +172,7 @@
                 }
             }
             .email {
-                label{@include inputCont(350px);}
+                label{@include inputCont(350px); font-size: 15px;}
             }
             .pwd {
                 i{ background-position-y: -31px;}
