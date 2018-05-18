@@ -2,7 +2,6 @@
 body {
   background-color: #FFF;
   font-family: sans-serif;
-  overflow: hidden;
 }
 
 input:focus::-webkit-input-placeholder {
