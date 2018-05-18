@@ -82,6 +82,8 @@
 }
 //login
 .login {
+    height: (768px-128);
+    padding-top: 128px;
     .back-index {
         display: none;
         position: absolute;
@@ -93,7 +95,6 @@
         img{
             width: 24.5px;
             height: 16.5px;
-            margin-top: 128px;
             margin-right: 8px;
             vertical-align: top;
         }
