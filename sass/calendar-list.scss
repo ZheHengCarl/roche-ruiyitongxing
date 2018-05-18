@@ -123,32 +123,38 @@
             width: 755px;
             height: 450px;
             margin: 0 auto;
-            overflow: auto;
+            overflow: hidden;
             border:{
                 top: 1px solid #45cbe4;
                 left: 1px solid #e0f0ff;
                 right: 1px solid #e0f0ff;
             }
-            >ul>li{
-                float: left;
-                width: 107px;
-                height: 89px;
-                border:{
-                    right: 1px solid #e0f0ff;
-                    bottom: 1px solid #e0f0ff;
-                }
-                &:nth-child(7n){
-                    border-right: none;
-                }
-                span{
-                    margin:{
-                        top:5px;
-                        left: 8px;
+            ul{
+                width: 800px;
+                height: 450px;
+                overflow: auto;
+                >li{
+                    float: left;
+                    width: 107px;
+                    height: 89px;
+                    border:{
+                        right: 1px solid #e0f0ff;
+                        bottom: 1px solid #e0f0ff;
                     }
-                    color: #78859a;
-                    font-size: 12px;
+                    &:nth-child(7n){
+                        border-right: none;
+                    }
+                    span{
+                        margin:{
+                            top:5px;
+                            left: 8px;
+                        }
+                        color: #78859a;
+                        font-size: 12px;
+                    }
                 }
             }
+            
             .hasmeeting{
                 >section{
                     position: relative;

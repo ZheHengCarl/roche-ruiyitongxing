@@ -5,52 +5,10 @@ body {
   overflow: hidden;
 }
 
-input:focus::-webkit-input-placeholder {
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-  -webkit-transform: translateX(80%);
-          transform: translateX(80%);
-  opacity: 0;
-}
-
-input:focus:-ms-input-placeholder {
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-  transform: translateX(80%);
-  opacity: 0;
-}
-
-input:focus::-ms-input-placeholder {
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-  transform: translateX(80%);
-  opacity: 0;
-}
-
 input:focus::placeholder {
-  -webkit-transition: all .4s ease;
   transition: all .4s ease;
-  -webkit-transform: translateX(80%);
-          transform: translateX(80%);
+  transform: translateX(80%);
   opacity: 0;
-}
-
-input::-webkit-input-placeholder {
-  color: rgba(40, 40, 40, 0.5);
-  font-size: 15px;
-  font-family: sans-serif;
-}
-
-input:-ms-input-placeholder {
-  color: rgba(40, 40, 40, 0.5);
-  font-size: 15px;
-  font-family: sans-serif;
-}
-
-input::-ms-input-placeholder {
-  color: rgba(40, 40, 40, 0.5);
-  font-size: 15px;
-  font-family: sans-serif;
 }
 
 input::placeholder {
@@ -126,8 +84,7 @@ select, #date1, #date2, #date3, #date4 {
   height: 25px;
   margin-bottom: 15px;
   background-color: #b8c1ce;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 15px;
   text-align: center;
   line-height: 25px;
@@ -167,8 +124,7 @@ select, #date1, #date2, #date3, #date4 {
   border-radius: 1px;
   border: solid 1px #b6bfce;
   vertical-align: -5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .container .options div span, .container .options label span {
   cursor: pointer;
@@ -177,9 +133,8 @@ select, #date1, #date2, #date3, #date4 {
   color: #1277be;
 }
 .container .copyright {
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  margin-top: 100px;
   color: #1277be;
   text-align: center;
   font-size: 10px;
@@ -220,13 +175,11 @@ select, #date1, #date2, #date3, #date4 {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 450px;
   height: 337px;
   background-color: #1277be;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
   border: solid 1px #006ab4;
   z-index: 999;
@@ -239,8 +192,7 @@ select, #date1, #date2, #date3, #date4 {
   margin-top: 10px;
   background-color: #47d6ff;
   color: #FFF;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 17px;
   text-align: center;
   font-size: 14px;
@@ -260,8 +212,7 @@ select, #date1, #date2, #date3, #date4 {
   width: 25px;
   height: 25px;
   background-color: #b8c1ce;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 12px;
   text-align: center;
   color: #FFF;
@@ -276,8 +227,7 @@ select, #date1, #date2, #date3, #date4 {
   height: 450px;
   border: none;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
 }
 .report-pop .shut-down {
@@ -372,15 +322,13 @@ select, #date1, #date2, #date3, #date4 {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 600px;
   height: 600px;
   padding: 20px;
   overflow: auto;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
   z-index: 999;
 }
@@ -474,17 +422,13 @@ html::-webkit-scrollbar {
 }
 
 .scroll-box {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   position: relative;
   width: 200px;
   height: 200px;
   overflow: hidden;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
   border: solid 1px #ffffff;
   z-index: 999;
@@ -541,8 +485,7 @@ html::-webkit-scrollbar {
   height: 370px;
   padding: 0 15px 15px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 2px 60px 0px rgba(29, 29, 29, 0.25), 0px 2px 12px 0px rgba(0, 173, 228, 0.7);
-          box-shadow: 0px 2px 60px 0px rgba(29, 29, 29, 0.25), 0px 2px 12px 0px rgba(0, 173, 228, 0.7);
+  box-shadow: 0px 2px 60px 0px rgba(29, 29, 29, 0.25), 0px 2px 12px 0px rgba(0, 173, 228, 0.7);
   border-radius: 10px;
   border: none;
 }
@@ -562,8 +505,7 @@ html::-webkit-scrollbar {
   width: 65px;
   height: 25px;
   background-color: #b8c1ce;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 12px;
   color: #FFF;
   font-size: 12px;
@@ -643,15 +585,13 @@ html::-webkit-scrollbar {
   bottom: -15px;
   color: #fd7423;
   font-size: 12px;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
 }
 .pop-change .sub-btn {
   width: 65px;
   height: 25px;
   background-color: #1277be;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 15px;
   color: #FFF;
 }
@@ -670,10 +610,6 @@ html::-webkit-scrollbar {
 }
 .table-condensed .next:before {
   content: "\f054";
-}
-
-.dropup, .dropdown {
-  position: relative;
 }
 
 .dropdown-toggle {
@@ -705,9 +641,14 @@ html::-webkit-scrollbar {
   border: 1px solid rgba(0, 0, 0, 0.2);
   *border-right-width: 2px;
   *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
   border-radius: 6px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
   background-clip: padding-box;
 }
 
@@ -740,7 +681,10 @@ html::-webkit-scrollbar {
   text-decoration: none;
   color: #ffffff;
   background-color: #0081c2;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0088cc), to(#0077b3));
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
   background-image: linear-gradient(to bottom, #0088cc, #0077b3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
@@ -751,7 +695,10 @@ html::-webkit-scrollbar {
   text-decoration: none;
   outline: 0;
   background-color: #0081c2;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0088cc), to(#0077b3));
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
   background-image: linear-gradient(to bottom, #0088cc, #0077b3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
@@ -772,8 +719,7 @@ html::-webkit-scrollbar {
 .dropdown-menu {
   padding: 10px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
   border: none;
 }
@@ -782,8 +728,7 @@ html::-webkit-scrollbar {
   width: 450px;
   height: 600px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
   border: solid 1px #ffffff;
   z-index: 999;
@@ -792,8 +737,7 @@ html::-webkit-scrollbar {
   width: 400px;
   height: auto;
   background-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .privacy-pop .scroll-box .scroll-content {
   width: 450px;
@@ -836,8 +780,7 @@ html::-webkit-scrollbar {
   width: 350px;
   height: 200px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
   border: solid 1px #ffffff;
   text-align: center;
@@ -849,8 +792,7 @@ html::-webkit-scrollbar {
   margin-top: 35px;
   background-color: #47d6ff;
   color: #FFF;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 17px;
   text-align: center;
   font-size: 14px;
@@ -871,8 +813,7 @@ html::-webkit-scrollbar {
   margin-top: 10px;
   background-color: #47d6ff;
   color: #FFF;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 17px;
   text-align: center;
   font-size: 14px;
@@ -887,8 +828,7 @@ html::-webkit-scrollbar {
   margin-top: 25px;
   background-color: #47d6ff;
   color: #FFF;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 17px;
   text-align: center;
   font-size: 14px;
@@ -897,7 +837,7 @@ html::-webkit-scrollbar {
 }
 
 .login {
-  padding-top: 128px;
+  padding-top: 64px;
 }
 .login .back-index {
   display: none;
@@ -939,15 +879,9 @@ html::-webkit-scrollbar {
 }
 .login .form-content ul li {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
 }
 .login .form-content ul li i {
   display: inline-block;
@@ -958,23 +892,15 @@ html::-webkit-scrollbar {
 }
 .login .form-content ul li label {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
   padding-right: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #1277be;
   width: 350px;
   height: 40px;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15);
-          box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15);
+  box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15);
   border-radius: 20px;
   border: solid 1px #1277be;
   box-sizing: border-box;
@@ -1020,12 +946,10 @@ html::-webkit-scrollbar {
 .login .form-content ul .email label {
   width: 350px;
   height: 40px;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15);
-          box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15);
+  box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15);
   border-radius: 20px;
   border: solid 1px #1277be;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: rgba(243, 249, 255, 0.9);
 }
 .login .form-content ul .pwd i {
@@ -1056,15 +980,9 @@ html::-webkit-scrollbar {
   background-position-y: -273px;
 }
 .login .form-content .login-button-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .login .form-content .login-button-content button {
   border-radius: 20px;
@@ -1075,17 +993,14 @@ html::-webkit-scrollbar {
 .login .form-content .login-button-content .login-btn {
   width: 180px;
   height: 40px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1277be), to(#1277be)), -webkit-gradient(linear, left top, left bottom, from(#1277be), to(#1277be));
   background-image: linear-gradient(#1277be, #1277be), linear-gradient(#1277be, #1277be);
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15);
-          box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15);
+  box-shadow: 0px 5px 10px 0px rgba(28, 174, 226, 0.15);
 }
 .login .form-content .login-button-content .register-btn {
   width: 115px;
   height: 40px;
   background-color: #b8c1ce;
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(28, 174, 226, 0.15);
-          box-shadow: 0px 10px 20px 0px rgba(28, 174, 226, 0.15);
+  box-shadow: 0px 10px 20px 0px rgba(28, 174, 226, 0.15);
 }
 .login .form-content .login-bottom {
   margin-top: 70px;
@@ -1093,15 +1008,9 @@ html::-webkit-scrollbar {
 .login .form-content .login-bottom ul {
   width: 230px;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .login .form-content .login-bottom ul li {
   color: #4596d5;
@@ -1119,10 +1028,8 @@ html::-webkit-scrollbar {
   width: 184px;
   height: 40px;
   margin: 22.5px auto 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1277be), to(#1277be)), -webkit-gradient(linear, left top, left bottom, from(#1277be), to(#1277be));
   background-image: linear-gradient(#1277be, #1277be), linear-gradient(#1277be, #1277be);
-  -webkit-box-shadow: 0px 5px 10px 0p rgba(28, 174, 226, 0.15);
-          box-shadow: 0px 5px 10px 0p rgba(28, 174, 226, 0.15);
+  box-shadow: 0px 5px 10px 0p rgba(28, 174, 226, 0.15);
   border-radius: 20px;
   border: solid 1px #1277be;
   color: #FFF;
@@ -1147,8 +1054,7 @@ html::-webkit-scrollbar {
   position: absolute;
   top: 50%;
   right: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 25px;
   color: #1277be;
 }
@@ -1162,8 +1068,7 @@ html::-webkit-scrollbar {
   position: absolute;
   top: 50%;
   right: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 25px;
   color: #1277be;
 }
@@ -1184,15 +1089,9 @@ html::-webkit-scrollbar {
   margin-top: 22px;
 }
 .login .set-pwd-content ul li label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
 }
 .login .set-pwd-content ul li label span {
   width: 120px;
@@ -1269,8 +1168,7 @@ html::-webkit-scrollbar {
   width: 50px;
   height: 25px;
   background-color: rgba(182, 191, 206, 0.3);
-  -webkit-box-shadow: 0px 5px 21px 0px rgba(73, 170, 225, 0.27);
-          box-shadow: 0px 5px 21px 0px rgba(73, 170, 225, 0.27);
+  box-shadow: 0px 5px 21px 0px rgba(73, 170, 225, 0.27);
   border-radius: 25px;
   border: solid 1px rgba(158, 169, 186, 0.4);
   font-size: 14px;
@@ -1283,8 +1181,7 @@ html::-webkit-scrollbar {
   width: 270px;
   height: 80px;
   background-color: rgba(113, 195, 232, 0.3);
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(73, 170, 225, 0.27);
-          box-shadow: 0px 5px 20px 0px rgba(73, 170, 225, 0.27);
+  box-shadow: 0px 5px 20px 0px rgba(73, 170, 225, 0.27);
   border-radius: 20px;
   border: solid 1px rgba(113, 195, 232, 0.4);
   text-align: center;
@@ -1332,8 +1229,7 @@ html::-webkit-scrollbar {
   background: #FFF;
   padding: 0 20px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 2px 114px 0px rgba(29, 29, 29, 0.25), 0px 2px 24px 0px rgba(73, 170, 225, 0.7);
-          box-shadow: 0px 2px 114px 0px rgba(29, 29, 29, 0.25), 0px 2px 24px 0px rgba(73, 170, 225, 0.7);
+  box-shadow: 0px 2px 114px 0px rgba(29, 29, 29, 0.25), 0px 2px 24px 0px rgba(73, 170, 225, 0.7);
   text-align: center;
 }
 .index .menu a {
@@ -1341,8 +1237,7 @@ html::-webkit-scrollbar {
   height: 48px;
   line-height: 48px;
   border-bottom: 1px solid #e3effe;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 15px;
   color: #3375bb;
   font-weight: 500;
@@ -1396,8 +1291,7 @@ html::-webkit-scrollbar {
   width: 165px;
   height: 40px;
   background-color: #4595d4;
-  -webkit-box-shadow: 0px 5px 21px 0px rgba(73, 170, 225, 0.27);
-          box-shadow: 0px 5px 21px 0px rgba(73, 170, 225, 0.27);
+  box-shadow: 0px 5px 21px 0px rgba(73, 170, 225, 0.27);
   border-radius: 20px;
   border: solid 1px rgba(158, 169, 186, 0.4);
   text-align: center;
@@ -1406,10 +1300,7 @@ html::-webkit-scrollbar {
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .index .more-function i {
   margin-left: 13px;
@@ -1420,8 +1311,7 @@ html::-webkit-scrollbar {
   width: 172px;
   height: 100%;
   background-color: #ffffff;
-  -webkit-box-shadow: 5px 0px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 5px 0px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 5px 0px 10px 0px rgba(0, 173, 228, 0.15);
   z-index: 2;
 }
 .conference .nav .logo {
@@ -1495,7 +1385,7 @@ html::-webkit-scrollbar {
 .conference .nav .nav-middle ul li p {
   padding-left: 15px;
   color: #fd7423;
-  font-size: 36px;
+  font-size: 33px;
 }
 .conference .nav .nav-middle .behalf-info li div i {
   vertical-align: -4px;
@@ -1572,8 +1462,7 @@ html::-webkit-scrollbar {
   margin-left: 5px;
   line-height: 73px;
   background-color: #FFF;
-  -webkit-box-shadow: 2px 2px 15px 0px rgba(0, 173, 228, 0.2);
-          box-shadow: 2px 2px 15px 0px rgba(0, 173, 228, 0.2);
+  box-shadow: 2px 2px 15px 0px rgba(0, 173, 228, 0.2);
 }
 .conference .conference-content .bread-crumb-nav li {
   float: left;
@@ -1616,8 +1505,7 @@ html::-webkit-scrollbar {
   margin: 20px 0 0 15px;
   padding: 0 10px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 0px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 0px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
 }
 .conference .conference-content .list-content .title {
@@ -1651,8 +1539,7 @@ html::-webkit-scrollbar {
   margin: 0 10px 25px;
   padding: 10px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
 }
 .conference .conference-content .list-content .meeting-content li img {
@@ -1719,24 +1606,20 @@ html::-webkit-scrollbar {
 }
 .conference .conference-content .list-content .meeting-content li .btn-content .alter {
   background-color: #4596d5;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
 }
 .conference .conference-content .list-content .meeting-content li .btn-content .del {
   margin-left: 15px;
   background-color: #45cbe4;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
 }
 .conference .conference-content .list-content .meeting-content li .btn-content .grab {
   background-color: #fd7423;
-  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
 }
 .conference .conference-content .list-content .meeting-content .active .state {
   background-color: #1277be;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
 }
 .conference .conference-content .list-content .meeting-content .active .state i {
   background-position-y: -20px;
@@ -1744,8 +1627,7 @@ html::-webkit-scrollbar {
 .conference .conference-content .list-content .scroll-box {
   width: 100%;
   height: 590px;
-  -webkit-box-shadow: initial;
-          box-shadow: initial;
+  box-shadow: initial;
   background-color: transparent;
 }
 .conference .conference-content .list-content .scroll-box .scroll-content {
@@ -1822,8 +1704,7 @@ html::-webkit-scrollbar {
   height: 25px;
   margin: 15px auto;
   background-color: #1277be;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 25px;
   text-align: center;
   color: #FFF;
@@ -1852,14 +1733,12 @@ html::-webkit-scrollbar {
 }
 .draft .btn-content .alter {
   background-color: #1277be;
-  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
 }
 .draft .btn-content .del {
   margin-left: 15px;
   background-color: #b8c1ce;
-  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
 }
 .draft .message-list {
   padding: 0 30px;
@@ -1872,15 +1751,9 @@ html::-webkit-scrollbar {
 }
 .draft .message-list li label {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .draft .message-list li label input {
   position: absolute;
@@ -1944,19 +1817,16 @@ html::-webkit-scrollbar {
 }
 .new-conference .btn-content .save {
   background-color: #4596d5;
-  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
 }
 .new-conference .btn-content .submit {
   margin: 0 15px;
   background-color: #1277be;
-  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
 }
 .new-conference .btn-content .cancel {
   background-color: #45cbe4;
-  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
 }
 .new-conference .form-content {
   height: 570px;
@@ -1967,8 +1837,7 @@ html::-webkit-scrollbar {
   padding-top: 15px;
   margin-bottom: 15px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
 }
 .new-conference .form-content .add-atThe-venue {
@@ -1976,8 +1845,7 @@ html::-webkit-scrollbar {
   height: 25px;
   margin: 20px auto;
   background-color: #fd7423;
-  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
   border-radius: 24px;
   color: #ffffff;
   font-size: 12px;
@@ -2015,8 +1883,7 @@ html::-webkit-scrollbar {
   height: 210px;
   padding: 0 19px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
   overflow: auto;
   text-align: left;
@@ -2157,8 +2024,7 @@ html::-webkit-scrollbar {
   line-height: 25px;
   font-size: 12px;
   background-color: #1277be;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.33);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.33);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.33);
   cursor: pointer;
 }
 .new-conference .form-content .main-info li:nth-child(1) > input {
@@ -2177,8 +2043,7 @@ html::-webkit-scrollbar {
   margin-top: 5px;
   margin-right: 10px;
   background-color: #b8c1ce;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 15px;
   text-align: center;
   line-height: 25px;
@@ -2243,8 +2108,7 @@ html::-webkit-scrollbar {
   width: 350px;
   height: 200px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 5px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
   border: solid 1px #ffffff;
   text-align: center;
@@ -2256,8 +2120,7 @@ html::-webkit-scrollbar {
   margin-top: 35px;
   background-color: #47d6ff;
   color: #FFF;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 17px;
   text-align: center;
   font-size: 14px;
@@ -2278,8 +2141,7 @@ html::-webkit-scrollbar {
   margin-bottom: 15px;
   padding: 0 30px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
 }
 .check-report .list-content > ul li, .check-report .list-content > div li {
@@ -2315,8 +2177,7 @@ html::-webkit-scrollbar {
   height: 210px;
   padding: 0 19px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 10px;
   overflow: auto;
   text-align: left;
@@ -2332,8 +2193,7 @@ html::-webkit-scrollbar {
   line-height: 25px;
   font-size: 12px;
   background-color: #1277be;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.33);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.33);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.33);
   cursor: pointer;
 }
 .check-report .list-content > ul li .drop .drop-content label, .check-report .list-content > div li .drop .drop-content label {
@@ -2392,8 +2252,7 @@ html::-webkit-scrollbar {
   height: 30px;
   margin-left: 10px;
   background-color: #53c6ea;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 15px;
   text-align: center;
   line-height: 30px;
@@ -2412,15 +2271,9 @@ html::-webkit-scrollbar {
 }
 
 .behalf-check-report .list-content .info li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 80%;
 }
 .behalf-check-report .list-content .type2 li {
@@ -2437,15 +2290,9 @@ html::-webkit-scrollbar {
   background-size: cover;
 }
 .brand-list .conference-content .list-content .meeting-content li .btn-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .brand-list .conference-content .list-content .meeting-content li .btn-content div, .brand-list .conference-content .list-content .meeting-content li .btn-content .del, .brand-list .conference-content .list-content .meeting-content li .btn-content .alter {
   background-color: #b8c1ce;
@@ -2460,15 +2307,9 @@ html::-webkit-scrollbar {
   font-weight: 500;
 }
 .brand-list .conference-content .list-content .meeting-content li.active .btn-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .brand-list .conference-content .list-content .meeting-content li.active .btn-content .oneKey {
   background-color: #1277be;
@@ -2507,8 +2348,6 @@ html::-webkit-scrollbar {
   font-size: 18px;
 }
 .brand-list .title-menu {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 160px;
   height: 30px;
@@ -2517,14 +2356,11 @@ html::-webkit-scrollbar {
   border: solid 1px #006ab4;
   vertical-align: middle;
   overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .brand-list .title-menu a {
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   height: 100%;
   color: #78859a;
   font-size: 12px;
@@ -2565,15 +2401,9 @@ html::-webkit-scrollbar {
   margin-top: 15px;
 }
 .circusee .conference-content .list-content .meeting-content li .btn-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .circusee .conference-content .list-content .meeting-content li .btn-content .oneKey {
   background-color: #1277be;
@@ -2581,9 +2411,7 @@ html::-webkit-scrollbar {
 .circusee .conference-content .list-content .meeting-content li .btn-content .oneKey a {
   color: #FFF;
 }
-.circusee .conference-content .list-content .meeting-content li .btn-content a{
-  color: #FFF;
-}
+
 .affirm-meeting .conference-content .list-content .meeting-content li {
   width: 340px;
   min-height: 250px;
@@ -2612,13 +2440,11 @@ html::-webkit-scrollbar {
 }
 .affirm-meeting .list-content .btn-content2 .consent {
   background-color: #1277be;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.33);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.33);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.33);
 }
 .affirm-meeting .list-content .btn-content2 .reject {
   background-color: #fd7423;
-  -webkit-box-shadow: 0px 3px 10px 0pxrgba 0, 173, 228, 0.15;
-          box-shadow: 0px 3px 10px 0pxrgba 0, 173, 228, 0.15;
+  box-shadow: 0px 3px 10px 0pxrgba 0, 173, 228, 0.15;
 }
 
 .sub-error .pop-btn {
@@ -2677,8 +2503,7 @@ html::-webkit-scrollbar {
   width: 791px;
   height: 40px;
   background-color: rgba(69, 203, 228, 0.3);
-  -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
-          box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
+  box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
   border-radius: 20px;
   border: solid 1px rgba(83, 198, 234, 0.4);
   text-align: center;
@@ -2697,20 +2522,14 @@ html::-webkit-scrollbar {
   cursor: pointer;
 }
 .calendar-list .weeks {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 760px;
   height: 40px;
   margin: 0 auto;
 }
 .calendar-list .weeks li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   text-align: center;
   font-size: 12px;
 }
@@ -2719,8 +2538,7 @@ html::-webkit-scrollbar {
   position: absolute;
   left: 50%;
   top: 60%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   z-index: 999;
@@ -2734,15 +2552,9 @@ html::-webkit-scrollbar {
 .calendar-list .swiper-slide .preview-content .btn-content {
   width: 40%;
   margin: 15px auto 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .calendar-list .swiper-slide .preview-content .btn-content div {
   display: inline-block;
@@ -2775,22 +2587,27 @@ html::-webkit-scrollbar {
   width: 755px;
   height: 450px;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
   border-top: 1px solid #45cbe4;
   border-left: 1px solid #e0f0ff;
   border-right: 1px solid #e0f0ff;
 }
-.calendar-list .calendar-month-content .days > ul > li {
+.calendar-list .calendar-month-content .days ul {
+  width: 800px;
+  height: 450px;
+  overflow: auto;
+}
+.calendar-list .calendar-month-content .days ul > li {
   float: left;
   width: 107px;
   height: 89px;
   border-right: 1px solid #e0f0ff;
   border-bottom: 1px solid #e0f0ff;
 }
-.calendar-list .calendar-month-content .days > ul > li:nth-child(7n) {
+.calendar-list .calendar-month-content .days ul > li:nth-child(7n) {
   border-right: none;
 }
-.calendar-list .calendar-month-content .days > ul > li span {
+.calendar-list .calendar-month-content .days ul > li span {
   margin-top: 5px;
   margin-left: 8px;
   color: #78859a;
@@ -2817,8 +2634,7 @@ html::-webkit-scrollbar {
   width: 300px;
   height: 375px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 5px 29px 0px rgba(0, 173, 228, 0.33);
-          box-shadow: 0px 5px 29px 0px rgba(0, 173, 228, 0.33);
+  box-shadow: 0px 5px 29px 0px rgba(0, 173, 228, 0.33);
   z-index: 999;
 }
 .calendar-list .calendar-month-content .days .hasmeeting > section .detail h3 {
@@ -2866,22 +2682,15 @@ html::-webkit-scrollbar {
 }
 .calendar-list .calendar-month-content .days .hasmeeting > section .detail ol li .btn-content {
   width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
 }
 .calendar-list .calendar-month-content .days .hasmeeting > section .detail ol li .btn-content div {
   width: 65px;
   height: 25px;
-  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
   border-radius: 17px;
   text-align: center;
   font-size: 12px;
@@ -2965,8 +2774,7 @@ html::-webkit-scrollbar {
 .calendar-list .calendar-week-content .week-content .week-scroll-content > div {
   height: 49px;
   border-bottom: 1px solid #e0f0ff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .calendar-list .calendar-week-content .week-content .week-scroll-content > div .time {
   float: left;
@@ -2999,8 +2807,7 @@ html::-webkit-scrollbar {
   width: 300px;
   height: 375px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 5px 29px 0px rgba(0, 173, 228, 0.33);
-          box-shadow: 0px 5px 29px 0px rgba(0, 173, 228, 0.33);
+  box-shadow: 0px 5px 29px 0px rgba(0, 173, 228, 0.33);
   z-index: 999;
   font-size: 12px;
 }
@@ -3052,22 +2859,15 @@ html::-webkit-scrollbar {
 }
 .calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul > li .detail ol li .btn-content {
   width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
 }
 .calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul > li .detail ol li .btn-content div {
   width: 65px;
   height: 25px;
-  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 6px 20px 0px rgba(0, 173, 228, 0.15);
   border-radius: 17px;
   text-align: center;
   font-size: 12px;
@@ -3108,21 +2908,21 @@ html::-webkit-scrollbar {
   background: #4192cb url("../img/icon/icon-week-ycj.jpg") no-repeat top left;
   background-size: 100% 20px;
 }
-.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul > li .ycj h3 span {
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul > li .ycj-title {
   color: #4192cb;
 }
 .calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul > li .wqd-top {
   background: #fd904f url("../img/icon/icon-week-wqd.jpg") no-repeat top left;
   background-size: 100% 20px;
 }
-.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul > li .wqd h3 span {
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul > li .wqd-title {
   color: #fd904f;
 }
 .calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul > li .yqd-top {
   background: #6ed2e5 url("../img/icon/icon-week-yqd.jpg") no-repeat top left;
   background-size: 100% 20px;
 }
-.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul > li .yqd h3 span {
+.calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul > li .yqd-title {
   color: #6ed2e5;
 }
 .calendar-list .calendar-week-content .week-content .week-scroll-content > div > ul > li .ycj-cont {
@@ -3156,8 +2956,7 @@ html::-webkit-scrollbar {
 .meeting-upload .list-content > div:not(.title):not(.upload-btn) {
   padding: 13px 0;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 173, 228, 0.33);
-          box-shadow: 0px 3px 15px 0px rgba(0, 173, 228, 0.33);
+  box-shadow: 0px 3px 15px 0px rgba(0, 173, 228, 0.33);
   border-radius: 10px;
 }
 .meeting-upload .list-content > div:not(.title):not(.upload-btn) span {
@@ -3172,17 +2971,10 @@ html::-webkit-scrollbar {
 .meeting-upload .list-content .upload-general .form-content {
   margin-top: 30px;
   padding-left: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .meeting-upload .list-content .upload-general .form-content > div {
   position: relative;
@@ -3191,19 +2983,10 @@ html::-webkit-scrollbar {
 }
 .meeting-upload .list-content .upload-general .form-content .upload {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 200px;
   height: 140px;
   background-color: #edeff3;
@@ -3273,13 +3056,11 @@ html::-webkit-scrollbar {
 .meeting-upload .list-content .upload-btn .confirm {
   margin-right: 30px;
   background-color: #1277be;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
 }
 .meeting-upload .list-content .upload-btn .cancel {
   background-color: #b8c1ce;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
 }
 .meeting-upload .del-pop .confirm {
   display: inline-block;
@@ -3287,8 +3068,7 @@ html::-webkit-scrollbar {
   height: 25px;
   margin-right: 15px;
   background-color: #1277be;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
-          box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
+  box-shadow: 0px 3px 10px 0px rgba(0, 173, 228, 0.15);
   border-radius: 17px;
   text-align: center;
   line-height: 25px;
@@ -3341,8 +3121,7 @@ html::-webkit-scrollbar {
   width: 76px;
   height: 76px;
   background-color: rgba(83, 198, 234, 0.2);
-  -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
-          box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
+  box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
   border-radius: 37px;
   border: solid 1px rgba(83, 198, 234, 0.4);
 }
@@ -3360,8 +3139,7 @@ html::-webkit-scrollbar {
   width: 121px;
   height: 120px;
   background-color: rgba(83, 198, 234, 0.4);
-  -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
-          box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
+  box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
   border-radius: 60px;
   border: solid 1px rgba(83, 198, 234, 0.4);
 }
@@ -3383,8 +3161,7 @@ html::-webkit-scrollbar {
   width: 76px;
   height: 76px;
   background-color: rgba(83, 198, 234, 0.2);
-  -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
-          box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
+  box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
   border-radius: 37px;
   border: solid 1px rgba(83, 198, 234, 0.4);
 }
@@ -3402,8 +3179,7 @@ html::-webkit-scrollbar {
   width: 91px;
   height: 91px;
   background-color: rgba(83, 198, 234, 0.4);
-  -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
-          box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
+  box-shadow: 0px 3px 11px 0px rgba(0, 173, 228, 0.27);
   border-radius: 45px;
   border: solid 1px rgba(83, 198, 234, 0.4);
 }
@@ -3543,3 +3319,5 @@ html::-webkit-scrollbar {
   min-height: 280px;
   margin: 0 20px;
 }
+
+/*# sourceMappingURL=com.css.map */
