@@ -38,6 +38,16 @@
             }
         }
     }
+    .brand{
+        label{
+            &:nth-child(2){
+                i{
+                    background-color: #fd7423;
+                    border: 4px solid #ffe3d3;
+                }
+            }
+        }
+    }
     .years{
         width: 791px;
         height: 40px;
