@@ -93,14 +93,14 @@
         img{
             width: 24.5px;
             height: 16.5px;
+            margin-top: 128px;
             margin-right: 8px;
             vertical-align: top;
         }
     }
-    padding-top: (128px/2);
-    @media screen and (max-width: 1025px) {
-        height: 640px;
-    }
+    // @media screen and (max-width: 1025px) {
+    //     height: 640px;
+    // }
     .login-title{
         display: block;
         width: (713px/2);
