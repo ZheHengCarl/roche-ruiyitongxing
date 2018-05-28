@@ -64,7 +64,7 @@
     init: function(){
       var _this = this;
       this.element.hide();
-
+      
       this.searchableElement = $('<div tabindex="0" class="searchable-select"></div>');
       this.holder = $('<div class="searchable-select-holder"></div>');
       this.dropdown = $('<div class="searchable-select-dropdown searchable-select-hide"></div>');
@@ -164,7 +164,6 @@
       var _this = this;
       this.element.find('option').each(function(){
         var item = $('<div class="searchable-select-item" data-value="'+$(this).attr('value')+'">'+$(this).text()+'</div>');
-
         if(this.selected){
           _this.selectItem(item);
           _this.hoverItem(item);
@@ -178,8 +177,10 @@
           event.stopPropagation();
           _this.selectItem($(this));
           _this.hide();
+          if (_this.element[0].className == "main-head") {
+            ////////
+          }
         });
-
         _this.items.append(item);
       });
 
@@ -200,9 +201,9 @@
 
       if(this.items.find(':not(.searchable-select-hide)').length === 0)
           this.input.val('');
-      this.dropdown.addClass('searchable-select-hide');
-      this.searchableElement.trigger('focus');
-      this.status = 'hide';
+          this.dropdown.addClass('searchable-select-hide');
+          this.searchableElement.trigger('focus');
+          this.status = 'hide';
     },
 
     hasCurrentSelectedItem: function(){
@@ -215,13 +216,12 @@
 
       this.currentSelectedItem = item;
       item.addClass('selected');
-
       this.hoverItem(item);
-
       this.holder.text(item.text());
       var value = item.data('value');
       this.holder.data('value', value);
       this.element.val(value);
+      
 
       if(this.options.afterSelectItem){
         this.options.afterSelectItem.apply(this);

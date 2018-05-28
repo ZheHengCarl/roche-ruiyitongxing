@@ -12,7 +12,7 @@ $(function () {
     var dropIndex=1;
     $(".drop").click(function(e){
         if (e.target.className == "sub-btn") {
-            $(this).find(".drop-content").hide()
+            $(this).find(".drop-content").hide();
         }
         else{
             $(this).find(".drop-content").show().css("z-index",dropIndex++);
@@ -38,8 +38,8 @@ $(function () {
                     sText += $(this).val()+',';
                 }
             }
-        })
+        });
         sText = sText.substring(0,sText.length-1);
         _this.parent().parent().find(".show").text(sText);
-    })
-})
+    });
+});

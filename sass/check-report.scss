@@ -27,6 +27,11 @@
                     border-radius: 15px;
                     vertical-align: middle;
                     .show{
+                        display: inline-block;
+                        width: 75%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
                         line-height: 30px;
                     }
                     .drop-content{
@@ -68,6 +73,11 @@
                                 width: 20px;
                                 height: 20px;
                                 margin: 0;
+                                opacity: 0;
+                                filter:alpha(opacity=0);
+                                filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                                -MS-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                                -moz-opacity:0;
                                 &:checked + i{
                                     background: url('../img/icon/icon-check2.png') no-repeat 0 0;
                                     background-size: cover;
@@ -84,11 +94,11 @@
                         }
                     }
                 }
-                &:nth-child(2){ 
+                &:nth-child(2){
                     .drop{ width: 184px;}
                     label{ margin-right: 35px;}
                 }
-                &:nth-child(3){ 
+                &:nth-child(3){
                     .drop{ width: 440px;}
                 }
             }
@@ -140,12 +150,12 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                width: 80%;
+                // width: 80%;
             }
         }
         .type2{
             li{
-                width: 90%;
+                // width: 90%;
             }
         }
     }

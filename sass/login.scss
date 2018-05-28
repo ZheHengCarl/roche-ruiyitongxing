@@ -136,6 +136,7 @@
                     padding-right: 10px;
                     box-sizing: border-box;
                     color: #1277be;
+                    font-size: 15px;
                     @include inputCont(350px);
                     .temp-cCode{
                         position: absolute;
@@ -197,7 +198,7 @@
             }
             
             .confirm-pwd{
-                i{background-position-y: -273px;}
+                i{background-position-y: -271px;}
             }
         }
         .login-button-content{
@@ -311,7 +312,6 @@
                 }
                 i{
                     float: left;
-                    margin-top: 22px;
                 }
                 label{
                     display: flex;
@@ -323,6 +323,7 @@
                     }
                 }
                 p{
+                    height: 45px;
                     margin: 10px 0 0;
                     text-align: center;
                     color: #fd7423;
@@ -330,7 +331,7 @@
                 }
                 b{
                     position: absolute;
-                    top: 28px;
+                    top: 8px;
                     right: 0;
                     width: 25px;
                     height: 25px;
@@ -338,6 +339,7 @@
                     border-radius: 50%;
                     text-align: center;
                     line-height: 25px;
+                    font-size: 16px;
                     i{
                         float: none;
                         margin: 0;

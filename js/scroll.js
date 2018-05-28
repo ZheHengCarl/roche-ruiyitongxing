@@ -8,7 +8,7 @@ $(function () {
     });
     window.onload = function (){
         oScroll();
-    }
+    };
     function oScroll (){
         var oDevice = 'ontouchstart' in window,
             startEvent = oDevice ? 'touchstart' : 'mousedown',
@@ -24,40 +24,40 @@ $(function () {
 
         oDomScrollContent.scroll(function(){
             var nScrollTop = $(this)[0].scrollTop;
-            nScrollBarH = nScrollTop * ((nDivHeight - barSize) / (nScrollHeight - nDivHeight))
-            $(this).next().find(".active-bar").height(nScrollBarH)
+            nScrollBarH = nScrollTop * ((nDivHeight - barSize) / (nScrollHeight - nDivHeight));
+            $(this).next().find(".active-bar").height(nScrollBarH);
         });
 
         var startpoint = {}, _nScrollBarH = 0;
         var fnTouchstart = function (e) {
             oTouchScrollContent = $(this).parent().parent().prev();
             if (e.originalEvent.changedTouches) {
-                var e = e.originalEvent.changedTouches[0]
+                var e = e.originalEvent.changedTouches[0];
             }
-            _nScrollBarH = nScrollBarH
-            startpoint.y = e.clientY
-            $(document).bind(moveEvent, fnTouchmove)
-            $(document).bind(endEvent, fnTouchend)
-        }
+            _nScrollBarH = nScrollBarH;
+            startpoint.y = e.clientY;
+            $(document).bind(moveEvent, fnTouchmove);
+            $(document).bind(endEvent, fnTouchend);
+        };
         var fnTouchmove = function (e) {
             if (e.originalEvent.changedTouches) {
-                var e = e.originalEvent.changedTouches[0]
+                var e = e.originalEvent.changedTouches[0];
             }
-            var moveY = e.clientY - startpoint.y
-            var nTempScrollBarH = _nScrollBarH + moveY
+            var moveY = e.clientY - startpoint.y;
+            var nTempScrollBarH = _nScrollBarH + moveY;
 
             if (nTempScrollBarH > maxH) {
-            nTempScrollBarH = maxH
+            nTempScrollBarH = maxH;
             } else if (nTempScrollBarH < 0) {
-                nTempScrollBarH = 0
+                nTempScrollBarH = 0;
             }
-            nScrollTop = nTempScrollBarH / ((nDivHeight - barSize) / (nScrollHeight - nDivHeight))
+            nScrollTop = nTempScrollBarH / ((nDivHeight - barSize) / (nScrollHeight - nDivHeight));
             oTouchScrollContent.scrollTop(nScrollTop);
-        }
+        };
         var fnTouchend = function (e) {
-            $(document).unbind(moveEvent, fnTouchmove)
-            $(document).unbind(endEvent, fnTouchend)
-        }
+            $(document).unbind(moveEvent, fnTouchmove);
+            $(document).unbind(endEvent, fnTouchend);
+        };
         $(".bar").bind(startEvent, fnTouchstart);
     };
-})
+});
